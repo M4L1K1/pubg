@@ -1,3 +1,4 @@
+#!/bin/bash
 # funcao menu de opções do programa.
 
 
@@ -27,7 +28,8 @@ case $opcao in
 1) Um ;; # funcao Um
 2) Dois ;; # funcao Dois
 3) Três ;;
-4) Sair ;;
+4) Root ;;
+5) Sair ;;
 *) 'Opção desconhecida.' ; echo; Menu;;
 
 esac
@@ -112,6 +114,13 @@ clear
 Menu
 }
 
+Root(){
+echo 'Adicionar Super Usuario !!!'
+su -c setenceforce 0'
+sleep 4
+clear 
+Menu
+}
 Sair(){
 
 if [[ exit ]]; then
