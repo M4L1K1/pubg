@@ -54,13 +54,13 @@ echo " "
 mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/Korea/Backup
 echo " "
 echo " "
-cp /storage/emulated/0/Korea/mod/libUE4.so /data/data/com.pubg.krmobile/lib
-chmod -r 777 /data/data/com.pubg.krmobile/lib/libUE4.so
+mv /storage/emulated/0/Korea/mod/libUE4.so /data/data/com.pubg.krmobile/lib
+chmod -r 2755 /data/data/com.pubg.krmobile/lib/libUE4.so
 echo "Backup Completo  "
 sleep 4
 echo " "
 am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
-
+sleep 50
 while :; do
 echo " CLEAN LOGS AUTOMATICO "
 echo " PARA PARAR O LOOPING APERTE NO BOTAO DE VOLTAR! "
