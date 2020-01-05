@@ -1,10 +1,6 @@
 # funcao menu de opções do programa.
-#apt update
-#apt upgrade
-#apt install coreutils
-#apt-get install nano
-#termux-setup-storage
-clear
+
+
 
 Menu(){
 clear
