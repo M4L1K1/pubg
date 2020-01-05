@@ -5,7 +5,8 @@ echo
 Menu(){
 clear
 echo '----------------------------------------------'
-echo 'Atenção para as Opções'
+echo 'Atenção para as Opções, Não esquecer de alterar
+      as Permições da pasta e Sub Pastas  '
 echo '----------------------------------------------'
 echo
 echo 'Escolha a Versão do Jogo : '
