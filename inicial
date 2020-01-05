@@ -8,10 +8,11 @@ echo '----------------------------------------------'
 echo 'Atenção para as Opções'
 echo '----------------------------------------------'
 echo
-chmod -r 000 /data/data/com.pubg.krmobile/databases/bugly
-chmod -r 777 /data/data/com.pubg.krmobile/lib/libUE4.so
-chmod -f 777 /data/data/com.pubg.krmobile/cache
+#chmod -r 000 /data/data/com.pubg.krmobile/databases/bugly
+#chmod -r 777 /data/data/com.pubg.krmobile/lib/libUE4.so
+#chmod -f 777 /data/data/com.pubg.krmobile/cache
 mv /storage/emulated/0/Korea/mod/libUE4.so /data/data/com.pubg.krmobile/lib
+mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/Korea/Backup
 echo 'Escolha a Versão do Jogo : '
 echo
 echo '1. Global'
