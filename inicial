@@ -33,8 +33,6 @@ case $opcao in
 
 esac
 }
-
-
 # funcao exibe 1
 Um(){
 echo 'Iniciando Global Aguarde atualização'
@@ -43,7 +41,6 @@ sleep 5
 clear
 Menu
 }
-
 Dois(){
 echo 'Iniciando Korea Aguarde'
 echo "Script exclusivo Membros Clâ Shot"
@@ -62,7 +59,6 @@ echo "Backup Completo  "
 sleep 4
 echo " "
 am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
-
 while :; do
 echo " CLEAN LOGS AUTOMATICO "
 echo " PARA PARAR O LOOPING APERTE NO BOTAO DE VOLTAR! "
@@ -97,9 +93,8 @@ rm -rf /data/data/com.pubg.krmobile/cache
 sleep 1
 done
 echo " "
-
+Menu
 }
-
 Três(){
 echo 'Trocando a pasta ShadowTracker Aguarde !!!'
 mv /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra /storage/emulated/0/Korea/Backup 
@@ -109,7 +104,6 @@ sleep 4
 clear 
 Menu
 }
-
 Root(){
 echo 'Adicionar Super Usuario !!!'
 su -c setenceforce 0'
@@ -117,14 +111,11 @@ sleep 4
 clear 
 Menu
 }
-
 Sair(){
-
 if [[ exit ]]; then
 echo 'Exit'
 echo
 fi
 }
-
 # Primeira função a ser executada no programa.
 Menu
