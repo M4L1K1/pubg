@@ -1,6 +1,6 @@
   
 # funcao menu de opções do programa.
-su
+
 echo
 Menu(){
 clear
