@@ -55,6 +55,7 @@ chmod -R 2755 /data/data/com.pubg.krmobile/lib/libUE4.so
 mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/Korea/Backup
 echo " "
 echo " "
+chmod -R 2755 /data/data/com.pubg.krmobile/lib/libUE4.so
 mv /storage/emulated/0/Korea/mod/libUE4.so /data/data/com.pubg.krmobile/lib
 echo "Backup Completo  "
 sleep 4
