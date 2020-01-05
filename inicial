@@ -16,7 +16,7 @@ echo
 echo '1. Global'
 echo '2. Korea'
 echo '3. Primeira Execução Kr'
-echo '4. Root'
+echo '4. Quatro'
 echo '5. SAIR'
 echo -n 'Qual a opção desejada : '
 read opcao # read le a variável opcao
@@ -104,13 +104,13 @@ sleep 4
 clear 
 Menu
 }
-Root(){
+Quatro(){
 echo 'Adicionar Super Usuario !!!'
-su -c setenceforce 0'
 sleep 4
 clear 
 Menu
 }
+
 Sair(){
 if [[ exit ]]; then
 echo 'Exit'
