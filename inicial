@@ -1,4 +1,21 @@
-
-am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity
-
-
+ case  $variable-name  in
+                pattern1|pattern2|pattern3)       
+     		    command1
+                    ...
+                    ....
+                    commandN
+                    ;;
+                pattern4|pattern5|pattern6)
+     		    command1
+                    ...
+                    ....
+                    commandN
+                    ;;            
+                pattern7|pattern8|patternN)       
+     		    command1
+                    ...
+                    ....
+                    commandN
+                    ;;
+                *)              
+          esac 
