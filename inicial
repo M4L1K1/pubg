@@ -11,7 +11,7 @@ echo '----------------------------------------------'
 echo
 echo 'Escolha a Versão do Jogo : '
 echo 
-echo '1. Global'
+echo '1. Restaura Original'
 echo '2. Korea'
 echo '3. Primeira Execução Kr'
 echo '4. SAIR'
@@ -34,9 +34,11 @@ esac
 
 # funcao exibe 1
 Um(){
-echo 'Iniciando Global Aguarde atualização'
-echo
+echo 'Iniciando restauração de Arquivos'
+mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/Korea/mod
+mv /storage/emulated/0/Korea/Backup/libUE4.so /data/data/com.pubg.krmobile/lib
 sleep 5
+echo '100 %'
 clear
 Menu
 }
