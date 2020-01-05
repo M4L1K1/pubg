@@ -4,7 +4,6 @@
 
 
 Menu(){
-clear
 chmod -R 000 /data/data/com.pubg.krmobile/databases/bugly
 chmod -R 755 /data/data/com.pubg.krmobile/lib/libUE4.so
 chmod -R 755 /data/data/com.pubg.krmobile/cache
