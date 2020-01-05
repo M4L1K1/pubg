@@ -2,6 +2,7 @@
 apt update
 apt upgrade
 apt install coreutils
+apt-get install nano
 termux-setup-storage
 clear
 Menu(){
