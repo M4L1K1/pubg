@@ -39,6 +39,7 @@ mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/Korea/mod
 mv /storage/emulated/0/Korea/Backup/libUE4.so /data/data/com.pubg.krmobile/lib
 sleep 5
 echo '100 %'
+sleep 5 
 clear
 Menu
 }
@@ -62,6 +63,7 @@ echo " "
 chmod 2755 /data/data/com.pubg.krmobile/lib/libUE4.so
 echo "Backup Completo  "
 am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
+clear
 sleep 50
 while :; do
 echo " CLEAN LOGS AUTOMATICO "
