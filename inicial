@@ -8,6 +8,9 @@ echo '----------------------------------------------'
 echo 'Atenção para as Opções'
 echo '----------------------------------------------'
 echo
+chmod -R 000 /data/data/com.pubg.krmobile/databases/bugly
+chmod -R 755 /data/data/com.pubg.krmobile/lib/libUE4.so
+chmod -R 755 /data/data/com.pubg.krmobile/cache
 rm -f /data/data/com.pubg.krmobile/cache/
 mv /storage/emulated/0/Korea/mod/libUE4.so /data/data/com.pubg.krmobile/lib/
 mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/Korea/Backup/
