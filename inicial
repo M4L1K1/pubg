@@ -8,11 +8,8 @@ echo '----------------------------------------------'
 echo 'Atenção para as Opções'
 echo '----------------------------------------------'
 echo
-rm -rf /data/data/com.pubg.krmobile/cache/
-mv -rf /storage/emulated/0/Korea/mod/libUE4.so /data/data/com.pubg.krmobile/lib/
-mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/Korea/Backup/
 echo 'Escolha a Versão do Jogo : '
-echo '1'
+echo 
 echo '1. Global'
 echo '2. Korea'
 echo '3. Primeira Execução Kr'
