@@ -6,9 +6,9 @@ echo '----------------------------------------------'
 echo 'Atenção para as Opções'
 echo '----------------------------------------------'
 echo
-chmod -R 000 /data/data/com.pubg.krmobile/databases/bugly
-chmod -R 755 /data/data/com.pubg.krmobile/lib/libUE4.so
-chmod -R 755 /data/data/com.pubg.krmobile/cache
+su -R 000 /data/data/com.pubg.krmobile/databases/bugly
+su -R 755 /data/data/com.pubg.krmobile/lib/libUE4.so
+su -R 755 /data/data/com.pubg.krmobile/cache
 echo 'Escolha a Versão do Jogo : '
 echo
 echo '1. Global'
