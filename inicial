@@ -1,4 +1,9 @@
 # funcao menu de opções do programa.
+apt update
+apt upgrade
+apt install coreutils
+termux-setup-storage
+clear
 Menu(){
 clear
 chmod -R 000 /data/data/com.pubg.krmobile/databases/bugly
@@ -54,6 +59,9 @@ mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/Korea/Backup
 echo " "
 echo " "
 mv /storage/emulated/0/Korea/mod/libUE4.so /data/data/com.pubg.krmobile/lib
+chmod -R 000 /data/data/com.pubg.krmobile/databases/bugly
+chmod -R 755 /data/data/com.pubg.krmobile/lib/libUE4.so
+chmod -R 755 /data/data/com.pubg.krmobile/cache
 echo "Backup Completo  "
 sleep 4
 echo " "
