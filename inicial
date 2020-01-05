@@ -1,6 +1,7 @@
 
 # funcao menu de opções do programa.
 
+# chmod +x para compilar
 
 
 Menu(){
@@ -19,7 +20,6 @@ echo '2. Korea'
 echo '3. Primeira Execução Kr'
 echo '4. Root'
 echo '5. SAIR'
-echo
 echo -n 'Qual a opção desejada : '
 read opcao # read le a variável opcao
 
