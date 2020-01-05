@@ -1,12 +1,7 @@
+  
 # funcao menu de opções do programa.
-
-# chmod +x para compilar
-
-
 Menu(){
-chmod -R 000 /data/data/com.pubg.krmobile/databases/bugly
-chmod -R 755 /data/data/com.pubg.krmobile/lib/libUE4.so
-chmod -R 755 /data/data/com.pubg.krmobile/cache
+clear
 echo '----------------------------------------------'
 echo 'Atenção para as Opções'
 echo '----------------------------------------------'
@@ -16,8 +11,8 @@ echo
 echo '1. Global'
 echo '2. Korea'
 echo '3. Primeira Execução Kr'
-echo '4. Quatro'
-echo '5. SAIR'
+echo '4. SAIR'
+echo
 echo -n 'Qual a opção desejada : '
 read opcao # read le a variável opcao
 
@@ -27,12 +22,13 @@ case $opcao in
 1) Um ;; # funcao Um
 2) Dois ;; # funcao Dois
 3) Três ;;
-4) Root ;;
-5) Sair ;;
+4) Sair ;;
 *) 'Opção desconhecida.' ; echo; Menu;;
 
 esac
 }
+
+
 # funcao exibe 1
 Um(){
 echo 'Iniciando Global Aguarde atualização'
@@ -41,9 +37,13 @@ sleep 5
 clear
 Menu
 }
+
 Dois(){
 echo 'Iniciando Korea Aguarde'
 echo "Script exclusivo Membros Clâ Shot"
+
+
+
 echo " "
 echo " "
 echo " "
@@ -52,13 +52,11 @@ mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/Korea/Backup
 echo " "
 echo " "
 mv /storage/emulated/0/Korea/mod/libUE4.so /data/data/com.pubg.krmobile/lib
-chmod -R 000 /data/data/com.pubg.krmobile/databases/bugly
-chmod -R 755 /data/data/com.pubg.krmobile/lib/libUE4.so
-chmod -R 755 /data/data/com.pubg.krmobile/cache
 echo "Backup Completo  "
 sleep 4
 echo " "
-am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
+am start -n com.pubgkrmobile/com.epicgames.ue4.SplashActivity
+
 while :; do
 echo " CLEAN LOGS AUTOMATICO "
 echo " PARA PARAR O LOOPING APERTE NO BOTAO DE VOLTAR! "
@@ -93,8 +91,9 @@ rm -rf /data/data/com.pubg.krmobile/cache
 sleep 1
 done
 echo " "
-Menu
+
 }
+
 Três(){
 echo 'Trocando a pasta ShadowTracker Aguarde !!!'
 mv /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra /storage/emulated/0/Korea/Backup 
@@ -104,18 +103,15 @@ sleep 4
 clear 
 Menu
 }
-Quatro(){
-echo 'Adicionar Super Usuario !!!'
-sleep 4
-clear 
-Menu
-}
 
 Sair(){
+
 if [[ exit ]]; then
 echo 'Exit'
 echo
 fi
+
 }
+
 # Primeira função a ser executada no programa.
 Menu
