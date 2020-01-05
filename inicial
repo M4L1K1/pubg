@@ -1,4 +1,4 @@
-#!/bin/bash
+
 # funcao menu de opções do programa.
 
 
@@ -17,7 +17,8 @@ echo
 echo '1. Global'
 echo '2. Korea'
 echo '3. Primeira Execução Kr'
-echo '4. SAIR'
+echo '4. Root'
+echo '5. SAIR'
 echo
 echo -n 'Qual a opção desejada : '
 read opcao # read le a variável opcao
@@ -48,9 +49,6 @@ Menu
 Dois(){
 echo 'Iniciando Korea Aguarde'
 echo "Script exclusivo Membros Clâ Shot"
-
-
-
 echo " "
 echo " "
 echo " "
@@ -121,13 +119,13 @@ sleep 4
 clear 
 Menu
 }
+
 Sair(){
 
 if [[ exit ]]; then
 echo 'Exit'
 echo
 fi
-
 }
 
 # Primeira função a ser executada no programa.
