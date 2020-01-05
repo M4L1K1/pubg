@@ -1,14 +1,59 @@
-case $1 in
-read 1
-1) echo "Um" ;;
-2) echo "dois" ;;
-3) echo "tres" ;;
-4) echo "quatro" ;;
-5) echo "cinco" ;;
-6) echo "seis" ;;
-7) echo "sete" ;;
-8) echo "oito" ;;
-9) echo "nove" ;;
-10) echo "dez" ;;
-*) echo "Opcao Invalida!" ;;
+# funcao menu de opções do programa.
+Menu(){
+clear
+echo '----------------------------------------------'
+echo 'Utilização do Case in Shell Script'
+echo '----------------------------------------------'
+echo
+echo 'Escolha a opção : '
+echo
+echo '1. UM'
+echo '2. DOIS'
+echo '3. TRÊS'
+echo '4. SAIR'
+echo
+echo -n 'Qual a opção desejada : '
+read opcao # read le a variável opcao
+
+# Recebe o valor da opção lida e executa a função correspondente
+case $opcao in
+
+1) Um ;; # funcao Um
+2) Dois ;; # funcao Dois
+3) Três ;;
+4) Sair ;;
+*) 'Opção desconhecida.' ; echo; Menu;;
+
 esac
+}
+
+
+# funcao exibe 1
+Um(){
+echo 'Escolheu opção 1'
+echo
+
+}
+
+Dois(){
+echo 'Escolheu opção 2'
+echo
+
+}
+
+Três(){
+echo 'Escolheu opção 3'
+echo
+}
+
+Sair(){
+
+if [[ exit ]]; then
+echo 'Vo&#265;e Saiu do programa...'
+echo
+fi
+
+}
+
+# Primeira função a ser executada no programa.
+Menu
