@@ -65,7 +65,7 @@ chmod 2775 /data/data/com.pubg.krmobile/cache/*
 echo "Backup Completo  "
 am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
 clear
-sleep 150
+sleep 400
 while :; do
 echo " CLEAN LOGS AUTOMATICO "
 echo " PARA PARAR O LOOPING APERTE NO BOTAO DE VOLTAR! "
@@ -81,7 +81,6 @@ echo " "
 echo " "
 rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/cache
 rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/tbslog
-rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/ProgramBinaryCache
 rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/new.filelist
 rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
 rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/filelist.json
