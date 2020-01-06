@@ -1,5 +1,5 @@
   
-# funcao menu de opções do programa.
+#!/data/data/com.termux/files/usr/bin/bash
 
 echo
 Menu(){
@@ -123,3 +123,4 @@ fi
 
 # Primeira função a ser executada no programa.
 Menu
+<EOF>
