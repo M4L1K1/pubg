@@ -61,7 +61,7 @@ mv /storage/emulated/0/Korea/mod/libUE4.so /data/data/com.pubg.krmobile/lib
 sleep 4
 echo " "
 chmod 2755 /data/data/com.pubg.krmobile/lib/libUE4.so
-chmod 777 /data/data/com.pubg.krmobile/cache
+chmod 2775 /data/data/com.pubg.krmobile/cache/*
 echo "Backup Completo  "
 am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
 clear
@@ -95,8 +95,7 @@ rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/cacheFile.txt
 rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/login-identifier.txt
 rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag
 rm -rf /data/data/com.pubg.krmobile/app_tbs
-rm -rf /data/data/com.pubg.krmobile/app_bugly
-rm -rf /data/data/com.pubg.krmobile/cache
+rm -rf /data/data/com.pubg.krmobile/cache/*
 sleep 1
 done
 echo " "
