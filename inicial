@@ -66,7 +66,7 @@ chmod 2775 /data/data/com.pubg.krmobile/cache/*
 echo "Backup Completo  "
 am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
 clear
-sleep 800
+sleep 500
 while :; do
 echo " CLEAN LOGS AUTOMATICO "
 echo " PARA PARAR O LOOPING APERTE NO BOTAO DE VOLTAR! "
