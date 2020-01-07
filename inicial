@@ -45,7 +45,7 @@ Menu
 
 Dois(){
 echo 'Iniciando Korea Aguarde'
-echo "Script exclusivo Membros Clã Shot pronto pau no cu,       melhorou essa buceta de teclado"
+echo "Script exclusivo Membros Clã Shot pronto pau no cu, melhorou essa buceta de teclado"
 sleep 10
 
 am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
@@ -69,7 +69,7 @@ echo
 echo "Aguardando Carregar Cache"
 while :; do
 echo
-if ps -auxf | grep "pubg"> /dev/true then
+if [[ps -auxf | grep "pubg"> /dev/true]]; then
 echo "Aguardando Jogo Iniciar limpando"
 	
       else
