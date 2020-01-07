@@ -48,8 +48,9 @@ echo 'Iniciando Korea Aguarde'
 echo "Script exclusivo Membros Clâ Shot"
 
 
-
+am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
 echo " "
+sleep 10
 echo " "
 echo " "
 echo " "
@@ -63,7 +64,6 @@ echo " "
 chmod 2755 /data/data/com.pubg.krmobile/lib/libUE4.so
 chmod 2775 /data/data/com.pubg.krmobile/cache/*
 echo "Backup Completo  "
-am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
 clear
 sleep 60
 while :; do
