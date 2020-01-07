@@ -68,21 +68,16 @@ echo "Troca de libs ok "
 echo
 echo "Aguardando Carregar Cache"
 while :; do
-echo " CLEAN LOGS AUTOMATICO "
-echo " PARA PARAR O LOOPING APERTE NO BOTAO DE VOLTAR! "
-echo " "
-echo " "
-until ps -auxf | grep "pubg"> /dev/true
-do
-      echo "Aguardando Jogo Iniciar limpando"
-      sleep 1
+echo
+if ps -auxf | grep "pubg"> /dev/true
+echo "Aguardando Jogo Iniciar limpando"
+	
+      else
+	echo "Voltando ao menu Restaure o jogo "
+	sleep 5;
+      Menu
+	fi
 done
-Menu
-echo " "
-echo " "
-sleep 0
-done
-echo " "
 
 }
 
