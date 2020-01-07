@@ -45,7 +45,11 @@ Menu
 
 Dois(){
 echo 'Iniciando Korea Aguarde'
+echo 
+echo
+echo
 echo "Script exclusivo Membros Clã Shot pronto pau no cu,   melhorou essa buceta de teclado"
+
 sleep 10
 
 am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
@@ -67,11 +71,13 @@ chmod 2775 /data/data/com.pubg.krmobile/cache/*
 echo "Troca de libs ok "
 echo
 echo "Aguardando Carregar Cache"
+sleep 4
 while :; do
+echo 
+echo "LIMPANDO LOG"
 echo
-if ps -auxf | grep pubg > /dev/false ; then
-echo "Aguardando Jogo Iniciar limpando"
-sleep 2
+done
+echo
 fi
 
 done
