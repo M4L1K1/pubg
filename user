@@ -4,12 +4,6 @@ apt-get --assume-yes upgrade
 su -c 'setenforce 0'
 apt-get --assume-yes install tsu
 apt-get --assume-yes install wget
-apt-get --assume-yes install grep
-apt-get --assume-yes install bc
-apt-get --assume-yes install toilet
-apt-get --assume-yes install ncurses-utils
-apt-get --assume-yes install rsync aapt neofetch openssl-tool ruby
-
 
 tsu -c git clone https://github.com/M4L1K1/pubg.git
 tsu -c chmod 777 ./pubg
