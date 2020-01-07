@@ -71,13 +71,8 @@ while :; do
 echo
 if ps -auxf | grep pubg > /dev/true ; then
 echo "Aguardando Jogo Iniciar limpando"
-	
-      else
-	echo "Voltando ao menu Restaure o jogo "
-	sleep 5
-	fi
-      Menu
-
+sleep
+fi
 done
 
 }
