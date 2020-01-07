@@ -11,8 +11,8 @@ apt-get --assume-yes install ncurses-utils
 apt-get --assume-yes install rsync aapt neofetch openssl-tool ruby
 
 tsu -c 'find . -iname '*inicial*' -exec rm -rf {} \;'
-tsu -c 'wget https://github.com/M4L1K1/pubg.git
-tsu -c chmod 777 ./pubg
-tsu -c mv /pubg/inicial /$HOME
+tsu -c 'wget https://github.com/M4L1K1/pubg.git'
+tsu -c 'chmod 777 ./pubg'
+tsu -c 'mv /pubg/inicial /$HOME'
 tsu -c 'chmod a+x inicial'
-tsu -c ./inicial
+tsu -c './inicial'
