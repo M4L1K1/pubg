@@ -67,7 +67,7 @@ chmod 2775 /data/data/com.pubg.krmobile/cache/*
 echo "Troca de libs ok "
 echo
 echo "Aguardando Carregar Cache"
-until ps -e | grep om.pubg.krmobile > /dev/false
+until ps -e | grep com.pubg.krmobile > /dev/false
 do
       echo "Pubg está em execução."
       sleep 1
