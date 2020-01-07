@@ -48,7 +48,7 @@ echo 'Iniciando Korea Aguarde'
 echo "Script exclusivo Membros Clã Shot pronto pau no cu, melhorou essa buceta de teclado do mac"
 sleep 10
 
-am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
+am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivit
 clear
 echo " "
 sleep 10
@@ -67,7 +67,7 @@ chmod 2775 /data/data/com.pubg.krmobile/cache/*
 echo "Troca de libs ok "
 echo
 echo "Aguardando Carregar Cache"
-until ps -e | grep com.pubg.krmobile > /dev/true
+until ps -e | grep krmobile > /dev/true
 do
       echo "Pubg está em execução."
       sleep 1
