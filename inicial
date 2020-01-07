@@ -67,7 +67,7 @@ chmod 2775 /data/data/com.pubg.krmobile/cache/*
 echo "Troca de libs ok "
 echo
 echo "Aguardando Carregar Cache"
-until ps -e | grep com.pubg.krmobile/com.epicgames.ue4.SplashActivity > /dev/true
+until ps -e | grep com.pubg.krmobile > /dev/true
 do
       echo "Pubg está em execução."
       sleep 10
