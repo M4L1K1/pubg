@@ -46,7 +46,7 @@ Menu
 Dois(){
 echo 'Iniciando Korea Aguarde'
 echo "Script exclusivo Membros Clã Shot pronto pau no cu, melhorou essa buceta de teclado do mac"
-
+sleep 10
 
 am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
 clear
