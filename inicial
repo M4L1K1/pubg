@@ -67,7 +67,7 @@ chmod 2775 /data/data/com.pubg.krmobile/cache/*
 echo "Troca de libs ok "
 echo
 echo "Aguardando Carregar Cache"
-until ps -e | grep krmobile > /dev/true
+until ps -e | grep PUBG MOBILE > /dev/true
 do
       echo "Pubg está em execução."
       sleep 1
