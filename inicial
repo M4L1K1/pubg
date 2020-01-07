@@ -63,8 +63,10 @@ sleep 4
 echo " "
 chmod 2755 /data/data/com.pubg.krmobile/lib/libUE4.so
 chmod 2775 /data/data/com.pubg.krmobile/cache/*
-echo "Backup Completo  "
-clear
+echo "Troca de libs ok "
+echo
+echo "Aguardando Carregar Cache 
+
 sleep 60
 while :; do
 echo " CLEAN LOGS AUTOMATICO "
