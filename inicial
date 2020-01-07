@@ -48,7 +48,7 @@ echo 'Iniciando Korea Aguarde'
 echo "Script exclusivo Membros Clã Shot pronto pau no cu, melhorou essa buceta de teclado do mac"
 sleep 10
 
-am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivit
+am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
 clear
 echo " "
 sleep 10
@@ -72,7 +72,7 @@ do
       echo "Pubg está em execução."
       sleep 1
 done
-echo "Aguardando iniciar"
+Menu
 }
 
 Três(){
