@@ -1,10 +1,13 @@
 #!/data/data/com.termux/files/usr/bin/bash
+
 apt-get update
 apt-get --assume-yes upgrade 
 su -c 'setenforce 0'
 apt-get --assume-yes install tsu
 apt-get --assume-yes install wget
 apt-get --assume-yes install git
+tsu -c rm -rf pubg
+tsu -c rm -rf inicial
 
 tsu -c git clone https://github.com/M4L1K1/pubg.git
 tsu -c chmod 777 ./pubg
