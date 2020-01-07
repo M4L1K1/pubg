@@ -69,7 +69,7 @@ echo
 echo "Aguardando Carregar Cache"
 while :; do
 echo
-if ps -auxf | grep "pubg"> /dev/true
+if ps -auxf | grep "pubg"> /dev/true then
 echo "Aguardando Jogo Iniciar limpando"
 	
       else
