@@ -49,6 +49,7 @@ echo "Script exclusivo Membros Clâ Shot"
 
 
 am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
+clear
 echo " "
 sleep 10
 echo " "
@@ -66,25 +67,11 @@ chmod 2775 /data/data/com.pubg.krmobile/cache/*
 echo "Troca de libs ok "
 echo
 echo "Aguardando Carregar Cache"
-echo
-sleep 60
-while :; do
-echo " CLEAN LOGS AUTOMATICO "
-echo " PARA PARAR O LOOPING APERTE NO BOTAO DE VOLTAR! "
-echo " "
-echo " "
-echo " "
-echo " "
-echo " "
-echo " "
-echo ""
-echo " "
-echo " "
-echo " "
-sleep 0
+until ps -e | grep com.pubg.krmobile/com.epicgames.ue4.SplashActivity > /dev/true
+do
+      echo "Pubg está em execução."
+      sleep 10
 done
-echo " "
-
 }
 
 Três(){
