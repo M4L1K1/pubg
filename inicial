@@ -1,4 +1,3 @@
-  
 #!/data/data/com.termux/files/usr/bin/bash
 
 echo
@@ -123,4 +122,3 @@ fi
 
 # Primeira função a ser executada no programa.
 Menu
-
