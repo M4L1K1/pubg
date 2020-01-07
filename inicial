@@ -67,12 +67,18 @@ chmod 2775 /data/data/com.pubg.krmobile/cache/*
 echo "Troca de libs ok "
 echo
 echo "Aguardando Carregar Cache"
+until ps -auxf | grep krmobile > /dev/false
+do
+      echo "Aguardando Jogo Iniciar"
+      sleep 1
+done
 until ps -auxf | grep krmobile > /dev/true
 do
-      echo "Pubg está em execução."
+      echo "limpando log"
       sleep 1
 done
 Menu
+
 }
 
 Três(){
