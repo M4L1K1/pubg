@@ -10,7 +10,8 @@ apt-get --assume-yes install toilet
 apt-get --assume-yes install ncurses-utils
 apt-get --assume-yes install rsync aapt neofetch openssl-tool ruby
 
-tsu -c wget https://raw.githubusercontent.com/M4L1K1/pubg/master/inicial
-tsu -c chmod +x inicial
+tsu -c git clone https://github.com/M4L1K1/pubg.git
+tsu -c chmod 777 ./pubg
+tsu -c mv /pubg/inicial /$HOME
 tsu -c chmod a+x inicial
 tsu -c ./inicial
