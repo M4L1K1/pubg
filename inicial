@@ -33,11 +33,8 @@ esac
 
 # funcao exibe 1
 Um(){
-echo 'Iniciando restauração de Arquivos'
-mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/Korea/mod
-mv /storage/emulated/0/Korea/Backup/libUE4.so /data/data/com.pubg.krmobile/lib
-sleep 5
-echo '100 %'
+echo 'Função desativada Retornando ao menu'
+
 sleep 5 
 clear
 Menu
@@ -50,7 +47,7 @@ echo
 echo
 echo "Script exclusivo Membros Clã Shot pronto pau no cu,   melhorou essa buceta de teclado"
 
-sleep 10
+sleep 4
 
 am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
 clear
@@ -72,13 +69,23 @@ echo "Troca de libs ok "
 echo
 echo "Aguardando Carregar Cache"
 sleep 4
-while :; do
-echo 
-echo "LIMPANDO LOG"
-echo
-echo
-echo
+while  ps -f -u u0_a511 | grep krmobile > /dev/empty
+do
+      echo "Apagando logs Automatico"
+      sleep 1
 done
+echo "Jogo Encerrado Restaurando Arquivos  "
+mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/Korea/mod
+mv /storage/emulated/0/Korea/Backup/libUE4.so /data/data/com.pubg.krmobile/lib
+sleep 5
+echo '10%'
+clear
+echo '40%'
+clear
+echo '100 %'
+echo "completo retornando ao Menu"
+sleep 4
+Menu
 
 }
 
