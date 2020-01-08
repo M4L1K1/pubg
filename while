@@ -1,5 +1,5 @@
 
-jog = ps -auxf | grep krmobile
+set jog = ps -f -u u0_a511 | grep krmobile
 
 
-echo  $jog
+echo  "$jog"
