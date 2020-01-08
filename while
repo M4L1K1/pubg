@@ -1,4 +1,5 @@
 
-set jog = ps -auxf | grep pubg 
+jog = ps -auxf | grep krmobile
+
 
 echo  $jog
