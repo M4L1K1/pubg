@@ -1,4 +1,4 @@
-tsu ps -auxf
+tsu -c ps -auxf
 until ps -auxf | grep pubg > /dev/null
 do
       echo "aguardando o jogo iniciar"
