@@ -1,7 +1,8 @@
-until  ps -f -u u0_a511 | grep krmobile < /dev/null
+while  ps -f -u u0_a511 | grep krmobile > /dev/empty
 do
-      echo "aguardando o jogo iniciar "
+      echo "menu"
       sleep 1
 done
 echo "jogo iniciado "
+
 
