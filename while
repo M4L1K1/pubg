@@ -1,4 +1,4 @@
-while  ps -e | grep krmobile > /dev/empty
+while  ps aux | grep krmobile > /dev/empty
 do
       echo "Apagando logs Automatico"
       sleep 1
