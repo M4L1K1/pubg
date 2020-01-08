@@ -1,8 +1,10 @@
 while  ps -f -u u0_a511 | grep krmobile > /dev/empty
 do
-      echo "menu"
+      echo "Apagando logs Automatico"
       sleep 1
 done
-echo "jogo iniciado "
+echo "Jogo Encerrado Restaurando Arquivos  "
+sleep 4
+echo "completo retornando ao menu"
 
 
