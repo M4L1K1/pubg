@@ -76,10 +76,8 @@ while :; do
 echo 
 echo "LIMPANDO LOG"
 echo
-done
 echo
-fi
-
+echo
 done
 
 }
