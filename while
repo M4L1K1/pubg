@@ -1,4 +1,4 @@
-until  ps -f -u u0_a511 | grep krmobile > /dev/true
+until  ps -f -u u0_a511 | grep krmobile < /dev/null
 do
       echo "aguardando o jogo iniciar "
       sleep 1
