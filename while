@@ -1,0 +1,6 @@
+until ps -e | grep pubg > /dev/null
+do
+      echo "aguardando o jogo iniciar"
+      sleep 10
+done
+echo "jogo iniciado "
