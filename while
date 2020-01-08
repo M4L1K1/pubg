@@ -1,5 +1,7 @@
+until  ps -f -u u0_a511 | grep krmobile > /dev/null
+do
+      echo "aguardando o jogo iniciar "
+      sleep 1
+done
+echo "jogo iniciado "
 
-set jog = ps -f -u u0_a511 | grep krmobile
-
-
-echo  "$jog"
