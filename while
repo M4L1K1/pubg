@@ -1,4 +1,5 @@
-until ps -e | grep pubg > /dev/null
+tsu ps -auxf
+until ps -auxf | grep pubg > /dev/null
 do
       echo "aguardando o jogo iniciar"
       sleep 1
