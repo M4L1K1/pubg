@@ -1,9 +1,9 @@
-set jog = ps -auxf | grep pubg 
-echo '$jog'
+set jog=ps -auxf | grep pubg 
+echo  $jog
 sleep 4
 until  $jog | Korea > /dev/null
 do
-      echo "aguardando o jogo iniciar"
+      echo "aguardando o jogo iniciar "$jog" "
       sleep 1
 done
 echo "jogo iniciado "
