@@ -1,4 +1,4 @@
-while  ps -f -u u0_a511 | grep krmobile > /dev/empty
+while  ps aux | grep krmobile > /dev/pubg
 do
       echo "Apagando logs Automatico"
       sleep 1
