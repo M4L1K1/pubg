@@ -1,7 +1,7 @@
 set jog = ps -auxf | grep pubg 
-echo 'jog'
+echo '$jog'
 sleep 4
-until  jog | Korea > /dev/null
+until  $jog | Korea > /dev/null
 do
       echo "aguardando o jogo iniciar"
       sleep 1
