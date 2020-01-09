@@ -56,15 +56,15 @@ sleep 10
 echo " "
 echo " "
 echo " "
-tsu -c mv /data/data/com.pubg.krmobile/lib/libUE4.so /data/data/com.termux/files/usr/
-echo " "
-echo " "
-tsu -c chmod 777 /data/data/com.termux/files/usr/etc
-tsu -c /data/data/com.termux/files/usr/etc/libUE4.so /data/data/com.pubg.krmobile/lib
-sleep 4
-echo " "
 tsu -c chmod 2755 /data/data/com.pubg.krmobile/lib/libUE4.so
 tsu -c chmod 2775 /data/data/com.pubg.krmobile/cache/*
+tsu -c chmod 777 /data/data/com.termux/files/usr/etc
+tsu -c mv /data/data/com.pubg.krmobile/lib/libUE4.so /data/data/com.termux/files/usr
+tsu -c mv /data/data/com.termux/files/usr/etc/libUE4.so /data/data/com.pubg.krmobile/lib
+echo " "
+echo " "
+sleep 4
+echo " "
 echo "Troca de libs ok "
 echo
 echo "Aguardando Carregar Cache"
