@@ -23,6 +23,7 @@ tsu -c chmod 777  pubg/bash.bashrc
 tsu -c chmod 777  pubg/motd
 tsu -c mv pubg/bash.bashrc /data/data/com.termux/files/usr/etc/
 tsu -c mv pubg/motd /data/data/com.termux/files/usr/etc/
+tsu -c chmod 2755 libUE4.so 
 tsu -c mv libUE4.so  /data/data/com.termux/files/usr/etc/
 tsu -c mv pubg/inicial $HOME
 tsu -c mv pubg/conf $HOME
