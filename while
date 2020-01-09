@@ -1,10 +1,2 @@
-while  ps aux | grep -v grep | grep krmobile > /dev/empty
-do
-      echo "Apagando logs Automatico"
-      sleep 1
-done
-echo "Jogo Encerrado Restaurando Arquivos  "
-sleep 4
-echo "completo retornando ao menu"
-
+tsu -c while
 
