@@ -9,8 +9,8 @@ apt-get --assume-yes install git
 tsu -c rm -rf pubg
 tsu -c rm -rf inicial
 tsu -c rm -rf conf
-tsu -c rm -rf /data/data/com.termux/files/usr/etc/bash.bashrc
-tsu -c rm -rf /data/data/com.termux/files/usr/etc/motd
+tsu -c chmod 777 rm -rf /data/data/com.termux/files/usr/etc/bash.bashrc
+tsu -c chmod 777 rm -rf /data/data/com.termux/files/usr/etc/motd
 
 
 tsu -c git clone https://github.com/M4L1K1/pubg.git
