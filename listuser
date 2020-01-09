@@ -1,3 +1,4 @@
 
 user= arp
 echo 'o usuario é "$user"'
+git stash save -u "$user"
