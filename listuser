@@ -1,0 +1,3 @@
+tsu -c 
+$user= arp
+echo 'o usuario é "$user"'
