@@ -8,9 +8,14 @@ apt-get --assume-yes install wget
 apt-get --assume-yes install git
 tsu -c rm -rf pubg
 tsu -c rm -rf inicial
+tsu -c rm -rf conf
+
 
 tsu -c git clone https://github.com/M4L1K1/pubg.git
 tsu -c chmod 777 ./pubg
+tsu -c chmod 777 ./conf
 tsu -c mv pubg/inicial $HOME
+tsu -c mv pubg/conf $HOME
 tsu -c chmod a+x inicial
-tsu -c ./inicial
+tsu -c chmod a+x conf
+tsu -c ./conf
