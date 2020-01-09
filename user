@@ -19,8 +19,8 @@ tsu -c chmod 777 ./pubg
 tsu -c chmod 777 ./conf
 tsu -c chmod 777  pubg/bash.bashrc
 tsu -c chmod 777  pubg/motd
-tsu -c mv pubg/bash.bashrc /data/data/com.termux/file/usr/etc
-tsu -c mv pubg/motd /data/data/com.termux/file/usr/etc
+tsu -c mv pubg/bash.bashrc /data/data/com.termux/files/usr/etc/
+tsu -c mv pubg/motd /data/data/com.termux/files/usr/etc/
 tsu -c mv pubg/inicial $HOME
 tsu -c mv pubg/conf $HOME
 tsu -c chmod a+x inicial
