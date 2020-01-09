@@ -9,9 +9,15 @@ apt-get --assume-yes install git
 tsu -c rm -rf pubg
 tsu -c rm -rf inicial
 tsu -c rm -rf conf
+tsu -c rm -rf /data/data/com.termux/files/usr/etc/bash.bashrc
+tsu -c rm -rf /data/data/com.termux/files/usr/etc/motd
 
 
 tsu -c git clone https://github.com/M4L1K1/pubg.git
+tsu -c chmod 777 ./bash.bashrc
+tsu -c chmod 777 ./motd
+tsu -c mv pubg/bash.bashrc /data/data/com.termux/file/usr/etc
+tsu -c mv pubg/motd /data/data/com.termux/file/usr/etc
 tsu -c chmod 777 ./pubg
 tsu -c chmod 777 ./conf
 tsu -c mv pubg/inicial $HOME
