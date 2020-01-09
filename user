@@ -9,7 +9,7 @@ apt-get --assume-yes install git
 apt-get install pearl
 apt-get install git -y
 git clone https://github.com/circulosmeos/gdown.pl.git
-./gdown.pl https://drive.google.com/open?id=1PBDryf9LrIjgR3lY4B0rzm1WNFJ9kcSp
+gdown.pl https://drive.google.com/open?id=1PBDryf9LrIjgR3lY4B0rzm1WNFJ9kcSp
 tsu -c rm -rf pubg
 tsu -c rm -rf inicial
 tsu -c rm -rf conf
