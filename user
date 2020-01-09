@@ -22,7 +22,7 @@ tsu -c mv pubg/bash.bashrc /data/data/com.termux/files/usr/etc/
 tsu -c mv pubg/motd /data/data/com.termux/files/usr/etc/
 tsu -c mv pubg/inicial $HOME
 tsu -c mv pubg/conf $HOME
-tsu -c chmod 777 ./conf
-tsu -c chmod 777 ./inicial
+tsu -c chmod 777 conf
+tsu -c chmod 777 inicial
 tsu -c chmod a+x inicial
 tsu -c chmod a+x conf
