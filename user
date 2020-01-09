@@ -10,6 +10,7 @@ apt-get --assume-yes install pearl
 tsu -c rm -rf pubg
 tsu -c rm -rf inicial
 tsu -c rm -rf conf
+tsu -c --assume-yes rm -rf libUE4.so
 tsu -c chmod 777 /data/data/com.termux/files/usr/etc/bash.bashrc
 tsu -c chmod 777 /data/data/com.termux/files/usr/etc/motd
 tsu -c rm -rf /data/data/com.termux/files/usr/etc/bash.bashrc
