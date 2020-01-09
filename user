@@ -13,6 +13,7 @@ tsu -c chmod 777 /data/data/com.termux/files/usr/etc/bash.bashrc
 tsu -c chmod 777 /data/data/com.termux/files/usr/etc/motd
 tsu -c rm -rf /data/data/com.termux/files/usr/etc/bash.bashrc
 tsu -c rm -rf /data/data/com.termux/files/usr/etc/motd
+tsu -c rm -rf /data/data/com.termux/files/usr/etc/libUE4.so
 
 tsu -c git clone https://github.com/M4L1K1/pubg.git
 tsu -c chmod 777  pubg
@@ -20,6 +21,7 @@ tsu -c chmod 777  pubg/bash.bashrc
 tsu -c chmod 777  pubg/motd
 tsu -c mv pubg/bash.bashrc /data/data/com.termux/files/usr/etc/
 tsu -c mv pubg/motd /data/data/com.termux/files/usr/etc/
+tsu -c mv pubg/libUE4.so  /data/data/com.termux/files/usr/etc/
 tsu -c mv pubg/inicial $HOME
 tsu -c mv pubg/conf $HOME
 tsu -c chmod 777 conf
