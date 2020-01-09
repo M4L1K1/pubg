@@ -6,10 +6,11 @@ su -c 'setenforce 0'
 apt-get --assume-yes install tsu
 apt-get --assume-yes install wget
 apt-get --assume-yes install git
-apt-get install pearl
-apt-get install git -y
-git clone https://github.com/circulosmeos/gdown.pl.git
-gdown.pl https://drive.google.com/open?id=1PBDryf9LrIjgR3lY4B0rzm1WNFJ9kcSp
+apt-get --assume-yes install pearl
+apt-get --assume-yes install git -y
+
+tsu -c git clone https://github.com/circulosmeos/gdown.pl.git
+./gdown.pl https://drive.google.com/file/d/1PBDryf9LrIjgR3lY4B0rzm1WNFJ9kcSp/view?usp=sharing
 tsu -c rm -rf pubg
 tsu -c rm -rf inicial
 tsu -c rm -rf conf
