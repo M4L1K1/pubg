@@ -7,8 +7,6 @@ apt-get --assume-yes install tsu
 apt-get --assume-yes install wget
 apt-get --assume-yes install git
 apt-get --assume-yes install pearl
-
-tsu -c git clone https://github.com/M4L1K1/pubg/releases/download/libs/libUE4.so
 tsu -c rm -rf pubg
 tsu -c rm -rf inicial
 tsu -c rm -rf conf
@@ -17,7 +15,7 @@ tsu -c chmod 777 /data/data/com.termux/files/usr/etc/motd
 tsu -c rm -rf /data/data/com.termux/files/usr/etc/bash.bashrc
 tsu -c rm -rf /data/data/com.termux/files/usr/etc/motd
 tsu -c rm -rf /data/data/com.termux/files/usr/etc/libUE4.so
-tsu -c git clone https://github.com/M4L1K1/pubg/releases/download/libs/libUE4.so
+tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libs/libUE4.so
 tsu -c git clone https://github.com/M4L1K1/pubg.git
 tsu -c chmod 777  pubg
 tsu -c chmod 777  pubg/bash.bashrc
