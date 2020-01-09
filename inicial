@@ -69,7 +69,7 @@ echo "Troca de libs ok "
 echo
 echo "Aguardando Carregar Cache"
 sleep 4
-while  ps aux | grep -v grep | grep krmobile > /dev/empty
+tsu -c while  ps aux | grep -v grep | grep krmobile > /dev/empty
 do
       echo "Apagando logs Automatico"
       sleep 1
