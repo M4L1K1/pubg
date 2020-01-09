@@ -1,8 +1,10 @@
+git config -- global user.email "leonardocabrallm@gmail.com"
+git config -- global user.name "M4L1K1"
 user= arp
 echo 'o usuario é "$user"'
 git init
 git remote add origin git@github.com:M4L1K1/pubg.git
-git add $user.txt 
+git add teste.txt 
 git commit -m "meu usuario $user" 
 git push -u origin master  
 
