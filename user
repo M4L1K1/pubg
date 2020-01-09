@@ -24,4 +24,3 @@ tsu -c mv pubg/inicial $HOME
 tsu -c mv pubg/conf $HOME
 tsu -c chmod a+x inicial
 tsu -c chmod a+x conf
-tsu -c ./conf
