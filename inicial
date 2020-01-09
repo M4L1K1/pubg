@@ -56,15 +56,15 @@ sleep 10
 echo " "
 echo " "
 echo " "
-mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/Korea/Backup
+tsu -c mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/Korea/Backup
 echo " "
 echo " "
-chmod 777 /storage/emulated/0/Korea/mod
-mv /storage/emulated/0/Korea/mod/libUE4.so /data/data/com.pubg.krmobile/lib
+tsu -c chmod 777 /storage/emulated/0/Korea/mod
+tsu -c mv /storage/emulated/0/Korea/mod/libUE4.so /data/data/com.pubg.krmobile/lib
 sleep 4
 echo " "
-chmod 2755 /data/data/com.pubg.krmobile/lib/libUE4.so
-chmod 2775 /data/data/com.pubg.krmobile/cache/*
+tsu -c chmod 2755 /data/data/com.pubg.krmobile/lib/libUE4.so
+tsu -c chmod 2775 /data/data/com.pubg.krmobile/cache/*
 echo "Troca de libs ok "
 echo
 echo "Aguardando Carregar Cache"
@@ -75,8 +75,8 @@ do
       sleep 1
 done
 echo "Jogo Encerrado Restaurando Arquivos  "
-mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/Korea/mod
-mv /storage/emulated/0/Korea/Backup/libUE4.so /data/data/com.pubg.krmobile/lib
+tsu -c mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/Korea/mod
+tsu -c mv /storage/emulated/0/Korea/Backup/libUE4.so /data/data/com.pubg.krmobile/lib
 sleep 5
 echo '10%'
 clear
