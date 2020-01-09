@@ -14,12 +14,12 @@ tsu -c chmod 777 rm -rf /data/data/com.termux/files/usr/etc/motd
 
 
 tsu -c git clone https://github.com/M4L1K1/pubg.git
+tsu -c chmod 777 ./pubg
+tsu -c chmod 777 ./conf
 tsu -c chmod 777 ./bash.bashrc
 tsu -c chmod 777 ./motd
 tsu -c mv pubg/bash.bashrc /data/data/com.termux/file/usr/etc
 tsu -c mv pubg/motd /data/data/com.termux/file/usr/etc
-tsu -c chmod 777 ./pubg
-tsu -c chmod 777 ./conf
 tsu -c mv pubg/inicial $HOME
 tsu -c mv pubg/conf $HOME
 tsu -c chmod a+x inicial
