@@ -62,6 +62,8 @@ tsu -c chmod 777 /data/data/com.termux/files/usr/etc
 tsu -c mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/MALIKI/backup
 tsu -c mv /storage/emulated/0/MALIKI/libUE4.so /data/data/com.pubg.krmobile/lib
 tsu -c chmod 2755 /data/data/com.pubg.krmobile/lib/libUE4.so
+sleep 10
+tsu -c mv /storage/emulated/0/Android/data/com.pubg.krmobile/files/login-identifier.txt /storage/emulated/0/MALIKI/backup
 echo " "
 echo " "
 sleep 4
@@ -86,6 +88,7 @@ echo "
 
 tsu -c mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/MALIKI
 tsu -c mv /storage/emulated/0/MALIKI/backup/libUE4.so /data/data/com.pubg.krmobile/lib
+tsu -c mv /storage/emulated/0/MALIKI/backup/login-identifier.txt  /storage/emulated/0/Android/data/com.pubg.krmobile/files
 sleep 5
 echo '10%'
 clear
