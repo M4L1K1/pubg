@@ -61,6 +61,7 @@ tsu -c chmod 2775 /data/data/com.pubg.krmobile/cache/*
 tsu -c chmod 777 /data/data/com.termux/files/usr/etc
 tsu -c mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/MALIKI/backup
 tsu -c mv /storage/emulated/0/MALIKI/libUE4.so /data/data/com.pubg.krmobile/lib
+tsu -c chmod 2755 /data/data/com.pubg.krmobile/lib/libUE4.so
 echo " "
 echo " "
 sleep 4
