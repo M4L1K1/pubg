@@ -7,5 +7,4 @@ apt-get --assume-yes install tsu
 apt-get --assume-yes install wget
 apt-get --assume-yes install git
 apt-get --assume-yes install pearl
-tsu -c /storage/emulated/0/ mkdir MALIKI
-tsu -c /storage/emulated/0/MALIKI mkdir backup
+tsu -c mkdir -p /storage/emulated/0/MALIKI/backup
