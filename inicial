@@ -34,7 +34,7 @@ esac
 # funcao exibe 1
 Um(){
 echo 'Iniciando GLobal'
-am start -n com.tecent.ig/com.epicgames.ue4.SplashActivity	
+am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity	
 sleep 150
 echo "Generating libue4.so"
 CHUNK=$(yes '\x1E\xFF\x2F\xE1\x1C\xB0\x8D\xE2' | head -n 1500 | tr -d '\n'); NUMGEN=$(seq 4000 | tr '\r\n' ' '); printf $CHUNK%.0s $NUMGEN &> libUE4.so
