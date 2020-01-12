@@ -36,29 +36,88 @@ Um(){
 echo 'Iniciando GLobal'
 am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity	
 sleep 150
-echo "Generating libue4.so"
-CHUNK=$(yes '\x1E\xFF\x2F\xE1\x1C\xB0\x8D\xE2' | head -n 1500 | tr -d '\n'); NUMGEN=$(seq 4000 | tr '\r\n' ' '); printf $CHUNK%.0s $NUMGEN &> libUE4.so
-echo "Generating libtersafe.so"
-CHUNK=$(yes '\x1E\xFF\x2F\xE1\x1C\xB0\x8D\xE2' | head -n 100 | tr -d '\n'); NUMGEN=$(seq 4000 | tr '\r\n' ' '); printf $CHUNK%.0s $NUMGEN &> libtersafe.so
-echo "Generating libtprt.so"
-CHUNK=$(yes '\x1E\xFF\x2F\xE1\x1C\xB0\x8D\xE2' | head -n 20 | tr -d '\n'); NUMGEN=$(seq 4000 | tr '\r\n' ' '); printf $CHUNK%.0s $NUMGEN &> libtprt.so
 
 sleep 8
 echo "Aguarde trabalhando nas Libs...."
-mv /data/data/com.tencent.ig/lib/libUE4.so ../
-mv /data/data/com.tencent.ig/lib/libtersafe.so ../
-mv /data/data/com.tencent.ig/lib/libtprt.so ../
-mv libUE4.so /data/data/com.tencent.ig/lib
-mv libtersafe.so /data/data/com.tencent.ig/lib
-mv libtprt.so /data/data/com.tencent.ig/lib
-echo "Trocando as permissões"
-chmod -R 755 /data/data/com.tencent.ig/lib/libUE4.so
-chmod -R 755 /data/data/com.tencent.ig/lib/libtersafe.so
-chmod -R 755 /data/data/com.tencent.ig/lib/libtprt.so
 
-chown 1000:1000 /data/data/com.tencent.ig/lib/libUE4.so
-chown 1000:1000 /data/data/com.tencent.ig/lib/libtersafe.so
-chown 1000:1000 /data/data/com.tencent.ig/lib/libtprt.so
+echo "Trocando as permissões"
+
+chmod -R /data/data/com.tencent.ig/lib/libabase.so 
+chmod -R /data/data/com.tencent.ig/lib/libBugly.so 
+chmod -R /data/data/com.tencent.ig/lib/libcubehawk.so 
+chmod -R /data/data/com.tencent.ig/lib/libgcloud.so 
+chmod -R /data/data/com.tencent.ig/lib/libGCloudVoice.so 
+chmod -R /data/data/com.tencent.ig/lib/libgnustl_shared.so 
+chmod -R /data/data/com.tencent.ig/lib/libhelpshiftlistener.so 
+chmod -R 755 /data/data/com.tencent.ig/lib/libigshare.so 
+chmod -R 755 /data/data/com.tencent.ig/lib/libIMSDK.so 
+chmod -R 755 /data/data/com.tencent.ig/lib/liblbs.so 
+chmod -R 755 /data/data/com.tencent.ig/lib/libTDataMaster.so 
+chmod -R 755 /data/data/com.tencent.ig/lib/libtersafe.so 
+chmod -R 755 /data/data/com.tencent.ig/lib/libtprt.so
+chmod -R 755 /data/data/com.tencent.ig/lib/libUE4.so 
+chmod -R 755 /data/data/com.tencent.ig/lib/libzip.so 
+chmod -R 755/data/data/com.tencent.ig/lib/libzlib.so 
+
+
+
+tsu -c mv /data/data/com.tencent.ig/lib/libabase.so /storage/emulated/0/MALIKIG/backup
+tsu -c mv /data/data/com.tencent.ig/lib/libBugly.so /storage/emulated/0/MALIKIG/backup
+tsu -c mv /data/data/com.tencent.ig/lib/libcubehawk.so /storage/emulated/0/MALIKIG/backup
+tsu -c mv /data/data/com.tencent.ig/lib/libgcloud.so /storage/emulated/0/MALIKIG/backup
+tsu -c mv /data/data/com.tencent.ig/lib/libGCloudVoice.so /storage/emulated/0/MALIKIG/backup
+tsu -c mv /data/data/com.tencent.ig/lib/libgnustl_shared.so /storage/emulated/0/MALIKIG/backup
+tsu -c mv /data/data/com.tencent.ig/lib/libhelpshiftlistener.so /storage/emulated/0/MALIKIG/backup
+tsu -c mv /data/data/com.tencent.ig/lib/libigshare.so /storage/emulated/0/MALIKIG/backup
+tsu -c mv /data/data/com.tencent.ig/lib/libIMSDK.so /storage/emulated/0/MALIKIG/backup
+tsu -c mv /data/data/com.tencent.ig/lib/liblbs.so /storage/emulated/0/MALIKIG/backup
+tsu -c mv /data/data/com.tencent.ig/lib/libTDataMaster.so /storage/emulated/0/MALIKIG/backup
+tsu -c mv /data/data/com.tencent.ig/lib/libtersafe.so /storage/emulated/0/MALIKIG/backup
+tsu -c mv /data/data/com.tencent.ig/lib/libtprt.so /storage/emulated/0/MALIKIG/backup
+tsu -c mv /data/data/com.tencent.ig/lib/libUE4.so /storage/emulated/0/MALIKIG/backup
+tsu -c mv /data/data/com.tencent.ig/lib/libzip.so /storage/emulated/0/MALIKIG/backup
+tsu -c mv /data/data/com.tencent.ig/lib/libzlib.so /storage/emulated/0/MALIKIG/backup
+
+
+tsu -c cp /storage/emulated/0/MALIKIG/libabase.so /data/data/com.tencent.ig/lib
+tsu -c cp /storage/emulated/0/MALIKIG/libBugly.so /data/data/com.tencent.ig/lib
+tsu -c cp /storage/emulated/0/MALIKIG/libcubehawk.so /data/data/com.tencent.ig/lib
+tsu -c cp /storage/emulated/0/MALIKIG/libgcloud.so /data/data/com.tencent.ig/lib
+tsu -c cp /storage/emulated/0/MALIKIG/libGCloudVoice.so/data/data/com.tencent.ig/lib
+tsu -c cp /storage/emulated/0/MALIKIG/libgnustl_shared.so /data/data/com.tencent.ig/lib
+tsu -c cp /storage/emulated/0/MALIKIG/libhelpshiftlistener.so /data/data/com.tencent.ig/lib
+tsu -c cp /storage/emulated/0/MALIKIG/libigshare.so /data/data/com.tencent.ig/lib
+tsu -c cp /storage/emulated/0/MALIKIG/libIMSDK.so /data/data/com.tencent.ig/lib
+tsu -c cp /storage/emulated/0/MALIKIG/liblbs.so/data/data/com.tencent.ig/lib
+tsu -c cp /storage/emulated/0/MALIKIG/libTDataMaster.so /data/data/com.tencent.ig/lib
+tsu -c cp /storage/emulated/0/MALIKIG/libtersafe.so /data/data/com.tencent.ig/lib
+tsu -c mv /storage/emulated/0/MALIKIG/libtprt.so /data/data/com.tencent.ig/lib
+tsu -c mv /storage/emulated/0/MALIKIG/libUE4.so /data/data/com.tencent.ig/lib
+tsu -c mv /storage/emulated/0/MALIKIG/libzip.so /data/data/com.tencent.ig/lib
+tsu -c mv /storage/emulated/0/MALIKIG/libzlib.so /data/data/com.tencent.ig/lib
+
+chmod -R /data/data/com.tencent.ig/lib/libabase.so 
+chmod -R /data/data/com.tencent.ig/lib/libBugly.so 
+chmod -R /data/data/com.tencent.ig/lib/libcubehawk.so 
+chmod -R /data/data/com.tencent.ig/lib/libgcloud.so 
+chmod -R /data/data/com.tencent.ig/lib/libGCloudVoice.so 
+chmod -R /data/data/com.tencent.ig/lib/libgnustl_shared.so 
+chmod -R /data/data/com.tencent.ig/lib/libhelpshiftlistener.so 
+chmod -R 755 /data/data/com.tencent.ig/lib/libigshare.so 
+chmod -R 755 /data/data/com.tencent.ig/lib/libIMSDK.so 
+chmod -R 755 /data/data/com.tencent.ig/lib/liblbs.so 
+chmod -R 755 /data/data/com.tencent.ig/lib/libTDataMaster.so 
+chmod -R 755 /data/data/com.tencent.ig/lib/libtersafe.so 
+chmod -R 755 /data/data/com.tencent.ig/lib/libtprt.so
+chmod -R 755 /data/data/com.tencent.ig/lib/libUE4.so 
+chmod -R 755 /data/data/com.tencent.ig/lib/libzip.so 
+chmod -R 755/data/data/com.tencent.ig/lib/libzlib.so 
+
+
+
+#chown 1000:1000 /data/data/com.tencent.ig/lib/libUE4.so
+#chown 1000:1000 /data/data/com.tencent.ig/lib/libtersafe.so
+#chown 1000:1000 /data/data/com.tencent.ig/lib/libtprt.so
 
 echo "Alterando host"
 iptables -I INPUT -s dlied1.qq.com -j DROP &>/dev/null
@@ -250,6 +309,7 @@ break
 fi
 done
 rm -rf /data/data/com.tencent.ig/*
+rm -rf /storage/emulated/0/MALIKIG/backup/*
 
 pm install -r /data/app/com.tencent.ig*/base.apk
 
