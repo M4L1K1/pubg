@@ -1,0 +1,41 @@
+127.0.0.1                    localhost
+
+127.0.0.1         b localhost.localdomain
+
+127.0.0.1                    local
+
+255.255.255.255         broadcasthost
+
+::1 localhost
+
+::1 ip6-localhost
+
+::1 ip6-loopback
+
+127.0.0.1 dnf.static.qq.com
+127.0.0.1 d3g.yyb.sched.dcloudstc.com
+127.0.0.1 u.weixin.qq.com
+127.0.0.1 support.wechat.com
+127.0.0.1 www.zhongshengtiancheng.com
+127.0.0.1 tendbot.com
+127.0.0.1 203.205.158.62
+127.0.0.1 121.51.142.185
+127.0.0.1 flash.cn
+127.0.0.1 apppagecos.024701.com
+127.0.0.1 dlied2.qq.com:80
+127.0.0.1 dlied3.tc.qq.com
+127.0.0.1 dlied4.tcdn.com
+127.0.0.1 dlied4.tcdn.qq.com
+127.0.0.1 dlied5.tcdn.qq.com
+127.0.0.1 dlied6.qq.com:80
+127.0.0.1 dlied.tcdn.com
+127.0.0.1 cloud.tencent.com
+127.0.0.1 uscreen.tencent.com
+127.0.0.1 kite.tencent.com
+127.0.0.1 developers.tencent.com
+127.0.0.1 meeting.tencent.com
+127.0.0.1 hr.tencent.com
+127.0.0.1 isp.tencent.com
+
+@perangsytem
+@ABHSQUAD
