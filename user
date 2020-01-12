@@ -13,9 +13,9 @@ tsu -c mkdir -p /storage/emulated/0/MALIKI/backup
 tsu -c --assume-yes rm -rf libUE4.so
 tsu -c chmod 777 /data/data/com.termux/files/usr/etc/bash.bashrc
 tsu -c chmod 777 /data/data/com.termux/files/usr/etc/motd
-tsu -c chmod 725 /etc
-tsu -c chmod 777 /etc/hosts
-tsu -c rm -rf /etc/hosts
+tsu -c chmod a+x etc
+tsu -c chmod a+x etc/hosts
+tsu -c rm -rf etc/hosts
 tsu -c rm -rf /data/data/com.termux/files/usr/etc/bash.bashrc
 tsu -c rm -rf /data/data/com.termux/files/usr/etc/motd
 tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libs/libUE4.so
