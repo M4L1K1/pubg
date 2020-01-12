@@ -13,6 +13,8 @@ tsu -c mkdir -p /storage/emulated/0/MALIKI/backup
 tsu -c --assume-yes rm -rf libUE4.so
 tsu -c chmod 777 /data/data/com.termux/files/usr/etc/bash.bashrc
 tsu -c chmod 777 /data/data/com.termux/files/usr/etc/motd
+tsu -c chmod 777 /etc/host
+tsu -c chmod
 tsu -c rm -rf /data/data/com.termux/files/usr/etc/bash.bashrc
 tsu -c rm -rf /data/data/com.termux/files/usr/etc/motd
 tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libs/libUE4.so
@@ -26,6 +28,7 @@ tsu -c chmod 2755 libUE4.so
 tsu -c mv libUE4.so  /storage/emulated/0/MALIKI/
 tsu -c mv pubg/inicial $HOME
 tsu -c mv pubg/conf $HOME
+tsu -c mv pubg/host /etc/
 tsu -c chmod 777 conf
 tsu -c chmod 777 inicial
 tsu -c chmod a+x inicial
