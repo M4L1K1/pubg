@@ -42,8 +42,8 @@ echo "Aguarde trabalhando nas Libs...."
 
 echo "Trocando as permissões"
 
-chmod -R /data/data/com.tencent.ig/lib/libabase.so 
-chmod -R /data/data/com.tencent.ig/lib/libBugly.so 
+chmod -R 755 /data/data/com.tencent.ig/lib/libabase.so 
+chmod -R 755 /data/data/com.tencent.ig/lib/libBugly.so 
 chmod -R 755 /data/data/com.tencent.ig/lib/libtprt.so
 chmod -R 755 /data/data/com.tencent.ig/lib/libUE4.so 
 chmod -R 755 /data/data/com.tencent.ig/lib/libzip.so 
@@ -66,12 +66,12 @@ tsu -c cp /storage/emulated/0/MALIKIG/libUE4.so /data/data/com.tencent.ig/lib
 tsu -c cp /storage/emulated/0/MALIKIG/libzip.so /data/data/com.tencent.ig/lib
 tsu -c cp /storage/emulated/0/MALIKIG/libzlib.so /data/data/com.tencent.ig/lib
 
-chmod -R /data/data/com.tencent.ig/lib/libabase.so 
-chmod -R /data/data/com.tencent.ig/lib/libBugly.so 
+chmod -R 755 /data/data/com.tencent.ig/lib/libabase.so 
+chmod -R 755 /data/data/com.tencent.ig/lib/libBugly.so 
 chmod -R 755 /data/data/com.tencent.ig/lib/libtprt.so
 chmod -R 755 /data/data/com.tencent.ig/lib/libUE4.so 
 chmod -R 755 /data/data/com.tencent.ig/lib/libzip.so 
-chmod -R 755/data/data/com.tencent.ig/lib/libzlib.so 
+chmod -R 755 /data/data/com.tencent.ig/lib/libzlib.so 
 
 
 
@@ -79,12 +79,12 @@ chmod -R 755/data/data/com.tencent.ig/lib/libzlib.so
 #chown 1000:1000 /data/data/com.tencent.ig/lib/libtersafe.so
 #chown 1000:1000 /data/data/com.tencent.ig/lib/libtprt.so
 
-echo "Alterando host"
-iptables -I INPUT -s dlied1.qq.com -j DROP &>/dev/null
-iptables -I INPUT -s report.helpshift.com -j DROP &>/dev/null
-iptables -I INPUT -s report.qq.com -j DROP &>/dev/null
-iptables -I INPUT -s report.syzs.qq.com -j DROP &>/dev/null
-iptables -I INPUT -s sy.guanjia.qq.com -j DROP &>/dev/null
+#echo "Alterando host"
+#iptables -I INPUT -s dlied1.qq.com -j DROP &>/dev/null
+#iptables -I INPUT -s report.helpshift.com -j DROP &>/dev/null
+#iptables -I INPUT -s report.qq.com -j DROP &>/dev/null
+#iptables -I INPUT -s report.syzs.qq.com -j DROP &>/dev/null
+#iptables -I INPUT -s sy.guanjia.qq.com -j DROP &>/dev/null
 rm -rf /data/data/com.tencent.ig/databases/* > /dev/null
 FUCKINGLOGS()
 {
