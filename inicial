@@ -35,9 +35,8 @@ esac
 Um(){
 echo 'Iniciando GLobal'
 am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity	
-sleep 150
+sleep 15
 
-sleep 8
 echo "Aguarde trabalhando nas Libs...."
 
 echo "Trocando as permissões"
@@ -73,7 +72,7 @@ chmod -R 755 /data/data/com.tencent.ig/lib/libUE4.so
 chmod -R 755 /data/data/com.tencent.ig/lib/libzip.so 
 chmod -R 755 /data/data/com.tencent.ig/lib/libzlib.so 
 
-
+echo " libs Trocadas "
 
 #chown 1000:1000 /data/data/com.tencent.ig/lib/libUE4.so
 #chown 1000:1000 /data/data/com.tencent.ig/lib/libtersafe.so
@@ -86,6 +85,7 @@ chmod -R 755 /data/data/com.tencent.ig/lib/libzlib.so
 #iptables -I INPUT -s report.syzs.qq.com -j DROP &>/dev/null
 #iptables -I INPUT -s sy.guanjia.qq.com -j DROP &>/dev/null
 rm -rf /data/data/com.tencent.ig/databases/* > /dev/null
+sleep 150
 FUCKINGLOGS()
 {
 
@@ -257,7 +257,7 @@ rm -rf /data/data/com.tencent.ig/app_appcache &> /dev/null
 rm -rf /data/data/com.tencent.ig/app_crashrecord &> /dev/null
 rm -rf /sdcard/.backups &> /dev/null
 rm -rf /sdcard/Tencent &> /dev/null
-sleep 100
+sleep 10
 echo " Log Apagado "
 }
 PACKAGE='com.tencent.ig'
