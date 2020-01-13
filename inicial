@@ -326,7 +326,7 @@ rm -rf /data/data/com.pubg.krmobile/app_bugly/tomb_1565956570550.txt
 rm -rf /data/data/com.pubg.krmobile/app_bugly/tomb_1565957246658.txt
 rm -rf /data/data/com.pubg.krmobile/cache/*
 echo "passou por todos comandos"
-
+sleep 15
 done
 echo "Jogo Encerrado Restaurando Arquivos  "
 echo "
