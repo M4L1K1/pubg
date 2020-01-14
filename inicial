@@ -12,7 +12,7 @@ echo 'Escolha a Versão do Jogo : '
 echo 
 echo '1. Global'
 echo '2. Korea'
-echo '3. Primeira Execução Kr'
+echo '3. Restaura Pubg Global e Kr'
 echo '4. SAIR'
 echo
 echo -n 'Qual a opção desejada : '
@@ -35,6 +35,10 @@ esac
 Um(){
 echo 'Iniciando GLobal'
 am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity	
+clear 
+echo
+echo
+echo "Script exclusivo Membros Clã Shot "
 sleep 15
 
 echo "Aguarde trabalhando nas Libs...."
@@ -271,7 +275,9 @@ done
 rm -rf /data/data/com.tencent.ig/*
 rm -rf /storage/emulated/0/MALIKIG/backup/*
 
-pm install -r /data/app/com.tencent.ig*/base.apk
+tsu -c cp /data/app/com.tencent.ig*/lib/libUE4.so /data/data/com.tencent.ig/lib/
+
+#pm install /data/app/com.tencent.ig*/base.apk
 
 su -c iptables --flush
 Menu
@@ -353,9 +359,18 @@ Menu
 }
 
 Três(){
-echo 'Trocando a pasta ShadowTracker Aguarde !!!'
-mv /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra /storage/emulated/0/Korea/Backup 
-mv /storage/emulated/0/Korea/mod/ShadowTrackerExtra /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/
+echo 'Restaurando Pubg Global e Kr!!!'
+
+rm -rf /storage/emulated/0/MALIKI/backup/*
+rm -rf /storage/emulated/0/MALIKIG/backup/*
+tsu -c cp /data/app/com.tencent.ig*/lib/libUE4.so /data/data/com.tencent.ig/lib/
+tsu -c cp /data/app/com.pubg.krmobile*/lib/libUE4.so /data/data/com.pubg.krmobile/lib/
+
+
+
+
+#mv /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra /storage/emulated/0/Korea/Backup 
+#mv /storage/emulated/0/Korea/mod/ShadowTrackerExtra /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/
 echo "100% completa"
 sleep 4
 clear 
