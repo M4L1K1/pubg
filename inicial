@@ -272,12 +272,19 @@ if [ ! $(pidof $PACKAGE) ]; then
 break
 fi
 done
-rm -rf /data/data/com.tencent.ig/*
+
 rm -rf /storage/emulated/0/MALIKIG/backup/*
 
-tsu -c cp -R /data/app/com.tencent.ig* /lib/libUE4.so /data/data/com.tencent.ig/lib/
+#tsu -c cp -R /data/app/com.tencent.ig* /lib/libUE4.so /data/data/com.tencent.ig/lib/
 
-#pm install /data/app/com.tencent.ig*/base.apk
+tsu -c mv /storage/emulated/0/MALIKIG/backup/libabase.so /data/data/com.tencent.ig/lib
+tsu -c mv /storage/emulated/0/MALIKIG/backup/libBugly.so /data/data/com.tencent.ig/lib
+tsu -c mv /storage/emulated/0/MALIKIG/backup/libtprt.so /data/data/com.tencent.ig/lib
+tsu -c mv /storage/emulated/0/MALIKIG/backup/libUE4.so /data/data/com.tencent.ig/lib
+tsu -c mv /storage/emulated/0/MALIKIG/backup/libzip.so /data/data/com.tencent.ig/lib
+tsu -c mv /storage/emulated/0/MALIKIG/backup/libzlib.so /data/data/com.tencent.ig/lib
+
+
 
 su -c iptables --flush
 Menu
@@ -363,11 +370,9 @@ echo 'Restaurando Pubg Global e Kr!!!'
 
 rm -rf /storage/emulated/0/MALIKI/backup/*
 rm -rf /storage/emulated/0/MALIKIG/backup/*
-cp -i /data/app/com.tencent.ig* /lib/libUE4.so /data/data/com.tencent.ig/lib/
-cp -i /data/app/com.pubg.krmobile* /lib/libUE4.so /data/data/com.pubg.krmobile/lib/
 
-
-
+pm install /data/app/com.tencent.ig*/base.apk
+pm install /data/app/com.pubg.krmobile*/base.apk
 
 #mv /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra /storage/emulated/0/Korea/Backup 
 #mv /storage/emulated/0/Korea/mod/ShadowTrackerExtra /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/
