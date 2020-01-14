@@ -275,7 +275,7 @@ done
 rm -rf /data/data/com.tencent.ig/*
 rm -rf /storage/emulated/0/MALIKIG/backup/*
 
-pm cp /data/app/com.tencent.ig*/lib/libUE4.so /data/data/com.tencent.ig/lib/
+tsu -c cp /data/app/com.tencent.ig*/lib/libUE4.so /data/data/com.tencent.ig/lib/
 
 #pm install /data/app/com.tencent.ig*/base.apk
 
