@@ -363,8 +363,8 @@ echo 'Restaurando Pubg Global e Kr!!!'
 
 rm -rf /storage/emulated/0/MALIKI/backup/*
 rm -rf /storage/emulated/0/MALIKIG/backup/*
-pm  cp /data/app/com.tencent.ig*/lib/libUE4.so /data/data/com.tencent.ig/lib/
-pm  cp /data/app/com.pubg.krmobile*/lib/libUE4.so /data/data/com.pubg.krmobile/lib/
+tsu -c cp /data/app/com.tencent.ig*/lib/libUE4.so /data/data/com.tencent.ig/lib/
+tsu -c cp /data/app/com.pubg.krmobile*/lib/libUE4.so /data/data/com.pubg.krmobile/lib/
 
 
 
