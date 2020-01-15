@@ -273,7 +273,6 @@ break
 fi
 done
 
-rm -rf /storage/emulated/0/MALIKIG/backup/*
 
 #tsu -c cp -R /data/app/com.tencent.ig* /lib/libUE4.so /data/data/com.tencent.ig/lib/
 
@@ -284,7 +283,7 @@ tsu -c mv /storage/emulated/0/MALIKIG/backup/libUE4.so /data/data/com.tencent.ig
 tsu -c mv /storage/emulated/0/MALIKIG/backup/libzip.so /data/data/com.tencent.ig/lib
 tsu -c mv /storage/emulated/0/MALIKIG/backup/libzlib.so /data/data/com.tencent.ig/lib
 
-
+#rm -rf /storage/emulated/0/MALIKIG/backup/*
 
 su -c iptables --flush
 Menu
