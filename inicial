@@ -78,8 +78,9 @@ chmod -R 755 /data/data/com.tencent.ig/lib/libzlib.so
 
 echo " libs Trocadas "
 $lobby
-echo " O jogo ja está no Lobby?, pressione Enter para Iniciar limpeza"
+echo " O jogo ja está no Lobby ?! pressione Enter para Iniciar limpeza"
 read lobby
+echo " Aguarde Iniciando"
 
 #chown 1000:1000 /data/data/com.tencent.ig/lib/libUE4.so
 #chown 1000:1000 /data/data/com.tencent.ig/lib/libtersafe.so
