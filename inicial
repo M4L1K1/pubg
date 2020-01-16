@@ -323,7 +323,9 @@ echo " "
 sleep 4
 echo " "
 echo "Troca de libs ok "
-echo
+echo " O jogo ja está no Lobby ?! pressione Enter para Iniciar limpeza !!!"
+read lobby
+
 echo "Aguardando Carregar Cache"
 sleep 25
 while tsu -c   ps aux | grep -v grep | grep krmobile > /dev/empty
