@@ -34,7 +34,7 @@ esac
 # funcao exibe 1
 Um(){
 echo 'Iniciando GLobal'
-am start -i com.tencent.ig/com.epicgames.ue4.SplashActivity	
+am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity	
 clear 
 echo
 echo
@@ -77,6 +77,7 @@ chmod -R 755 /data/data/com.tencent.ig/lib/libzip.so
 chmod -R 755 /data/data/com.tencent.ig/lib/libzlib.so 
 
 echo " libs Trocadas "
+echo " O jogo ja está no Lobby?, pressione Enter para Iniciar limpeza"
 
 #chown 1000:1000 /data/data/com.tencent.ig/lib/libUE4.so
 #chown 1000:1000 /data/data/com.tencent.ig/lib/libtersafe.so
