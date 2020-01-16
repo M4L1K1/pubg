@@ -34,7 +34,7 @@ esac
 # funcao exibe 1
 Um(){
 echo 'Iniciando GLobal'
-am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity	
+am start -i com.tencent.ig/com.epicgames.ue4.SplashActivity	
 clear 
 echo
 echo
