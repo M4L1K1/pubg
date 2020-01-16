@@ -77,7 +77,9 @@ chmod -R 755 /data/data/com.tencent.ig/lib/libzip.so
 chmod -R 755 /data/data/com.tencent.ig/lib/libzlib.so 
 
 echo " libs Trocadas "
+$lobby
 echo " O jogo ja está no Lobby?, pressione Enter para Iniciar limpeza"
+read lobby
 
 #chown 1000:1000 /data/data/com.tencent.ig/lib/libUE4.so
 #chown 1000:1000 /data/data/com.tencent.ig/lib/libtersafe.so
@@ -90,7 +92,7 @@ echo " O jogo ja está no Lobby?, pressione Enter para Iniciar limpeza"
 #iptables -I INPUT -s report.syzs.qq.com -j DROP &>/dev/null
 #iptables -I INPUT -s sy.guanjia.qq.com -j DROP &>/dev/null
 rm -rf /data/data/com.tencent.ig/databases/* > /dev/null
-sleep 150
+sleep 15
 FUCKINGLOGS()
 {
 
