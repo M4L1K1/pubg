@@ -23,6 +23,7 @@ tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/libBugly.
 tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/libtprt.so
 tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/libzip.so
 tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/libzlib.so
+tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/AntiCheat.ini
                 
 tsu -c git clone https://github.com/M4L1K1/pubg.git
 tsu -c chmod 777  pubg
@@ -40,7 +41,7 @@ tsu -c chmod 2755 AntiCheat.ini
 
 tsu -c mv libUE4.so  /storage/emulated/0/MALIKI/
 tsu -c mv libabase.so /storage/emulated/0/MALIKIG/
-tsu -c mv AntiCheat.ini/storage/emulated/0/MALIKIG/
+tsu -c mv AntiCheat.ini /storage/emulated/0/MALIKIG/
 tsu -c mv libBugly.so /storage/emulated/0/MALIKIG/
 tsu -c mv libtprt.so /storage/emulated/0/MALIKIG/
 tsu -c mv libzip.so /storage/emulated/0/MALIKIG/
