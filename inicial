@@ -92,12 +92,12 @@ echo " libs Trocadas "
 #chown 1000:1000 /data/data/com.tencent.ig/lib/libtersafe.so
 #chown 1000:1000 /data/data/com.tencent.ig/lib/libtprt.so
 
-#echo "Alterando host"
-#iptables -I INPUT -s dlied1.qq.com -j DROP &>/dev/null
-#iptables -I INPUT -s report.helpshift.com -j DROP &>/dev/null
-#iptables -I INPUT -s report.qq.com -j DROP &>/dev/null
-#iptables -I INPUT -s report.syzs.qq.com -j DROP &>/dev/null
-#iptables -I INPUT -s sy.guanjia.qq.com -j DROP &>/dev/null
+echo "Alterando host"
+iptables -I INPUT -s dlied1.qq.com -j DROP &>/dev/null
+iptables -I INPUT -s report.helpshift.com -j DROP &>/dev/null
+iptables -I INPUT -s report.qq.com -j DROP &>/dev/null
+iptables -I INPUT -s report.syzs.qq.com -j DROP &>/dev/null
+iptables -I INPUT -s sy.guanjia.qq.com -j DROP &>/dev/null
 rm -rf /data/data/com.tencent.ig/databases/* > /dev/null
 sleep 100
 FUCKINGLOGS()
