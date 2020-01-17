@@ -36,9 +36,11 @@ tsu -c chmod 2755 libBugly.so
 tsu -c chmod 2755 libtprt.so
 tsu -c chmod 2755 libzip.so
 tsu -c chmod 2755 libzlib.so
+tsu -c chmod 2755 AntiCheat.ini
 
 tsu -c mv libUE4.so  /storage/emulated/0/MALIKI/
 tsu -c mv libabase.so /storage/emulated/0/MALIKIG/
+tsu -c mv AntiCheat.ini/storage/emulated/0/MALIKIG/
 tsu -c mv libBugly.so /storage/emulated/0/MALIKIG/
 tsu -c mv libtprt.so /storage/emulated/0/MALIKIG/
 tsu -c mv libzip.so /storage/emulated/0/MALIKIG/
