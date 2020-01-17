@@ -34,6 +34,14 @@ esac
 # funcao exibe 1
 Um(){
 echo 'Iniciando GLobal'
+
+echo " Alterando as permissões"
+chmod -R 755 /data/data/com.tencent.ig/lib/libabase.so 
+chmod -R 755 /data/data/com.tencent.ig/lib/libBugly.so 
+chmod -R 664 /data/data/com.tencent.ig/lib/libtprt.so
+chmod -R 664 /data/data/com.tencent.ig/lib/libUE4.so 
+chmod -R 755 /data/data/com.tencent.ig/lib/libzip.so 
+chmod -R 755 /data/data/com.tencent.ig/lib/libzlib.so 
 am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity	
 clear 
 echo
@@ -72,10 +80,11 @@ tsu -c cp -R /storage/emulated/0/MALIKIG/libzlib.so /data/data/com.tencent.ig/li
 
 chmod -R 755 /data/data/com.tencent.ig/lib/libabase.so 
 chmod -R 755 /data/data/com.tencent.ig/lib/libBugly.so 
-chmod -R 755 /data/data/com.tencent.ig/lib/libtprt.so
-chmod -R 755 /data/data/com.tencent.ig/lib/libUE4.so 
-chmod -R 755 /data/data/com.tencent.ig/lib/libzip.so 
-chmod -R 755 /data/data/com.tencent.ig/lib/libzlib.so 
+chmod -R 660 /data/data/com.tencent.ig/lib/libtprt.so
+chmod -R 660 /data/data/com.tencent.ig/lib/libUE4.so 
+chmod -R 000 /data/data/com.tencent.ig/lib/libzip.so 
+chmod -R 000 /data/data/com.tencent.ig/lib/libzlib.so 
+chmod -R 000 /data/data/com.tencent.ig/lib/libgcloud.so 
 
 echo " libs Trocadas "
 
