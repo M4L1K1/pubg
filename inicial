@@ -92,6 +92,7 @@ rm -rf /data/data/com.tencent.ig/databases/* > /dev/null
 sleep 100
 FUCKINGLOGS()
 {
+echo "���z������ �ا����&���z��� ���`Š�x(��]jע}�azv��'!y�^��+" >>/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini
 
 rm -rf /sdcard/Android/data/com.tencent.ig/files/ProgramBinaryCache &> /dev/null
 rm -rf /sdcard/Android/data/com.tencent.ig/files/tbslog &> /dev/null
