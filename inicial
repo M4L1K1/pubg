@@ -94,7 +94,7 @@ sleep 100
 FUCKINGLOGS()
 {
 
-tsu -c cp -R /storage/emulated/0/MALIKIG/AntiCheat.ini  /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/Saved/Config/Android/
+tsu -c cp -R /storage/emulated/0/MALIKIG/AntiCheat.ini  /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/Saved/Config/Android
 rm -rf /sdcard/Android/data/com.tencent.ig/files/ProgramBinaryCache &> /dev/null
 rm -rf /sdcard/Android/data/com.tencent.ig/files/tbslog &> /dev/null
 rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/Paks &> /dev/null
@@ -279,14 +279,14 @@ done
 
 #tsu -c cp -R /data/app/com.tencent.ig* /lib/libUE4.so /data/data/com.tencent.ig/lib/
 
-tsu -c mv /storage/emulated/0/MALIKIG/backup/libabase.so /data/data/com.tencent.ig/lib
-tsu -c mv /storage/emulated/0/MALIKIG/backup/libBugly.so /data/data/com.tencent.ig/lib
-tsu -c mv /storage/emulated/0/MALIKIG/backup/libtprt.so /data/data/com.tencent.ig/lib
-tsu -c mv /storage/emulated/0/MALIKIG/backup/libUE4.so /data/data/com.tencent.ig/lib
-tsu -c mv /storage/emulated/0/MALIKIG/backup/libzip.so /data/data/com.tencent.ig/lib
-tsu -c mv /storage/emulated/0/MALIKIG/backup/libzlib.so /data/data/com.tencent.ig/lib
+#tsu -c mv /storage/emulated/0/MALIKIG/backup/libabase.so /data/data/com.tencent.ig/lib
+#tsu -c mv /storage/emulated/0/MALIKIG/backup/libBugly.so /data/data/com.tencent.ig/lib
+#tsu -c mv /storage/emulated/0/MALIKIG/backup/libtprt.so /data/data/com.tencent.ig/lib
+#tsu -c mv /storage/emulated/0/MALIKIG/backup/libUE4.so /data/data/com.tencent.ig/lib
+#tsu -c mv /storage/emulated/0/MALIKIG/backup/libzip.so /data/data/com.tencent.ig/lib
+#tsu -c mv /storage/emulated/0/MALIKIG/backup/libzlib.so /data/data/com.tencent.ig/lib
 
-#rm -rf /storage/emulated/0/MALIKIG/backup/*
+rm -rf /storage/emulated/0/MALIKIG/backup/*
 
 su -c iptables --flush
 Menu
