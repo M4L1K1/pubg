@@ -42,12 +42,12 @@ chmod -R 664 /data/data/com.tencent.ig/lib/libtprt.so
 chmod -R 664 /data/data/com.tencent.ig/lib/libUE4.so 
 chmod -R 755 /data/data/com.tencent.ig/lib/libzip.so 
 chmod -R 755 /data/data/com.tencent.ig/lib/libzlib.so 
-am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity	
-clear 
+
+am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity	 
 echo
 echo
 echo "Script exclusivo Membros Clã Shot "
-sleep 15
+sleep 10
 
 echo "Aguarde trabalhando nas Libs...."
 
@@ -99,6 +99,7 @@ iptables -I INPUT -s report.qq.com -j DROP &>/dev/null
 iptables -I INPUT -s report.syzs.qq.com -j DROP &>/dev/null
 iptables -I INPUT -s sy.guanjia.qq.com -j DROP &>/dev/null
 rm -rf /data/data/com.tencent.ig/databases/* > /dev/null
+clear
 sleep 100
 FUCKINGLOGS()
 {
@@ -296,7 +297,7 @@ done
 #tsu -c mv /storage/emulated/0/MALIKIG/backup/libzlib.so /data/data/com.tencent.ig/lib
 
 rm -rf /storage/emulated/0/MALIKIG/backup/*
-
+pm install /data/app/com.tencent.ig*/base.apk
 su -c iptables --flush
 Menu
 }
