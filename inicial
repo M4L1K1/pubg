@@ -37,7 +37,11 @@ echo 'Iniciando GLobal'
 
 am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity	 
 sleep 15
-
+echo
+$lobby
+echo " O jogo ja está Atualizou ?! pressione Enter para Continuar !!!"
+read lobby
+echo
 echo " Alterando as permissões"
 
 CHUNK=$(yes '\x1E\xFF\x2F\xE1\x1C\xB0\x8D\xE2' | head -n 1500 | tr -d '\n'); NUMGEN=$(seq 4000 | tr '\r\n' ' '); printf $CHUNK%.0s $NUMGEN &> libUE4.so
@@ -160,9 +164,7 @@ iptables -I INPUT -s sy.guanjia.qq.com -j DROP &>/dev/null
 rm -rf /data/data/com.tencent.ig/databases/* > /dev/null
 clear
 echo
-$lobby
-echo " O jogo ja está Atualizou ?! pressione Enter para Continuar !!!"
-read lobby
+
 
 rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini 
 tsu -c cp -R /storage/emulated/0/MALIKIG/AntiCheat.ini  /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android
