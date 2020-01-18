@@ -383,7 +383,7 @@ rm -rf /data/data/com.tencent.ig/app_appcache &> /dev/null
 rm -rf /data/data/com.tencent.ig/app_crashrecord &> /dev/null
 rm -rf /sdcard/.backups &> /dev/null
 rm -rf /sdcard/Tencent &> /dev/null
-sleep 1
+sleep 3
 echo " Log Apagado "
 }
 PACKAGE='com.tencent.ig'
