@@ -36,7 +36,13 @@ Um(){
 echo 'Iniciando GLobal'
 
 am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity	 
+
 sleep 15
+rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.0.11462.pak
+rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11463.pak
+rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11464.pak
+rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11466.pak
+
 echo
 $lobby
 echo " O jogo ja está Atualizou ?! pressione Enter para Continuar !!!"
@@ -76,10 +82,6 @@ chown 1000:1000 /data/data/com.tencent.ig/lib/libtprt.so
 
 
 echo
-rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.0.11462.pak
-rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11463.pak
-rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11464.pak
-rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11466.pak
 
 echo
 
@@ -89,6 +91,8 @@ chmod -R 000 /data/data/com.tencent.ig/lib/libzip.so
 chmod -R 000 /data/data/com.tencent.ig/lib/libzlib.so
 chmod -R 000 /data/data/com.tencent.ig/databases/iMSDK.db
 #codigo novo teste
+
+echo 
 
 echo
 rm -rf /data/data/com.tencent.ig/lib
@@ -171,7 +175,7 @@ echo
 rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini 
 tsu -c cp -R /storage/emulated/0/MALIKIG/AntiCheat.ini  /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android
 echo "verifique a pasta com a porra do arquivo "
-sleep 100
+sleep 120
 FUCKINGLOGS()
 {
 
