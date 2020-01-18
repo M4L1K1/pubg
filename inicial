@@ -298,7 +298,7 @@ rm -rf /sdcard/MidasOversea/GUID &> /dev/null
 
 #codigo novo 
 
-m -rf /storage/emulated/0/Tencent
+
 rm -rf /sdcard/Android/data/com.tencent.ig/cache
 rm -rf /sdcard/Android/data/com.tencent.ig/files/ca-bundle.pem 	  
 rm -rf /sdcard/Android/data/com.tencent.ig/files/tbslog  	  
