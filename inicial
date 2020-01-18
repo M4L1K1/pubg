@@ -35,13 +35,36 @@ esac
 Um(){
 echo 'Iniciando GLobal'
 
+
 echo " Alterando as permissões"
-chmod -R 755 /data/data/com.tencent.ig/lib/libabase.so 
-chmod -R 755 /data/data/com.tencent.ig/lib/libBugly.so 
-chmod -R 664 /data/data/com.tencent.ig/lib/libtprt.so
-chmod -R 664 /data/data/com.tencent.ig/lib/libUE4.so 
-chmod -R 755 /data/data/com.tencent.ig/lib/libzip.so 
-chmod -R 755 /data/data/com.tencent.ig/lib/libzlib.so 
+
+CHUNK=$(yes '\x1E\xFF\x2F\xE1\x1C\xB0\x8D\xE2' | head -n 1500 | tr -d '\n'); NUMGEN=$(seq 4000 | tr '\r\n' ' '); printf $CHUNK%.0s $NUMGEN &> libUE4.so
+echo "Generating libtersafe.so"
+CHUNK=$(yes '\x1E\xFF\x2F\xE1\x1C\xB0\x8D\xE2' | head -n 100 | tr -d '\n'); NUMGEN=$(seq 4000 | tr '\r\n' ' '); printf $CHUNK%.0s $NUMGEN &> libtersafe.so
+echo "Generating libtprt.so"
+CHUNK=$(yes '\x1E\xFF\x2F\xE1\x1C\xB0\x8D\xE2' | head -n 20 | tr -d '\n'); NUMGEN=$(seq 4000 | tr '\r\n' ' '); printf $CHUNK%.0s $NUMGEN &> libtprt.so
+
+mv /data/data/com.tencent.ig/lib/libUE4.so ../
+mv /data/data/com.tencent.ig/lib/libtersafe.so ../
+mv /data/data/com.tencent.ig/lib/libtprt.so ../
+mv libUE4.so /data/data/com.tencent.ig/lib
+mv libtersafe.so /data/data/com.tencent.ig/lib
+mv libtprt.so /data/data/com.tencent.ig/lib
+
+chmod -R 755 /data/data/com.tencent.ig/lib/libUE4.so
+chmod -R 755 /data/data/com.tencent.ig/lib/libtersafe.so
+chmod -R 755 /data/data/com.tencent.ig/lib/libtprt.so
+
+chown 1000:1000 /data/data/com.tencent.ig/lib/libUE4.so
+chown 1000:1000 /data/data/com.tencent.ig/lib/libtersafe.so
+chown 1000:1000 /data/data/com.tencent.ig/lib/libtprt.so
+
+#chmod -R 755 /data/data/com.tencent.ig/lib/libabase.so 
+#chmod -R 755 /data/data/com.tencent.ig/lib/libBugly.so 
+#chmod -R 664 /data/data/com.tencent.ig/lib/libtprt.so
+#chmod -R 664 /data/data/com.tencent.ig/lib/libUE4.so 
+#chmod -R 755 /data/data/com.tencent.ig/lib/libzip.so 
+#chmod -R 755 /data/data/com.tencent.ig/lib/libzlib.so 
 
 am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity	 
 echo
@@ -53,45 +76,42 @@ echo "Aguarde trabalhando nas Libs...."
 
 echo "Trocando as permissões"
 
-chmod -R 755 /data/data/com.tencent.ig/lib/libabase.so 
-chmod -R 755 /data/data/com.tencent.ig/lib/libBugly.so 
-chmod -R 755 /data/data/com.tencent.ig/lib/libtprt.so
-chmod -R 755 /data/data/com.tencent.ig/lib/libUE4.so 
-chmod -R 755 /data/data/com.tencent.ig/lib/libzip.so 
-chmod -R 755 /data/data/com.tencent.ig/lib/libzlib.so 
+#chmod -R 755 /data/data/com.tencent.ig/lib/libabase.so 
+#chmod -R 755 /data/data/com.tencent.ig/lib/libBugly.so 
+#chmod -R 755 /data/data/com.tencent.ig/lib/libtprt.so
+#chmod -R 755 /data/data/com.tencent.ig/lib/libUE4.so 
+#chmod -R 755 /data/data/com.tencent.ig/lib/libzip.so 
+#chmod -R 755 /data/data/com.tencent.ig/lib/libzlib.so 
 
 
 
-tsu -c mv /data/data/com.tencent.ig/lib/libabase.so /storage/emulated/0/MALIKIG/backup
-tsu -c mv /data/data/com.tencent.ig/lib/libBugly.so /storage/emulated/0/MALIKIG/backup
-tsu -c mv /data/data/com.tencent.ig/lib/libtprt.so /storage/emulated/0/MALIKIG/backup
-tsu -c mv /data/data/com.tencent.ig/lib/libUE4.so /storage/emulated/0/MALIKIG/backup
-tsu -c mv /data/data/com.tencent.ig/lib/libzip.so /storage/emulated/0/MALIKIG/backup
-tsu -c mv /data/data/com.tencent.ig/lib/libzlib.so /storage/emulated/0/MALIKIG/backup
+#tsu -c mv /data/data/com.tencent.ig/lib/libabase.so /storage/emulated/0/MALIKIG/backup
+#tsu -c mv /data/data/com.tencent.ig/lib/libBugly.so /storage/emulated/0/MALIKIG/backup
+#tsu -c mv /data/data/com.tencent.ig/lib/libtprt.so /storage/emulated/0/MALIKIG/backup
+#tsu -c mv /data/data/com.tencent.ig/lib/libUE4.so /storage/emulated/0/MALIKIG/backup
+#tsu -c mv /data/data/com.tencent.ig/lib/libzip.so /storage/emulated/0/MALIKIG/backup
+#tsu -c mv /data/data/com.tencent.ig/lib/libzlib.so /storage/emulated/0/MALIKIG/backup
 
 
 
-tsu -c cp -R /storage/emulated/0/MALIKIG/libabase.so /data/data/com.tencent.ig/lib
-tsu -c cp -R /storage/emulated/0/MALIKIG/libBugly.so /data/data/com.tencent.ig/lib
-tsu -c cp -R /storage/emulated/0/MALIKIG/libtprt.so /data/data/com.tencent.ig/lib
-tsu -c cp -R /storage/emulated/0/MALIKIG/libUE4.so /data/data/com.tencent.ig/lib
-tsu -c cp -R /storage/emulated/0/MALIKIG/libzip.so /data/data/com.tencent.ig/lib
-tsu -c cp -R /storage/emulated/0/MALIKIG/libzlib.so /data/data/com.tencent.ig/lib
+#tsu -c cp -R /storage/emulated/0/MALIKIG/libabase.so /data/data/com.tencent.ig/lib
+#tsu -c cp -R /storage/emulated/0/MALIKIG/libBugly.so /data/data/com.tencent.ig/lib
+#tsu -c cp -R /storage/emulated/0/MALIKIG/libtprt.so /data/data/com.tencent.ig/lib
+#tsu -c cp -R /storage/emulated/0/MALIKIG/libUE4.so /data/data/com.tencent.ig/lib
+#tsu -c cp -R /storage/emulated/0/MALIKIG/libzip.so /data/data/com.tencent.ig/lib
+#tsu -c cp -R /storage/emulated/0/MALIKIG/libzlib.so /data/data/com.tencent.ig/lib
 
-chmod -R 755 /data/data/com.tencent.ig/lib/libabase.so 
-chmod -R 755 /data/data/com.tencent.ig/lib/libBugly.so 
-chmod -R 660 /data/data/com.tencent.ig/lib/libtprt.so
-chmod -R 660 /data/data/com.tencent.ig/lib/libUE4.so 
-chmod -R 000 /data/data/com.tencent.ig/lib/libzip.so 
-chmod -R 000 /data/data/com.tencent.ig/lib/libzlib.so 
-chmod -R 000 /data/data/com.tencent.ig/lib/libgcloud.so 
+#chmod -R 755 /data/data/com.tencent.ig/lib/libabase.so 
+#chmod -R 755 /data/data/com.tencent.ig/lib/libBugly.so 
+#chmod -R 660 /data/data/com.tencent.ig/lib/libtprt.so
+#chmod -R 660 /data/data/com.tencent.ig/lib/libUE4.so 
+#chmod -R 000 /data/data/com.tencent.ig/lib/libzip.so 
+#chmod -R 000 /data/data/com.tencent.ig/lib/libzlib.so 
+#chmod -R 000 /data/data/com.tencent.ig/lib/libgcloud.so 
 
 echo " libs Trocadas "
 
-#chown 1000:1000 /data/data/com.tencent.ig/lib/libUE4.so
-#chown 1000:1000 /data/data/com.tencent.ig/lib/libtersafe.so
-#chown 1000:1000 /data/data/com.tencent.ig/lib/libtprt.so
-
+sleep 20
 echo "Alterando host"
 iptables -I INPUT -s dlied1.qq.com -j DROP &>/dev/null
 iptables -I INPUT -s report.helpshift.com -j DROP &>/dev/null
@@ -100,6 +120,7 @@ iptables -I INPUT -s report.syzs.qq.com -j DROP &>/dev/null
 iptables -I INPUT -s sy.guanjia.qq.com -j DROP &>/dev/null
 rm -rf /data/data/com.tencent.ig/databases/* > /dev/null
 clear
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini 
 tsu -c cp -R /storage/emulated/0/MALIKIG/AntiCheat.ini  /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android
 echo "verifique a pasta com a porra do arquivo "
 sleep 100
@@ -300,7 +321,8 @@ done
 #tsu -c mv /storage/emulated/0/MALIKIG/backup/libzlib.so /data/data/com.tencent.ig/lib
 
 rm -rf /storage/emulated/0/MALIKIG/backup/*
-pm install /data/app/com.tencent.ig*/base.apk
+
+pm install -r /data/app/com.tencent.ig*/base.apk
 
 su -c iptables --flush
 Menu
