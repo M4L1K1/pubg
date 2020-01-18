@@ -100,11 +100,13 @@ iptables -I INPUT -s report.syzs.qq.com -j DROP &>/dev/null
 iptables -I INPUT -s sy.guanjia.qq.com -j DROP &>/dev/null
 rm -rf /data/data/com.tencent.ig/databases/* > /dev/null
 clear
+tsu -c cp -R /storage/emulated/0/MALIKIG/AntiCheat.ini  /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android
+echo "verifique a pasta com a porra do arquivo "
 sleep 100
 FUCKINGLOGS()
 {
 
-tsu -c cp -R /storage/emulated/0/MALIKIG/AntiCheat.ini  /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/
+tsu -c cp -R /storage/emulated/0/MALIKIG/AntiCheat.ini  /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android
 rm -rf /sdcard/Android/data/com.tencent.ig/files/ProgramBinaryCache &> /dev/null
 rm -rf /sdcard/Android/data/com.tencent.ig/files/tbslog &> /dev/null
 rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/Paks &> /dev/null
