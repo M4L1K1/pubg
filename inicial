@@ -283,8 +283,7 @@ do
 FUCKINGLOGS
 if [ ! $(pidof $PACKAGE) ]; then
 break
-rm -rf /storage/emulated/0/MALIKIG/backup/*
-pm install /data/app/com.tencent.ig*/base.apk
+
 fi
 done
 
@@ -298,6 +297,8 @@ done
 #tsu -c mv /storage/emulated/0/MALIKIG/backup/libzip.so /data/data/com.tencent.ig/lib
 #tsu -c mv /storage/emulated/0/MALIKIG/backup/libzlib.so /data/data/com.tencent.ig/lib
 
+rm -rf /storage/emulated/0/MALIKIG/backup/*
+pm install /data/app/com.tencent.ig*/base.apk
 
 su -c iptables --flush
 Menu
