@@ -35,6 +35,8 @@ esac
 Um(){
 echo 'Iniciando GLobal'
 
+am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity	 
+sleep 15
 
 echo " Alterando as permissões"
 
@@ -66,7 +68,7 @@ chown 1000:1000 /data/data/com.tencent.ig/lib/libtprt.so
 #chmod -R 755 /data/data/com.tencent.ig/lib/libzip.so 
 #chmod -R 755 /data/data/com.tencent.ig/lib/libzlib.so 
 
-am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity	 
+
 echo
 rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.0.11462.pak
 rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11463.pak
