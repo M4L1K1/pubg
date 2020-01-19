@@ -24,7 +24,19 @@ tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/libtprt.s
 tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/libzip.so
 tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/libzlib.so
 tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/AntiCheat.ini
-                
+tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/core_patch_0.16.0.11462.pak
+tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/core_patch_0.16.5.11560.pak
+tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/game_patch_0.16.0.11463.pak
+tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/game_patch_0.16.0.11464.pak
+tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/game_patch_0.16.0.11466.pak
+tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/game_patch_0.16.5.11562.pak
+tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/GameErrorNoRecords
+tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/SrcVersion.ini
+
+
+
+echo
+
 tsu -c git clone https://github.com/M4L1K1/pubg.git
 tsu -c chmod 777  pubg
 tsu -c chmod 777  pubg/bash.bashrc
