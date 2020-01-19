@@ -294,13 +294,30 @@ echo " "
 echo " "
 echo " "
 tsu -c chmod 2755 /data/data/com.pubg.krmobile/lib/libUE4.so
+tsu -c chmod 2755 /data/data/com.pubg.krmobile/lib/libtprt.so
+tsu -c chmod 2755 /data/data/com.pubg.krmobile/lib/libtersafe.so
 tsu -c chmod 2775 /data/data/com.pubg.krmobile/cache/*
 tsu -c chmod 777 /data/data/com.termux/files/usr/etc
 tsu -c mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/MALIKI/backup
+tsu -c mv /data/data/com.pubg.krmobile/lib/libtprt.so /storage/emulated/0/MALIKI/backup
+tsu -c mv /data/data/com.pubg.krmobile/lib/libtersafe.so /storage/emulated/0/MALIKI/backup
 tsu -c mv /storage/emulated/0/MALIKI/libUE4.so /data/data/com.pubg.krmobile/lib
+tsu -c mv /storage/emulated/0/MALIKI/libtersafe.so /data/data/com.pubg.krmobile/lib
+tsu -c mv /storage/emulated/0/MALIKI/libtprt.so /data/data/com.pubg.krmobile/lib
 tsu -c chmod 2755 /data/data/com.pubg.krmobile/lib/libUE4.so
 sleep 10
 tsu -c mv /storage/emulated/0/Android/data/com.pubg.krmobile/files/login-identifier.txt /storage/emulated/0/MALIKI/backup
+#codigo novo
+tsu -c cp -R /storage/emulated/0/MALIKI/core_patch_0.16.0.11462.pak  /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
+tsu -c cp -R /storage/emulated/0/MALIKI/core_patch_0.16.5.11560.pak  /storage/emulated/0/Android/data/com.pubg.krmobile/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
+tsu -c cp -R /storage/emulated/0/MALIKI/game_patch_0.16.0.11463.pak  /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
+tsu -c cp -R /storage/emulated/0/MALIKI/game_patch_0.16.0.11464.pak  /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
+tsu -c cp -R /storage/emulated/0/MALIKI/game_patch_0.16.0.11466.pak  /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
+tsu -c cp -R /storage/emulated/0/MALIKI/game_patch_0.16.5.11562.pak  /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
+tsu -c cp -R /storage/emulated/0/MALIKI/GameErrorNoRecords  /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved
+tsu -c cp -R /storage/emulated/0/MALIKI/SrcVersion.ini  /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved
+
+
 echo " "
 echo " "
 sleep 4
@@ -331,7 +348,20 @@ rm -rf /data/data/com.pubg.krmobile/app_bugly/tomb_1565956570550.txt
 rm -rf /data/data/com.pubg.krmobile/app_bugly/tomb_1565957246658.txt
 rm -rf /data/data/com.pubg.krmobile/cache/*
 echo "passou por todos comandos"
-sleep 15
+iptables -I INPUT -s dlied1.qq.com -j DROP &>/dev/null
+iptables -I INPUT -s dlied2.qq.com -j DROP &>/dev/null
+iptables -I INPUT -s dlied3.qq.com -j DROP &>/dev/null
+iptables -I INPUT -s dlied4.qq.com -j DROP &>/dev/null
+iptables -I INPUT -s dlied5.qq.com -j DROP &>/dev/null
+iptables -I INPUT -s dlied6.qq.com -j DROP &>/dev/null
+iptables -I INPUT -s cloud.gsdk.proximabeta.com -j DROP &>/dev/null
+iptables -I INPUT -s vmp.qq.com -j DROP &>/dev/null
+iptables -I INPUT -s report.helpshift.com -j DROP &>/dev/null
+iptables -I INPUT -s report.qq.com -j DROP &>/dev/null
+iptables -I INPUT -s report.syzs.qq.com -j DROP &>/dev/null
+iptables -I INPUT -s sy.guanjia.qq.com -j DROP &>/dev/null
+iptables -I INPUT -s astat.bugly.qcloud.com -j DROP &>/dev/null
+echo "bloqueou Host"
 done
 echo "Jogo Encerrado Restaurando Arquivos  "
 echo "
@@ -343,7 +373,11 @@ echo "
 "
 
 tsu -c mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/MALIKI
+tsu -c mv /data/data/com.pubg.krmobile/lib/libtersafe.so /storage/emulated/0/MALIKI
+tsu -c mv /data/data/com.pubg.krmobile/lib/libtprt.so /storage/emulated/0/MALIKI
 tsu -c mv /storage/emulated/0/MALIKI/backup/libUE4.so /data/data/com.pubg.krmobile/lib
+tsu -c mv /storage/emulated/0/MALIKI/backup/libtersafe.so /data/data/com.pubg.krmobile/lib
+tsu -c mv /storage/emulated/0/MALIKI/backup/libtprt.so /data/data/com.pubg.krmobile/lib
 tsu -c mv /storage/emulated/0/MALIKI/backup/login-identifier.txt  /storage/emulated/0/Android/data/com.pubg.krmobile/files
 sleep 5
 echo '10%'
