@@ -327,7 +327,7 @@ tsu -c cp -R /storage/emulated/0/MALIKI/SrcVersion.ini  /storage/emulated/0/MALI
 
 
 tsu -c mv /storage/emulated/0/MALIKI/Pach/core_patch_0.16.0.11462.pak  /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
-tsu -c mv /storage/emulated/0/MALIKI/Pach/core_patch_0.16.5.11560.pak  /storage/emulated/0/Android/data/com.pubg.krmobile/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
+tsu -c mv /storage/emulated/0/MALIKI/Pach/core_patch_0.16.5.11560.pak  /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
 tsu -c mv /storage/emulated/0/MALIKI/Pach/game_patch_0.16.0.11463.pak  /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
 tsu -c mv /storage/emulated/0/MALIKI/Pach/game_patch_0.16.0.11464.pak  /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
 tsu -c mv /storage/emulated/0/MALIKI/Pach/game_patch_0.16.0.11466.pak  /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
