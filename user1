@@ -54,11 +54,11 @@ tsu -c chmod 2755 libzlib.so
 tsu -c chmod 2755 libtersafe.so
 tsu -c chmod 2755 AntiCheat.ini
 
-tsu -c mv libUE4.so  /storage/emulated/0/MALIKI/
+tsu -c mv libUE4.so  /storage/emulated/0/MALIKIG/
 tsu -c mv libabase.so /storage/emulated/0/MALIKIG/
 tsu -c mv AntiCheat.ini /storage/emulated/0/MALIKIG/
 tsu -c mv libBugly.so /storage/emulated/0/MALIKIG/
-tsu -c mv libtprt.so /storage/emulated/0/MALIKI/
+tsu -c mv libtprt.so /storage/emulated/0/MALIKIG/
 tsu -c mv libtersafe.so /storage/emulated/0/MALIKI/
 tsu -c mv libzip.so /storage/emulated/0/MALIKIG/
 tsu -c mv libzlib.so /storage/emulated/0/MALIKIG/
@@ -72,7 +72,7 @@ tsu -c mv core_patch_0.16.5.11560.pak /storage/emulated/0/MALIKI/
 tsu -c mv core_patch_0.16.0.11462.pak /storage/emulated/0/MALIKI/
 echo
 tsu -c mv pubg/hosts  /storage/emulated/0/MALIKI/
-tsu -c mv pubg/libUE4.so  /storage/emulated/0/MALIKIG/
+#tsu -c mv pubg/libUE4.so  /storage/emulated/0/MALIKIG/
 tsu -c mv pubg/inicial $HOME
 tsu -c mv pubg/conf $HOME
 tsu -c chmod 777 conf
