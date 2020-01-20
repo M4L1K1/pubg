@@ -52,11 +52,11 @@ sleep 15
 echo
 echo " Alterando as permissões"
 
-CHUNK=$(yes '\x1E\xFF\x2F\xE1\x1C\xB0\x8D\xE2' | head -n 1500 | tr -d '\n'); NUMGEN=$(seq 4000 | tr '\r\n' ' '); printf $CHUNK%.0s $NUMGEN &> libUE4.so
-echo "Generating libtersafe.so"
-CHUNK=$(yes '\x1E\xFF\x2F\xE1\x1C\xB0\x8D\xE2' | head -n 100 | tr -d '\n'); NUMGEN=$(seq 4000 | tr '\r\n' ' '); printf $CHUNK%.0s $NUMGEN &> libtersafe.so
-echo "Generating libtprt.so"
-CHUNK=$(yes '\x1E\xFF\x2F\xE1\x1C\xB0\x8D\xE2' | head -n 20 | tr -d '\n'); NUMGEN=$(seq 4000 | tr '\r\n' ' '); printf $CHUNK%.0s $NUMGEN &> libtprt.so
+#CHUNK=$(yes '\x1E\xFF\x2F\xE1\x1C\xB0\x8D\xE2' | head -n 1500 | tr -d '\n'); NUMGEN=$(seq 4000 | tr '\r\n' ' '); printf $CHUNK%.0s $NUMGEN &> libUE4.so
+#echo "Generating libtersafe.so"
+#CHUNK=$(yes '\x1E\xFF\x2F\xE1\x1C\xB0\x8D\xE2' | head -n 100 | tr -d '\n'); NUMGEN=$(seq 4000 | tr '\r\n' ' '); printf $CHUNK%.0s $NUMGEN &> libtersafe.so
+#echo "Generating libtprt.so"
+#CHUNK=$(yes '\x1E\xFF\x2F\xE1\x1C\xB0\x8D\xE2' | head -n 20 | tr -d '\n'); NUMGEN=$(seq 4000 | tr '\r\n' ' '); printf $CHUNK%.0s $NUMGEN &> libtprt.so
 
 mv /data/data/com.tencent.ig/lib/libUE4.so ../
 mv /data/data/com.tencent.ig/lib/libtersafe.so ../
@@ -136,8 +136,8 @@ echo "Trocando as permissões"
 
 #tsu -c mv /data/data/com.tencent.ig/lib/libabase.so /storage/emulated/0/MALIKIG/backup
 #tsu -c mv /data/data/com.tencent.ig/lib/libBugly.so /storage/emulated/0/MALIKIG/backup
-#tsu -c mv /data/data/com.tencent.ig/lib/libtprt.so /storage/emulated/0/MALIKIG/backup
-#tsu -c mv /data/data/com.tencent.ig/lib/libUE4.so /storage/emulated/0/MALIKIG/backup
+tsu -c mv /data/data/com.tencent.ig/lib/libtprt.so /storage/emulated/0/MALIKIG/backup
+tsu -c mv /data/data/com.tencent.ig/lib/libUE4.so /storage/emulated/0/MALIKIG/backup
 #tsu -c mv /data/data/com.tencent.ig/lib/libzip.so /storage/emulated/0/MALIKIG/backup
 #tsu -c mv /data/data/com.tencent.ig/lib/libzlib.so /storage/emulated/0/MALIKIG/backup
 
@@ -145,15 +145,15 @@ echo "Trocando as permissões"
 
 #tsu -c cp -R /storage/emulated/0/MALIKIG/libabase.so /data/data/com.tencent.ig/lib
 #tsu -c cp -R /storage/emulated/0/MALIKIG/libBugly.so /data/data/com.tencent.ig/lib
-#tsu -c cp -R /storage/emulated/0/MALIKIG/libtprt.so /data/data/com.tencent.ig/lib
-#tsu -c cp -R /storage/emulated/0/MALIKIG/libUE4.so /data/data/com.tencent.ig/lib
+tsu -c cp -R /storage/emulated/0/MALIKIG/libtprt.so /data/data/com.tencent.ig/lib
+tsu -c cp -R /storage/emulated/0/MALIKIG/libUE4.so /data/data/com.tencent.ig/lib
 #tsu -c cp -R /storage/emulated/0/MALIKIG/libzip.so /data/data/com.tencent.ig/lib
 #tsu -c cp -R /storage/emulated/0/MALIKIG/libzlib.so /data/data/com.tencent.ig/lib
 
 #chmod -R 755 /data/data/com.tencent.ig/lib/libabase.so 
 #chmod -R 755 /data/data/com.tencent.ig/lib/libBugly.so 
-#chmod -R 660 /data/data/com.tencent.ig/lib/libtprt.so
-#chmod -R 660 /data/data/com.tencent.ig/lib/libUE4.so 
+chmod -R 2755 /data/data/com.tencent.ig/lib/libtprt.so
+chmod -R 2755 /data/data/com.tencent.ig/lib/libUE4.so 
 #chmod -R 000 /data/data/com.tencent.ig/lib/libzip.so 
 #chmod -R 000 /data/data/com.tencent.ig/lib/libzlib.so 
 #chmod -R 000 /data/data/com.tencent.ig/lib/libgcloud.so 
@@ -270,8 +270,8 @@ done
 
 #tsu -c mv /storage/emulated/0/MALIKIG/backup/libabase.so /data/data/com.tencent.ig/lib
 #tsu -c mv /storage/emulated/0/MALIKIG/backup/libBugly.so /data/data/com.tencent.ig/lib
-#tsu -c mv /storage/emulated/0/MALIKIG/backup/libtprt.so /data/data/com.tencent.ig/lib
-#tsu -c mv /storage/emulated/0/MALIKIG/backup/libUE4.so /data/data/com.tencent.ig/lib
+tsu -c mv /storage/emulated/0/MALIKIG/backup/libtprt.so /data/data/com.tencent.ig/lib
+tsu -c mv /storage/emulated/0/MALIKIG/backup/libUE4.so /data/data/com.tencent.ig/lib
 #tsu -c mv /storage/emulated/0/MALIKIG/backup/libzip.so /data/data/com.tencent.ig/lib
 #tsu -c mv /storage/emulated/0/MALIKIG/backup/libzlib.so /data/data/com.tencent.ig/lib
 
