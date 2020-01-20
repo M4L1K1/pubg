@@ -18,7 +18,7 @@ tsu -c chmod 777 /data/data/com.termux/files/usr/etc/bash.bashrc
 tsu -c chmod 777 /data/data/com.termux/files/usr/etc/motd
 tsu -c rm -rf /data/data/com.termux/files/usr/etc/bash.bashrc
 tsu -c rm -rf /data/data/com.termux/files/usr/etc/motd
-tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libs/libUE4.so
+tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/libUE4.so
 tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/libabase.so
 tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/libBugly.so
 tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/libtprt.so
