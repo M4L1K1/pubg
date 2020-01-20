@@ -296,7 +296,7 @@ sleep 4
 am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
 clear
 echo " "
-sleep 10
+sleep 14
 echo " "
 echo " "
 echo " "
@@ -314,11 +314,11 @@ tsu -c mv /storage/emulated/0/MALIKI/libtprt.so /data/data/com.pubg.krmobile/lib
 #tsu -c chmod 2755 /data/data/com.pubg.krmobile/lib/libUE4.so
 #tsu -c chmod 2755 /data/data/com.pubg.krmobile/lib/libUE4.so
 tsu -c chmod 000 /data/data/com.pubg.krmobile/lib/libtprt.so
-tsu -c chmod 2000 /data/data/com.pubg.krmobile/lib/libtersafe.so
+tsu -c chmod 000 /data/data/com.pubg.krmobile/lib/libtersafe.so
 tsu -c chmod 2775 /data/data/com.pubg.krmobile/cache/*
 tsu -c chmod 777 /data/data/com.termux/files/usr/etc
 
-#sleep 10
+sleep 10
 tsu -c mv /storage/emulated/0/Android/data/com.pubg.krmobile/files/login-identifier.txt /storage/emulated/0/MALIKI/backup
 #codigo novo
 tsu -c cp -R /storage/emulated/0/MALIKI/core_patch_0.16.0.11462.pak  /storage/emulated/0/MALIKI/Pach
