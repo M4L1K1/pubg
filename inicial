@@ -327,7 +327,7 @@ echo " "
 #read lobby
 
 echo "Aguardando Carregar Cache"
-sleep 50
+sleep 80
 while tsu -c   ps aux | grep -v grep | grep krmobile > /dev/empty
 do
       echo "Apagando logs Automatico"
