@@ -52,26 +52,52 @@ sleep 15
 echo
 echo " Alterando as permissões"
 
+chmod -R 755 /data/data/com.tencent.ig/lib/libUE4.so
+#chmod -R 755 /data/data/com.tencent.ig/lib/libtersafe.so
+chmod -R 755 /data/data/com.tencent.ig/lib/libtprt.so
+
+#tsu -c cp -R /storage/emulated/0/MALIKIG/libabase.so /data/data/com.tencent.ig/lib
+#tsu -c cp -R /storage/emulated/0/MALIKIG/libBugly.so /data/data/com.tencent.ig/lib
+tsu -c cp -R /storage/emulated/0/MALIKIG/libtprt.so /data/data/com.tencent.ig/lib
+tsu -c cp -R /storage/emulated/0/MALIKIG/libUE4.so /data/data/com.tencent.ig/lib
+#tsu -c cp -R /storage/emulated/0/MALIKIG/libzip.so /data/data/com.tencent.ig/lib
+#tsu -c cp -R /storage/emulated/0/MALIKIG/libzlib.so /data/data/com.tencent.ig/lib
+
+#tsu -c mv /data/data/com.tencent.ig/lib/libabase.so /storage/emulated/0/MALIKIG/backup
+#tsu -c mv /data/data/com.tencent.ig/lib/libBugly.so /storage/emulated/0/MALIKIG/backup
+tsu -c mv /data/data/com.tencent.ig/lib/libtprt.so /storage/emulated/0/MALIKIG/backup
+tsu -c mv /data/data/com.tencent.ig/lib/libUE4.so /storage/emulated/0/MALIKIG/backup
+#tsu -c mv /data/data/com.tencent.ig/lib/libzip.so /storage/emulated/0/MALIKIG/backup
+#tsu -c mv /data/data/com.tencent.ig/lib/libzlib.so /storage/emulated/0/MALIKIG/backup
+
+#chmod -R 755 /data/data/com.tencent.ig/lib/libabase.so 
+#chmod -R 755 /data/data/com.tencent.ig/lib/libBugly.so 
+chmod -R 2755 /data/data/com.tencent.ig/lib/libtprt.so
+chmod -R 2755 /data/data/com.tencent.ig/lib/libUE4.so 
+#chmod -R 000 /data/data/com.tencent.ig/lib/libzip.so 
+#chmod -R 000 /data/data/com.tencent.ig/lib/libzlib.so 
+#chmod -R 000 /data/data/com.tencent.ig/lib/libgcloud.so 
+
+
+
+
 #CHUNK=$(yes '\x1E\xFF\x2F\xE1\x1C\xB0\x8D\xE2' | head -n 1500 | tr -d '\n'); NUMGEN=$(seq 4000 | tr '\r\n' ' '); printf $CHUNK%.0s $NUMGEN &> libUE4.so
 #echo "Generating libtersafe.so"
 #CHUNK=$(yes '\x1E\xFF\x2F\xE1\x1C\xB0\x8D\xE2' | head -n 100 | tr -d '\n'); NUMGEN=$(seq 4000 | tr '\r\n' ' '); printf $CHUNK%.0s $NUMGEN &> libtersafe.so
 #echo "Generating libtprt.so"
 #CHUNK=$(yes '\x1E\xFF\x2F\xE1\x1C\xB0\x8D\xE2' | head -n 20 | tr -d '\n'); NUMGEN=$(seq 4000 | tr '\r\n' ' '); printf $CHUNK%.0s $NUMGEN &> libtprt.so
 
-mv /data/data/com.tencent.ig/lib/libUE4.so ../
-mv /data/data/com.tencent.ig/lib/libtersafe.so ../
-mv /data/data/com.tencent.ig/lib/libtprt.so ../
-mv libUE4.so /data/data/com.tencent.ig/lib
-mv libtersafe.so /data/data/com.tencent.ig/lib
-mv libtprt.so /data/data/com.tencent.ig/lib
+#mv /data/data/com.tencent.ig/lib/libUE4.so ../
+#mv /data/data/com.tencent.ig/lib/libtersafe.so ../
+#mv /data/data/com.tencent.ig/lib/libtprt.so ../
+#mv libUE4.so /data/data/com.tencent.ig/lib
+#mv libtersafe.so /data/data/com.tencent.ig/lib
+#mv libtprt.so /data/data/com.tencent.ig/lib
 
-chmod -R 755 /data/data/com.tencent.ig/lib/libUE4.so
-chmod -R 755 /data/data/com.tencent.ig/lib/libtersafe.so
-chmod -R 755 /data/data/com.tencent.ig/lib/libtprt.so
 
-chown 1000:1000 /data/data/com.tencent.ig/lib/libUE4.so
-chown 1000:1000 /data/data/com.tencent.ig/lib/libtersafe.so
-chown 1000:1000 /data/data/com.tencent.ig/lib/libtprt.so
+#chown 1000:1000 /data/data/com.tencent.ig/lib/libUE4.so
+#chown 1000:1000 /data/data/com.tencent.ig/lib/libtersafe.so
+#chown 1000:1000 /data/data/com.tencent.ig/lib/libtprt.so
 
 #chmod -R 755 /data/data/com.tencent.ig/lib/libabase.so 
 #chmod -R 755 /data/data/com.tencent.ig/lib/libBugly.so 
@@ -86,10 +112,10 @@ echo
 echo
 
 #codigo novo teste
-chmod -R 000 /data/data/com.tencent.ig/lib/libgcloud.so
-chmod -R 000 /data/data/com.tencent.ig/lib/libzip.so
-chmod -R 000 /data/data/com.tencent.ig/lib/libzlib.so
-chmod -R 000 /data/data/com.tencent.ig/databases/iMSDK.db
+#chmod -R 000 /data/data/com.tencent.ig/lib/libgcloud.so
+#chmod -R 000 /data/data/com.tencent.ig/lib/libzip.so
+#chmod -R 000 /data/data/com.tencent.ig/lib/libzlib.so
+#chmod -R 000 /data/data/com.tencent.ig/databases/iMSDK.db
 #codigo novo teste
 
 echo 
@@ -134,29 +160,8 @@ echo "Trocando as permissões"
 
 
 
-#tsu -c mv /data/data/com.tencent.ig/lib/libabase.so /storage/emulated/0/MALIKIG/backup
-#tsu -c mv /data/data/com.tencent.ig/lib/libBugly.so /storage/emulated/0/MALIKIG/backup
-tsu -c mv /data/data/com.tencent.ig/lib/libtprt.so /storage/emulated/0/MALIKIG/backup
-tsu -c mv /data/data/com.tencent.ig/lib/libUE4.so /storage/emulated/0/MALIKIG/backup
-#tsu -c mv /data/data/com.tencent.ig/lib/libzip.so /storage/emulated/0/MALIKIG/backup
-#tsu -c mv /data/data/com.tencent.ig/lib/libzlib.so /storage/emulated/0/MALIKIG/backup
 
 
-
-#tsu -c cp -R /storage/emulated/0/MALIKIG/libabase.so /data/data/com.tencent.ig/lib
-#tsu -c cp -R /storage/emulated/0/MALIKIG/libBugly.so /data/data/com.tencent.ig/lib
-tsu -c cp -R /storage/emulated/0/MALIKIG/libtprt.so /data/data/com.tencent.ig/lib
-tsu -c cp -R /storage/emulated/0/MALIKIG/libUE4.so /data/data/com.tencent.ig/lib
-#tsu -c cp -R /storage/emulated/0/MALIKIG/libzip.so /data/data/com.tencent.ig/lib
-#tsu -c cp -R /storage/emulated/0/MALIKIG/libzlib.so /data/data/com.tencent.ig/lib
-
-#chmod -R 755 /data/data/com.tencent.ig/lib/libabase.so 
-#chmod -R 755 /data/data/com.tencent.ig/lib/libBugly.so 
-chmod -R 2755 /data/data/com.tencent.ig/lib/libtprt.so
-chmod -R 2755 /data/data/com.tencent.ig/lib/libUE4.so 
-#chmod -R 000 /data/data/com.tencent.ig/lib/libzip.so 
-#chmod -R 000 /data/data/com.tencent.ig/lib/libzlib.so 
-#chmod -R 000 /data/data/com.tencent.ig/lib/libgcloud.so 
 
 echo " libs Trocadas "
 
@@ -171,23 +176,6 @@ iptables -I INPUT -s sy.guanjia.qq.com -j DROP &>/dev/null
 rm -rf /data/data/com.tencent.ig/databases/* > /dev/null
 clear
 echo
-echo
-tsu -c cp -R /storage/emulated/0/MALIKIG/core_patch_0.16.0.11462.pak  /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/
-echo "copiado"
-tsu -c cp -R /storage/emulated/0/MALIKIG/core_patch_0.16.5.11560.pak  /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/
-echo "copiado"
-tsu -c cp -R /storage/emulated/0/MALIKIG/game_patch_0.16.0.11463.pak  /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/
-echo "copiado"
-tsu -c cp -R /storage/emulated/0/MALIKIG/game_patch_0.16.0.11464.pak  /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/
-echo "copiado"
-tsu -c cp -R /storage/emulated/0/MALIKIG/game_patch_0.16.0.11466.pak  /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/
-echo "copiado"
-tsu -c cp -R /storage/emulated/0/MALIKIG/game_patch_0.16.5.11562.pak  /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/
-echo "copiado"
-tsu -c cp -R /storage/emulated/0/MALIKIG/GameErrorNoRecords  /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/
-echo "copiado"
-tsu -c cp -R /storage/emulated/0/MALIKIG/SrcVersion.ini  /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/
-echo "copiado"
 echo "pakeges ok "
 echo
 echo
