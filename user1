@@ -10,8 +10,9 @@ tsu -c rm -rf  /storage/emulated/0/MALIKIG
 tsu -c rm -rf pubg
 tsu -c rm -rf inicial
 tsu -c rm -rf conf
-tsu -c mkdir -p /storage/emulated/0/MALIKI/backup
-tsu -c mkdir -p /storage/emulated/0/MALIKIG/{backup,Pach}
+tsu -c mkdir -p /storage/emulated/0/MALIKI/{backup,Pach}
+tsu -c mkdir -p /storage/emulated/0/MALIKIG/backup
+
 tsu -c --assume-yes rm -rf libUE4.so
 tsu -c chmod 777 /data/data/com.termux/files/usr/etc/bash.bashrc
 tsu -c chmod 777 /data/data/com.termux/files/usr/etc/motd
