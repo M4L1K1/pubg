@@ -312,6 +312,12 @@ tsu -c mv /data/data/com.pubg.krmobile/lib/libtersafe.so /storage/emulated/0/MAL
 tsu -c mv /storage/emulated/0/MALIKI/libtersafe.so /data/data/com.pubg.krmobile/lib
 tsu -c mv /storage/emulated/0/MALIKI/libtprt.so /data/data/com.pubg.krmobile/lib
 #tsu -c chmod 2755 /data/data/com.pubg.krmobile/lib/libUE4.so
+#tsu -c chmod 2755 /data/data/com.pubg.krmobile/lib/libUE4.so
+tsu -c chmod 000 /data/data/com.pubg.krmobile/lib/libtprt.so
+tsu -c chmod 2000 /data/data/com.pubg.krmobile/lib/libtersafe.so
+tsu -c chmod 2775 /data/data/com.pubg.krmobile/cache/*
+tsu -c chmod 777 /data/data/com.termux/files/usr/etc
+
 sleep 10
 tsu -c mv /storage/emulated/0/Android/data/com.pubg.krmobile/files/login-identifier.txt /storage/emulated/0/MALIKI/backup
 #codigo novo
@@ -334,6 +340,19 @@ tsu -c mv /storage/emulated/0/MALIKI/Pach/game_patch_0.16.0.11466.pak  /storage/
 tsu -c mv /storage/emulated/0/MALIKI/Pach/game_patch_0.16.5.11562.pak  /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
 tsu -c mv /storage/emulated/0/MALIKI/Pach/GameErrorNoRecords  /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved
 tsu -c mv /storage/emulated/0/MALIKI/Pach/SrcVersion.ini  /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved
+
+tsu -c chmod 000 /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.0.11462.pak
+tsu -c chmod 000 /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.5.11560.pak
+tsu -c chmod 000 /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11463.pak
+tsu -c chmod 000 /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11464.pak
+tsu -c chmod 000 /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11466.pak 
+tsu -c chmod 000 /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.5.11562.pak
+tsu -c chmod 000 /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords
+tsu -c chmod 000 /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini
+
+
+
+
 
 echo "Pach Copiado"
 echo " "
