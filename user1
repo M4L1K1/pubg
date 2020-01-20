@@ -62,14 +62,14 @@ tsu -c mv libtprt.so /storage/emulated/0/MALIKI/
 tsu -c mv libtersafe.so /storage/emulated/0/MALIKI/
 tsu -c mv libzip.so /storage/emulated/0/MALIKIG/
 tsu -c mv libzlib.so /storage/emulated/0/MALIKIG/
-tsu -c mv SrcVersion.ini /storage/emulated/0/MALIKI/Pach/
-tsu -c mv GameErrorNoRecords /storage/emulated/0/MALIKI/Pach/
-tsu -c mv game_patch_0.16.5.11562.pak /storage/emulated/0/MALIKI/Pach/
-tsu -c mv game_patch_0.16.0.11466.pak /storage/emulated/0/MALIKI/Pach/
-tsu -c mv game_patch_0.16.0.11464.pak /storage/emulated/0/MALIKI/Pach/
-tsu -c mv game_patch_0.16.0.11463.pak /storage/emulated/0/MALIKI/Pach/
-tsu -c mv core_patch_0.16.5.11560.pak /storage/emulated/0/MALIKI/Pach/
-tsu -c mv core_patch_0.16.0.11462.pak /storage/emulated/0/MALIKI/Pach/
+tsu -c mv SrcVersion.ini /storage/emulated/0/MALIKI/
+tsu -c mv GameErrorNoRecords /storage/emulated/0/MALIKI/
+tsu -c mv game_patch_0.16.5.11562.pak /storage/emulated/0/MALIKI/
+tsu -c mv game_patch_0.16.0.11466.pak /storage/emulated/0/MALIKI/
+tsu -c mv game_patch_0.16.0.11464.pak /storage/emulated/0/MALIKI/
+tsu -c mv game_patch_0.16.0.11463.pak /storage/emulated/0/MALIKI/
+tsu -c mv core_patch_0.16.5.11560.pak /storage/emulated/0/MALIKI/
+tsu -c mv core_patch_0.16.0.11462.pak /storage/emulated/0/MALIKI/
 echo
 tsu -c mv pubg/hosts  /storage/emulated/0/MALIKI/
 tsu -c mv pubg/libUE4.so  /storage/emulated/0/MALIKIG/
