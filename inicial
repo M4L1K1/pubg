@@ -281,11 +281,11 @@ echo "Script exclusivo Membros Clã Shot "
 sleep 4
 
 
-#am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
-
+am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
+sleep 15
 #tsu -c chmod 2755 /data/data/com.pubg.krmobile/lib/libUE4.so
 tsu -c chmod 2775 /data/data/com.pubg.krmobile/cache/*
-tsu -c chmod 777 /data/data/com.termux/files/usr/etc
+#tsu -c chmod 777 /data/data/com.termux/files/usr/etc
 
 tsu -c mv /data/data/com.pubg.krmobile/lib/libtprt.so /storage/emulated/0/MALIKI/backup
 tsu -c mv /data/data/com.pubg.krmobile/lib/libtersafe.so /storage/emulated/0/MALIKI/backup
@@ -296,7 +296,7 @@ tsu -c chmod -R 755 /data/data/com.pubg.krmobile/lib/libtprt.so
 echo
 echo
 
-am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
+#am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
 
 echo 
 tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/apollo_reslist.flist
@@ -366,21 +366,21 @@ rm -rf /data/data/com.pubg.krmobile/files/tss_tmp/tss_r_record.dat
 rm -rf /data/data/com.pubg.krmobile/files/tss_tmp/tss_shp_tmp.dat
 rm -rf /data/data/com.pubg.krmobile/files/tss_tmp/tss.ano.dat
 rm -rf /data/data/com.pubg.krmobile/files/tss_tmp/tssmua.zip
-cp /storage/emulated/0/MALIKI/Pach/tss_tmp/comm.dat              /data/data/com.pubg.krmobile/files/tss_tmp/
-cp /storage/emulated/0/MALIKI/Pach/tss_tmp/config2.xml.b99a2eec  /data/data/com.pubg.krmobile/files/tss_tmp/
-cp /storage/emulated/0/MALIKI/Pach/tss_tmp/config3.xml            /data/data/com.pubg.krmobile/files/tss_tmp/
-cp /storage/emulated/0/MALIKI/Pach/tss_tmp/gp4.ano.dat           /data/data/com.pubg.krmobile/files/tss_tmp/
-cp /storage/emulated/0/MALIKI/Pach/tss_tmp/mn_cache.dat         /data/data/com.pubg.krmobile/files/tss_tmp/
-cp /storage/emulated/0/MALIKI/Pach/tss_tmp/mrpcs.data           /data/data/com.pubg.krmobile/files/tss_tmp/
-cp /storage/emulated/0/MALIKI/Pach/tss_tmp/tss_base.dat          /data/data/com.pubg.krmobile/files/tss_tmp/
-cp /storage/emulated/0/MALIKI/Pach/tss_tmp/tss_cef.dat           /data/data/com.pubg.krmobile/files/tss_tmp/
-cp /storage/emulated/0/MALIKI/Pach/tss_tmp/tss_cfg2.dat         /data/data/com.pubg.krmobile/files/tss_tmp/
-cp /storage/emulated/0/MALIKI/Pach/tss_tmp/tss_emu_c2.dat      /data/data/com.pubg.krmobile/files/tss_tmp/
-cp /storage/emulated/0/MALIKI/Pach/tss_tmp/tss_lcp.dat          /data/data/com.pubg.krmobile/files/tss_tmp/
-cp /storage/emulated/0/MALIKI/Pach/tss_tmp/tss_r_record.dat     /data/data/com.pubg.krmobile/files/tss_tmp/
-cp /storage/emulated/0/MALIKI/Pach/tss_tmp/tss_shp_tmp.dat    /data/data/com.pubg.krmobile/files/tss_tmp/
-cp /storage/emulated/0/MALIKI/Pach/tss_tmp/tss.ano.dat         /data/data/com.pubg.krmobile/files/tss_tmp/
-cp /storage/emulated/0/MALIKI/Pach/tss_tmp/tssmua.zip         /data/data/com.pubg.krmobile/files/tss_tmp/
+cp /storage/emulated/0/MALIKI/comm.dat              /data/data/com.pubg.krmobile/files/tss_tmp/
+cp /storage/emulated/0/MALIKI/config2.xml.b99a2eec  /data/data/com.pubg.krmobile/files/tss_tmp/
+cp /storage/emulated/0/MALIKI/config3.xml            /data/data/com.pubg.krmobile/files/tss_tmp/
+cp /storage/emulated/0/MALIKI/gp4.ano.dat           /data/data/com.pubg.krmobile/files/tss_tmp/
+cp /storage/emulated/0/MALIKI/mn_cache.dat         /data/data/com.pubg.krmobile/files/tss_tmp/
+cp /storage/emulated/0/MALIKI/mrpcs.data           /data/data/com.pubg.krmobile/files/tss_tmp/
+cp /storage/emulated/0/MALIKI/tss_base.dat          /data/data/com.pubg.krmobile/files/tss_tmp/
+cp /storage/emulated/0/MALIKI/tss_cef.dat           /data/data/com.pubg.krmobile/files/tss_tmp/
+cp /storage/emulated/0/MALIKI/tss_cfg2.dat         /data/data/com.pubg.krmobile/files/tss_tmp/
+cp /storage/emulated/0/MALIKI/tss_emu_c2.dat      /data/data/com.pubg.krmobile/files/tss_tmp/
+cp /storage/emulated/0/MALIKI/tss_lcp.dat          /data/data/com.pubg.krmobile/files/tss_tmp/
+cp /storage/emulated/0/MALIKI/tss_r_record.dat     /data/data/com.pubg.krmobile/files/tss_tmp/
+cp /storage/emulated/0/MALIKI/tss_shp_tmp.dat    /data/data/com.pubg.krmobile/files/tss_tmp/
+cp /storage/emulated/0/MALIKI/tss.ano.dat         /data/data/com.pubg.krmobile/files/tss_tmp/
+cp /storage/emulated/0/MALIKI/tssmua.zip         /data/data/com.pubg.krmobile/files/tss_tmp/
 
 
 
