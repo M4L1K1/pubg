@@ -282,7 +282,7 @@ sleep 4
 
 
 am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
-sleep 15
+sleep 10
 #tsu -c chmod 2755 /data/data/com.pubg.krmobile/lib/libUE4.so
 tsu -c chmod 2775 /data/data/com.pubg.krmobile/cache/*
 #tsu -c chmod 777 /data/data/com.termux/files/usr/etc
