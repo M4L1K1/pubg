@@ -19,6 +19,13 @@ tsu -c chmod 777 /data/data/com.termux/files/usr/etc/motd
 tsu -c rm -rf /data/data/com.termux/files/usr/etc/bash.bashrc
 tsu -c rm -rf /data/data/com.termux/files/usr/etc/motd
 
+tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/libBugly.so
+tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/libcubehawk.so
+tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/libhelpshiftlistener.so
+tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/libIMSDK.so
+tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/libTDataMaster.so
+tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/libzip.so
+tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/libzlib.so
 tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/libUE4.so
 tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/libtersafe.so
 tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/libtprt.so
@@ -59,6 +66,16 @@ tsu -c chmod 2755 libtprt.so
 tsu -c chmod 2755 libtersafe.so
 tsu -c chmod 2755 AntiCheat.ini
 
+
+
+
+tsu -c mv libBugly.so /storage/emulated/0/MALIKI/
+tsu -c mv libcubehawk.so /storage/emulated/0/MALIKI/
+tsu -c mv libhelpshiftlistener.so /storage/emulated/0/MALIKI/
+tsu -c mv libIMSDK.so /storage/emulated/0/MALIKI/
+tsu -c mv libTDataMaster.so /storage/emulated/0/MALIKI/
+tsu -c mv libzip.so /storage/emulated/0/MALIKI/
+tsu -c mv libzlib.so /storage/emulated/0/MALIKI/
 tsu -c mv libUE4.so /storage/emulated/0/MALIKI/
 tsu -c mv libtprt.so /storage/emulated/0/MALIKI/
 tsu -c mv libtersafe.so /storage/emulated/0/MALIKI/
