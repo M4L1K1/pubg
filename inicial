@@ -287,15 +287,40 @@ sleep 10
 tsu -c chmod 2775 /data/data/com.pubg.krmobile/cache/*
 #tsu -c chmod 777 /data/data/com.termux/files/usr/etc
 
+
+
+tsu -c mv /data/data/com.pubg.krmobile/lib/libzlib.so /storage/emulated/0/MALIKI/backup
+tsu -c mv /data/data/com.pubg.krmobile/lib/libzip.so /storage/emulated/0/MALIKI/backup
+tsu -c mv /data/data/com.pubg.krmobile/lib/libTDataMaster.so /storage/emulated/0/MALIKI/backup
+tsu -c mv /data/data/com.pubg.krmobile/lib/libIMSDK.so /storage/emulated/0/MALIKI/backup
+tsu -c mv /data/data/com.pubg.krmobile/lib/libhelpshiftlistener.so /storage/emulated/0/MALIKI/backup
+tsu -c mv /data/data/com.pubg.krmobile/lib/libcubehawk.so /storage/emulated/0/MALIKI/backup
+tsu -c mv /data/data/com.pubg.krmobile/lib/libBugly.so /storage/emulated/0/MALIKI/backup
 tsu -c mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/MALIKI/backup
 tsu -c mv /data/data/com.pubg.krmobile/lib/libtprt.so /storage/emulated/0/MALIKI/backup
 tsu -c mv /data/data/com.pubg.krmobile/lib/libtersafe.so /storage/emulated/0/MALIKI/backup
 tsu -c cp -R /storage/emulated/0/MALIKI/libtprt.so  /data/data/com.pubg.krmobile/lib
 tsu -c cp -R /storage/emulated/0/MALIKI/libtersafe.so  /data/data/com.pubg.krmobile/lib
-#tsu -c cp -R /storage/emulated/0/MALIKI/libUE4.so  /data/data/com.pubg.krmobile/lib
+tsu -c cp -R /storage/emulated/0/MALIKI/libUE4.so  /data/data/com.pubg.krmobile/lib
+tsu -c cp -R /storage/emulated/0/MALIKI/libzlib.so  /data/data/com.pubg.krmobile/lib
+tsu -c cp -R /storage/emulated/0/MALIKI/libzip.so  /data/data/com.pubg.krmobile/lib
+tsu -c cp -R /storage/emulated/0/MALIKI/libTDataMaster.so  /data/data/com.pubg.krmobile/lib
+tsu -c cp -R /storage/emulated/0/MALIKI/libIMSDK.so  /data/data/com.pubg.krmobile/lib
+tsu -c cp -R /storage/emulated/0/MALIKI/libhelpshiftlistener.so  /data/data/com.pubg.krmobile/lib
+tsu -c cp -R /storage/emulated/0/MALIKI/libcubehawk.so  /data/data/com.pubg.krmobile/lib
+tsu -c cp -R /storage/emulated/0/MALIKI/libBugly.so  /data/data/com.pubg.krmobile/lib
+
+
+tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libBugly.so
+tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libcubehawk.so
+tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libhelpshiftlistener.so
+tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libIMSDK.so
+tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libTDataMaster.so
+tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libzip.so
+tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libzlib.so
 tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libtersafe.so
 tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libtprt.so
-#tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libUE4.so
+tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libUE4.so
 
 echo
 echo
