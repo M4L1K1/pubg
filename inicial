@@ -551,10 +551,21 @@ echo "
 #tsu -c mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/MALIKI
 #tsu -c mv /data/data/com.pubg.krmobile/lib/libtersafe.so /storage/emulated/0/MALIKI
 #tsu -c mv /data/data/com.pubg.krmobile/lib/libtprt.so /storage/emulated/0/MALIKI
-#tsu -c mv /storage/emulated/0/MALIKI/backup/libUE4.so /data/data/com.pubg.krmobile/lib
+tsu -c mv /storage/emulated/0/MALIKI/backup/libUE4.so /data/data/com.pubg.krmobile/lib
 tsu -c mv /storage/emulated/0/MALIKI/backup/libtersafe.so /data/data/com.pubg.krmobile/lib
 tsu -c mv /storage/emulated/0/MALIKI/backup/libtprt.so /data/data/com.pubg.krmobile/lib
 tsu -c mv /storage/emulated/0/MALIKI/backup/login-identifier.txt  /storage/emulated/0/Android/data/com.pubg.krmobile/files
+tsu -c mv /storage/emulated/0/MALIKI/backup/libUE4.so /data/data/com.pubg.krmobile/lib
+tsu -c mv /storage/emulated/0/MALIKI/backup/libtersafe.so /data/data/com.pubg.krmobile/lib
+tsu -c mv /storage/emulated/0/MALIKI/backup/libtprt.so /data/data/com.pubg.krmobile/lib
+tsu -c mv /storage/emulated/0/MALIKI/backup/libzlib.so /data/data/com.pubg.krmobile/lib
+tsu -c mv /storage/emulated/0/MALIKI/backup/libzip.so /data/data/com.pubg.krmobile/lib
+tsu -c mv /storage/emulated/0/MALIKI/backup/libTDataMaster.so /data/data/com.pubg.krmobile/lib
+tsu -c mv /storage/emulated/0/MALIKI/backup/libIMSDK.so /data/data/com.pubg.krmobile/lib
+tsu -c mv /storage/emulated/0/MALIKI/backup/libhelpshiftlistener.so /data/data/com.pubg.krmobile/lib
+tsu -c mv /storage/emulated/0/MALIKI/backup/libcubehawk.so /data/data/com.pubg.krmobile/lib
+tsu -c mv /storage/emulated/0/MALIKI/backup/libBugly.so /data/data/com.pubg.krmobile/lib
+
 sleep 5
 echo '10%'
 clear
