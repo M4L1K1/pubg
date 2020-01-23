@@ -48,7 +48,7 @@ echo
 #echo " O jogo ja está Atualizou ?! pressione Enter para Continuar !!!"
 #read lobby
 am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity
-sleep 15
+sleep 10
 echo
 echo " Alterando as permissões"
 
