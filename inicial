@@ -572,10 +572,14 @@ Menu
 }
 
 Três(){
+echo "Iniciando o jogo "
+sleep 3
 echo 'Host Kr!!!'
 echo 
-echo 
 echo " Não esqueça de já esta com o jogo Logado"
+sleep 3
+am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
+echo 
 echo
 iptables -I INPUT -s 183.3.255.64 intl.cloud.tencent.com -j DROP &>/dev/null
 iptables -I INPUT -s 183.3.255.64 intl.mtp.tencent.com -j DROP &>/dev/null
