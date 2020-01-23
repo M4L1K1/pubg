@@ -11,8 +11,8 @@ echo
 echo 'Escolha a Versão do Jogo : '
 echo 
 echo '1. Global'
-echo '2. Korea'
-echo '3. Restaura Pubg Global e Kr'
+echo '2. Korea Shadow'
+echo '3. Korea 2° opção Libs'
 echo '4. SAIR'
 echo
 echo -n 'Qual a opção desejada : '
@@ -33,47 +33,79 @@ esac
 
 # funcao exibe 1
 Um(){
+echo
 echo 'Iniciando GLobal'
-
+echo
+echo "Script exclusivo Membros Clã Shot "
+echo
+sleep 3 
+echo 'injetando libs' 
+echo
+sleep 3 
 #am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity	 
 
+echo "Aguarde trabalhando nas Libs...."
+echo "Trocando as permissões"
 #sleep 15
 #rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.0.11462.pak
 #rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11463.pak
 #rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11464.pak
 #rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11466.pak
-
+sleep 2 
 echo
 #$lobby
 #echo " O jogo ja está Atualizou ?! pressione Enter para Continuar !!!"
 #read lobby
 am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity
-sleep 10
+echo
+iptables -I INPUT -s 183.3.255.64 intl.cloud.tencent.com -j DROP &>/dev/null
+iptables -I INPUT -s 183.3.255.64 intl.mtp.tencent.com -j DROP &>/dev/null
+iptables -I INPUT -s 183.3.255.64 mtp@tencent.com -j DROP &>/dev/null
+iptables -I INPUT -s 127.0.0.1 localhost -j DROP &>/dev/null
+iptables -I INPUT -s 183.3.255.64 localhost -j DROP &>/dev/null
+iptables -I INPUT -s 127.1.40.2 localhost -j DROP &>/dev/null
+iptables -I INPUT -s 127.0.0.1 localhost.localdomain -j DROP &>/dev/null
+iptables -I INPUT -s 0.0.0.0 local -j DROP &>/dev/null
+iptables -I INPUT -s 255.255.255.255 broadcasthost -j DROP &>/dev/null
+iptables -I INPUT -s ::1 localhost -j DROP &>/dev/null
+iptables -I INPUT -s ::1 ip6-localhost -j DROP &>/dev/null
+iptables -I INPUT -s ::1 ip6-loopback -j DROP &>/dev/null
+iptables -I INPUT -s fe80::1%lo0 localhost -j DROP &>/dev/null
+iptables -I INPUT -s ff00::0 ip6-localnet -j DROP &>/dev/null
+iptables -I INPUT -s ff00::0 ip6-mcastprefix -j DROP &>/dev/null
+iptables -I INPUT -s ff02::1 ip6-allnodes -j DROP &>/dev/null
+iptables -I INPUT -s ff02::2 ip6-allrouters -j DROP &>/dev/null
+iptables -I INPUT -s ff02::3 ip6-allhosts -j DROP &>/dev/null
+iptables -I INPUT -s 183.3.255.64 .net -j DROP &>/dev/null
+iptables -I INPUT -s 183.3.255.64 .com -j DROP &>/dev/null
+iptables -I INPUT -s 183.3.255.64 .org -j DROP &>/dev/null
+echo
+echo
 echo
 echo " Alterando as permissões"
 
-chmod -R 755 /data/data/com.tencent.ig/lib/libUE4.so
+#chmod -R 755 /data/data/com.tencent.ig/lib/libUE4.so
 #chmod -R 755 /data/data/com.tencent.ig/lib/libtersafe.so
-chmod -R 755 /data/data/com.tencent.ig/lib/libtprt.so
+#chmod -R 755 /data/data/com.tencent.ig/lib/libtprt.so
 
 #tsu -c cp -R /storage/emulated/0/MALIKIG/libabase.so /data/data/com.tencent.ig/lib
 #tsu -c cp -R /storage/emulated/0/MALIKIG/libBugly.so /data/data/com.tencent.ig/lib
-tsu -c cp -R /storage/emulated/0/MALIKIG/libtprt.so /data/data/com.tencent.ig/lib
-tsu -c cp -R /storage/emulated/0/MALIKIG/libUE4.so /data/data/com.tencent.ig/lib
+#tsu -c cp -R /storage/emulated/0/MALIKIG/libtprt.so /data/data/com.tencent.ig/lib
+#tsu -c cp -R /storage/emulated/0/MALIKIG/libUE4.so /data/data/com.tencent.ig/lib
 #tsu -c cp -R /storage/emulated/0/MALIKIG/libzip.so /data/data/com.tencent.ig/lib
 #tsu -c cp -R /storage/emulated/0/MALIKIG/libzlib.so /data/data/com.tencent.ig/lib
 
 #tsu -c mv /data/data/com.tencent.ig/lib/libabase.so /storage/emulated/0/MALIKIG/backup
 #tsu -c mv /data/data/com.tencent.ig/lib/libBugly.so /storage/emulated/0/MALIKIG/backup
-tsu -c mv /data/data/com.tencent.ig/lib/libtprt.so /storage/emulated/0/MALIKIG/backup
-tsu -c mv /data/data/com.tencent.ig/lib/libUE4.so /storage/emulated/0/MALIKIG/backup
+#tsu -c mv /data/data/com.tencent.ig/lib/libtprt.so /storage/emulated/0/MALIKIG/backup
+#tsu -c mv /data/data/com.tencent.ig/lib/libUE4.so /storage/emulated/0/MALIKIG/backup
 #tsu -c mv /data/data/com.tencent.ig/lib/libzip.so /storage/emulated/0/MALIKIG/backup
 #tsu -c mv /data/data/com.tencent.ig/lib/libzlib.so /storage/emulated/0/MALIKIG/backup
 
 #chmod -R 755 /data/data/com.tencent.ig/lib/libabase.so 
 #chmod -R 755 /data/data/com.tencent.ig/lib/libBugly.so 
-chmod -R 2755 /data/data/com.tencent.ig/lib/libtprt.so
-chmod -R 2755 /data/data/com.tencent.ig/lib/libUE4.so 
+#chmod -R 2755 /data/data/com.tencent.ig/lib/libtprt.so
+#chmod -R 2755 /data/data/com.tencent.ig/lib/libUE4.so 
 #chmod -R 000 /data/data/com.tencent.ig/lib/libzip.so 
 #chmod -R 000 /data/data/com.tencent.ig/lib/libzlib.so 
 #chmod -R 000 /data/data/com.tencent.ig/lib/libgcloud.so 
@@ -105,51 +137,39 @@ chmod -R 2755 /data/data/com.tencent.ig/lib/libUE4.so
 #chmod -R 664 /data/data/com.tencent.ig/lib/libUE4.so 
 #chmod -R 755 /data/data/com.tencent.ig/lib/libzip.so 
 #chmod -R 755 /data/data/com.tencent.ig/lib/libzlib.so 
-
-
 echo
-
 echo
-
 #codigo novo teste
 #chmod -R 000 /data/data/com.tencent.ig/lib/libgcloud.so
 #chmod -R 000 /data/data/com.tencent.ig/lib/libzip.so
 #chmod -R 000 /data/data/com.tencent.ig/lib/libzlib.so
 #chmod -R 000 /data/data/com.tencent.ig/databases/iMSDK.db
 #codigo novo teste
-
 echo 
-
 echo
-rm -rf /data/data/com.tencent.ig/lib
-rm -rf /data/data/com.tencent.ig/databases/__hs__db_issues
-rm -rf /data/data/com.tencent.ig/databases/__hs__db_issues-shm
-rm -rf /data/data/com.tencent.ig/databases/__hs__db_issues-wal
-rm -rf /data/data/com.tencent.ig/databases/__hs__db_key_values
-rm -rf /data/data/com.tencent.ig/databases/__hs__db_key_values-shm
-rm -rf /data/data/com.tencent.ig/databases/__hs__db_key_values-wal
-rm -rf /data/data/com.tencent.ig/databases/__hs__db_properties
-rm -rf /data/data/com.tencent.ig/databases/__hs__db_properties-shm
-rm -rf /data/data/com.tencent.ig/databases/__hs__db_properties-wal
-rm -rf /data/data/com.tencent.ig/databases/__hs__db_sessions
-rm -rf /data/data/com.tencent.ig/databases/__hs__db_sessions-shm
-rm -rf /data/data/com.tencent.ig/databases/__hs__db_sessions-wal
-rm -rf /data/data/com.tencent.ig/databases/__hs__db_support_key_values
-rm -rf /data/data/com.tencent.ig/databases/__hs__db_support_key_values-shm
-rm -rf /data/data/com.tencent.ig/databases/__hs__db_support_key_values-wal
-rm -rf /data/data/com.tencent.ig/databases/__hs_db_helpshift_users
-rm -rf /data/data/com.tencent.ig/databases/__hs_db_helpshift_users-shm
-rm -rf /data/data/com.tencent.ig/databases/__hs_db_helpshift_users-wal
-rm -rf /data/data/com.tencent.ig/databases/__hs_log_store-shm
-rm -rf /data/data/com.tencent.ig/databases/__hs_log_store-wal
-rm -rf /data/data/com.tencent.ig/databases/__hs_log_store
+#rm -rf /data/data/com.tencent.ig/lib
+#rm -rf /data/data/com.tencent.ig/databases/__hs__db_issues
+#rm -rf /data/data/com.tencent.ig/databases/__hs__db_issues-shm
+#rm -rf /data/data/com.tencent.ig/databases/__hs__db_issues-wal
+#rm -rf /data/data/com.tencent.ig/databases/__hs__db_key_values
+#rm -rf /data/data/com.tencent.ig/databases/__hs__db_key_values-shm
+#rm -rf /data/data/com.tencent.ig/databases/__hs__db_key_values-wal
+#rm -rf /data/data/com.tencent.ig/databases/__hs__db_properties
+#rm -rf /data/data/com.tencent.ig/databases/__hs__db_properties-shm
+#rm -rf /data/data/com.tencent.ig/databases/__hs__db_properties-wal
+#rm -rf /data/data/com.tencent.ig/databases/__hs__db_sessions
+#rm -rf /data/data/com.tencent.ig/databases/__hs__db_sessions-shm
+#rm -rf /data/data/com.tencent.ig/databases/__hs__db_sessions-wal
+#rm -rf /data/data/com.tencent.ig/databases/__hs__db_support_key_values
+#rm -rf /data/data/com.tencent.ig/databases/__hs__db_support_key_values-shm
+#rm -rf /data/data/com.tencent.ig/databases/__hs__db_support_key_values-wal
+#rm -rf /data/data/com.tencent.ig/databases/__hs_db_helpshift_users
+#rm -rf /data/data/com.tencent.ig/databases/__hs_db_helpshift_users-shm
+#rm -rf /data/data/com.tencent.ig/databases/__hs_db_helpshift_users-wal
+#rm -rf /data/data/com.tencent.ig/databases/__hs_log_store-shm
+#rm -rf /data/data/com.tencent.ig/databases/__hs_log_store-wal
+#rm -rf /data/data/com.tencent.ig/databases/__hs_log_store
 
-echo "Script exclusivo Membros Clã Shot "
-sleep 10
-
-echo "Aguarde trabalhando nas Libs...."
-
-echo "Trocando as permissões"
 
 #chmod -R 755 /data/data/com.tencent.ig/lib/libabase.so 
 #chmod -R 755 /data/data/com.tencent.ig/lib/libBugly.so 
@@ -163,28 +183,18 @@ echo "Trocando as permissões"
 
 
 
-echo " libs Trocadas "
+echo " libs Ok"
 
-sleep 3
-echo "Alterando host"
-iptables -I INPUT -s dlied1.qq.com -j DROP &>/dev/null
-iptables -I INPUT -s cloud.gsdk.proximabeta.com -j DROP &>/dev/null
-iptables -I INPUT -s report.helpshift.com -j DROP &>/dev/null
-iptables -I INPUT -s report.qq.com -j DROP &>/dev/null
-iptables -I INPUT -s report.syzs.qq.com -j DROP &>/dev/null
-iptables -I INPUT -s sy.guanjia.qq.com -j DROP &>/dev/null
-rm -rf /data/data/com.tencent.ig/databases/* > /dev/null
-clear
-echo
-echo "pakeges ok "
+echo "pakeges Ok "
 echo
 echo
 echo 
 echo
-rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini 
-tsu -c cp -R /storage/emulated/0/MALIKIG/AntiCheat.ini  /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android
-echo "verifique a pasta com a porra do arquivo "
-sleep 120
+clear
+#rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini 
+#tsu -c cp -R /storage/emulated/0/MALIKIG/AntiCheat.ini  /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android
+#echo "verifique a pasta com a porra do arquivo "
+sleep 80
 FUCKINGLOGS()
 {
 
@@ -225,23 +235,10 @@ rm -rf /data/data/com.tencent.ig/files/hawk_data
 rm -rf /data/data/com.tencent.ig/files/AppEventsLogger.persistedevents
 #fim codigo novo
 #tentativa de bloqueio pra nao usar host 
-
-iptables -I INPUT -s dlied1.qq.com -j DROP &>/dev/null
-iptables -I INPUT -s dlied2.qq.com -j DROP &>/dev/null
-iptables -I INPUT -s dlied3.qq.com -j DROP &>/dev/null
-iptables -I INPUT -s dlied4.qq.com -j DROP &>/dev/null
-iptables -I INPUT -s dlied5.qq.com -j DROP &>/dev/null
-iptables -I INPUT -s dlied6.qq.com -j DROP &>/dev/null
-iptables -I INPUT -s cloud.gsdk.proximabeta.com -j DROP &>/dev/null
-iptables -I INPUT -s vmp.qq.com -j DROP &>/dev/null
-iptables -I INPUT -s report.helpshift.com -j DROP &>/dev/null
-iptables -I INPUT -s report.qq.com -j DROP &>/dev/null
-iptables -I INPUT -s report.syzs.qq.com -j DROP &>/dev/null
-iptables -I INPUT -s sy.guanjia.qq.com -j DROP &>/dev/null
-iptables -I INPUT -s astat.bugly.qcloud.com -j DROP &>/dev/null
-
-
+echo
+date
 echo " Log Apagado "
+
 }
 PACKAGE='com.tencent.ig'
 while [ $(pidof $PACKAGE) ]
@@ -258,14 +255,14 @@ done
 
 #tsu -c mv /storage/emulated/0/MALIKIG/backup/libabase.so /data/data/com.tencent.ig/lib
 #tsu -c mv /storage/emulated/0/MALIKIG/backup/libBugly.so /data/data/com.tencent.ig/lib
-tsu -c mv /storage/emulated/0/MALIKIG/backup/libtprt.so /data/data/com.tencent.ig/lib
-tsu -c mv /storage/emulated/0/MALIKIG/backup/libUE4.so /data/data/com.tencent.ig/lib
+#tsu -c mv /storage/emulated/0/MALIKIG/backup/libtprt.so /data/data/com.tencent.ig/lib
+#tsu -c mv /storage/emulated/0/MALIKIG/backup/libUE4.so /data/data/com.tencent.ig/lib
 #tsu -c mv /storage/emulated/0/MALIKIG/backup/libzip.so /data/data/com.tencent.ig/lib
 #tsu -c mv /storage/emulated/0/MALIKIG/backup/libzlib.so /data/data/com.tencent.ig/lib
 
-rm -rf /storage/emulated/0/MALIKIG/backup/*
+#rm -rf /storage/emulated/0/MALIKIG/backup/*
 
-pm install -r /data/app/com.tencent.ig*/base.apk
+#pm install -r /data/app/com.tencent.ig*/base.apk
 
 su -c iptables --flush
 Menu
@@ -574,9 +571,9 @@ Menu
 Três(){
 echo "Iniciando o jogo "
 sleep 3
-echo 'Host Kr!!!'
+echo 'Libs Trocadas'
 echo 
-echo " Não esqueça de já esta com o jogo Logado"
+echo "Injector Ativo"
 sleep 3
 am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
 echo 
@@ -604,7 +601,7 @@ iptables -I INPUT -s 183.3.255.64 .com -j DROP &>/dev/null
 iptables -I INPUT -s 183.3.255.64 .org -j DROP &>/dev/null
 echo
 echo
-echo "host injetado"
+echo "Libs Injector 1.0M "
 
 sleep 80
 while tsu -c   ps aux | grep -v grep | grep krmobile > /dev/empty
@@ -686,6 +683,8 @@ echo " 100 % retornando ao Menu"
 
 #mv /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra /storage/emulated/0/Korea/Backup 
 #mv /storage/emulated/0/Korea/mod/ShadowTrackerExtra /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/
+su -c iptables --flush
+
 echo "100% completa"
 sleep 4
 clear 
