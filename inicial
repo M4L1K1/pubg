@@ -42,20 +42,10 @@ sleep 3
 echo 'injetando libs' 
 echo
 sleep 3 
-#am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity	 
-
 echo "Aguarde trabalhando nas Libs...."
 echo "Trocando as permissões"
-#sleep 15
-#rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.0.11462.pak
-#rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11463.pak
-#rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11464.pak
-#rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11466.pak
 sleep 2 
 echo
-#$lobby
-#echo " O jogo ja está Atualizou ?! pressione Enter para Continuar !!!"
-#read lobby
 am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity
 echo
 iptables -I INPUT -s 183.3.255.64 intl.cloud.tencent.com -j DROP &>/dev/null
@@ -83,106 +73,6 @@ echo
 echo
 echo
 echo " Alterando as permissões"
-
-#chmod -R 755 /data/data/com.tencent.ig/lib/libUE4.so
-#chmod -R 755 /data/data/com.tencent.ig/lib/libtersafe.so
-#chmod -R 755 /data/data/com.tencent.ig/lib/libtprt.so
-
-#tsu -c cp -R /storage/emulated/0/MALIKIG/libabase.so /data/data/com.tencent.ig/lib
-#tsu -c cp -R /storage/emulated/0/MALIKIG/libBugly.so /data/data/com.tencent.ig/lib
-#tsu -c cp -R /storage/emulated/0/MALIKIG/libtprt.so /data/data/com.tencent.ig/lib
-#tsu -c cp -R /storage/emulated/0/MALIKIG/libUE4.so /data/data/com.tencent.ig/lib
-#tsu -c cp -R /storage/emulated/0/MALIKIG/libzip.so /data/data/com.tencent.ig/lib
-#tsu -c cp -R /storage/emulated/0/MALIKIG/libzlib.so /data/data/com.tencent.ig/lib
-
-#tsu -c mv /data/data/com.tencent.ig/lib/libabase.so /storage/emulated/0/MALIKIG/backup
-#tsu -c mv /data/data/com.tencent.ig/lib/libBugly.so /storage/emulated/0/MALIKIG/backup
-#tsu -c mv /data/data/com.tencent.ig/lib/libtprt.so /storage/emulated/0/MALIKIG/backup
-#tsu -c mv /data/data/com.tencent.ig/lib/libUE4.so /storage/emulated/0/MALIKIG/backup
-#tsu -c mv /data/data/com.tencent.ig/lib/libzip.so /storage/emulated/0/MALIKIG/backup
-#tsu -c mv /data/data/com.tencent.ig/lib/libzlib.so /storage/emulated/0/MALIKIG/backup
-
-#chmod -R 755 /data/data/com.tencent.ig/lib/libabase.so 
-#chmod -R 755 /data/data/com.tencent.ig/lib/libBugly.so 
-#chmod -R 2755 /data/data/com.tencent.ig/lib/libtprt.so
-#chmod -R 2755 /data/data/com.tencent.ig/lib/libUE4.so 
-#chmod -R 000 /data/data/com.tencent.ig/lib/libzip.so 
-#chmod -R 000 /data/data/com.tencent.ig/lib/libzlib.so 
-#chmod -R 000 /data/data/com.tencent.ig/lib/libgcloud.so 
-
-
-
-
-#CHUNK=$(yes '\x1E\xFF\x2F\xE1\x1C\xB0\x8D\xE2' | head -n 1500 | tr -d '\n'); NUMGEN=$(seq 4000 | tr '\r\n' ' '); printf $CHUNK%.0s $NUMGEN &> libUE4.so
-#echo "Generating libtersafe.so"
-#CHUNK=$(yes '\x1E\xFF\x2F\xE1\x1C\xB0\x8D\xE2' | head -n 100 | tr -d '\n'); NUMGEN=$(seq 4000 | tr '\r\n' ' '); printf $CHUNK%.0s $NUMGEN &> libtersafe.so
-#echo "Generating libtprt.so"
-#CHUNK=$(yes '\x1E\xFF\x2F\xE1\x1C\xB0\x8D\xE2' | head -n 20 | tr -d '\n'); NUMGEN=$(seq 4000 | tr '\r\n' ' '); printf $CHUNK%.0s $NUMGEN &> libtprt.so
-
-#mv /data/data/com.tencent.ig/lib/libUE4.so ../
-#mv /data/data/com.tencent.ig/lib/libtersafe.so ../
-#mv /data/data/com.tencent.ig/lib/libtprt.so ../
-#mv libUE4.so /data/data/com.tencent.ig/lib
-#mv libtersafe.so /data/data/com.tencent.ig/lib
-#mv libtprt.so /data/data/com.tencent.ig/lib
-
-
-#chown 1000:1000 /data/data/com.tencent.ig/lib/libUE4.so
-#chown 1000:1000 /data/data/com.tencent.ig/lib/libtersafe.so
-#chown 1000:1000 /data/data/com.tencent.ig/lib/libtprt.so
-
-#chmod -R 755 /data/data/com.tencent.ig/lib/libabase.so 
-#chmod -R 755 /data/data/com.tencent.ig/lib/libBugly.so 
-#chmod -R 664 /data/data/com.tencent.ig/lib/libtprt.so
-#chmod -R 664 /data/data/com.tencent.ig/lib/libUE4.so 
-#chmod -R 755 /data/data/com.tencent.ig/lib/libzip.so 
-#chmod -R 755 /data/data/com.tencent.ig/lib/libzlib.so 
-echo
-echo
-#codigo novo teste
-#chmod -R 000 /data/data/com.tencent.ig/lib/libgcloud.so
-#chmod -R 000 /data/data/com.tencent.ig/lib/libzip.so
-#chmod -R 000 /data/data/com.tencent.ig/lib/libzlib.so
-#chmod -R 000 /data/data/com.tencent.ig/databases/iMSDK.db
-#codigo novo teste
-echo 
-echo
-#rm -rf /data/data/com.tencent.ig/lib
-#rm -rf /data/data/com.tencent.ig/databases/__hs__db_issues
-#rm -rf /data/data/com.tencent.ig/databases/__hs__db_issues-shm
-#rm -rf /data/data/com.tencent.ig/databases/__hs__db_issues-wal
-#rm -rf /data/data/com.tencent.ig/databases/__hs__db_key_values
-#rm -rf /data/data/com.tencent.ig/databases/__hs__db_key_values-shm
-#rm -rf /data/data/com.tencent.ig/databases/__hs__db_key_values-wal
-#rm -rf /data/data/com.tencent.ig/databases/__hs__db_properties
-#rm -rf /data/data/com.tencent.ig/databases/__hs__db_properties-shm
-#rm -rf /data/data/com.tencent.ig/databases/__hs__db_properties-wal
-#rm -rf /data/data/com.tencent.ig/databases/__hs__db_sessions
-#rm -rf /data/data/com.tencent.ig/databases/__hs__db_sessions-shm
-#rm -rf /data/data/com.tencent.ig/databases/__hs__db_sessions-wal
-#rm -rf /data/data/com.tencent.ig/databases/__hs__db_support_key_values
-#rm -rf /data/data/com.tencent.ig/databases/__hs__db_support_key_values-shm
-#rm -rf /data/data/com.tencent.ig/databases/__hs__db_support_key_values-wal
-#rm -rf /data/data/com.tencent.ig/databases/__hs_db_helpshift_users
-#rm -rf /data/data/com.tencent.ig/databases/__hs_db_helpshift_users-shm
-#rm -rf /data/data/com.tencent.ig/databases/__hs_db_helpshift_users-wal
-#rm -rf /data/data/com.tencent.ig/databases/__hs_log_store-shm
-#rm -rf /data/data/com.tencent.ig/databases/__hs_log_store-wal
-#rm -rf /data/data/com.tencent.ig/databases/__hs_log_store
-
-
-#chmod -R 755 /data/data/com.tencent.ig/lib/libabase.so 
-#chmod -R 755 /data/data/com.tencent.ig/lib/libBugly.so 
-#chmod -R 755 /data/data/com.tencent.ig/lib/libtprt.so
-#chmod -R 755 /data/data/com.tencent.ig/lib/libUE4.so 
-#chmod -R 755 /data/data/com.tencent.ig/lib/libzip.so 
-#chmod -R 755 /data/data/com.tencent.ig/lib/libzlib.so 
-
-
-
-
-
-
 echo " libs Ok"
 
 echo "pakeges Ok "
@@ -191,9 +81,6 @@ echo
 echo 
 echo
 clear
-#rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini 
-#tsu -c cp -R /storage/emulated/0/MALIKIG/AntiCheat.ini  /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android
-#echo "verifique a pasta com a porra do arquivo "
 sleep 80
 FUCKINGLOGS()
 {
@@ -250,20 +137,6 @@ break
 fi
 done
 
-
-#tsu -c cp -R /data/app/com.tencent.ig* /lib/libUE4.so /data/data/com.tencent.ig/lib/
-
-#tsu -c mv /storage/emulated/0/MALIKIG/backup/libabase.so /data/data/com.tencent.ig/lib
-#tsu -c mv /storage/emulated/0/MALIKIG/backup/libBugly.so /data/data/com.tencent.ig/lib
-#tsu -c mv /storage/emulated/0/MALIKIG/backup/libtprt.so /data/data/com.tencent.ig/lib
-#tsu -c mv /storage/emulated/0/MALIKIG/backup/libUE4.so /data/data/com.tencent.ig/lib
-#tsu -c mv /storage/emulated/0/MALIKIG/backup/libzip.so /data/data/com.tencent.ig/lib
-#tsu -c mv /storage/emulated/0/MALIKIG/backup/libzlib.so /data/data/com.tencent.ig/lib
-
-#rm -rf /storage/emulated/0/MALIKIG/backup/*
-
-#pm install -r /data/app/com.tencent.ig*/base.apk
-
 su -c iptables --flush
 Menu
 }
@@ -280,167 +153,20 @@ sleep 4
 
 am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
 sleep 15
-#tsu -c chmod 2755 /data/data/com.pubg.krmobile/lib/libUE4.so
 tsu -c chmod 2775 /data/data/com.pubg.krmobile/cache/*
-#tsu -c chmod 777 /data/data/com.termux/files/usr/etc
-
-
-
-#tsu -c mv /data/data/com.pubg.krmobile/lib/libzlib.so /storage/emulated/0/MALIKI/backup
-#tsu -c mv /data/data/com.pubg.krmobile/lib/libzip.so /storage/emulated/0/MALIKI/backup
-#tsu -c mv /data/data/com.pubg.krmobile/lib/libTDataMaster.so /storage/emulated/0/MALIKI/backup
-#tsu -c mv /data/data/com.pubg.krmobile/lib/libIMSDK.so /storage/emulated/0/MALIKI/backup
-#tsu -c mv /data/data/com.pubg.krmobile/lib/libhelpshiftlistener.so /storage/emulated/0/MALIKI/backup
-#tsu -c mv /data/data/com.pubg.krmobile/lib/libcubehawk.so /storage/emulated/0/MALIKI/backup
-#tsu -c mv /data/data/com.pubg.krmobile/lib/libBugly.so /storage/emulated/0/MALIKI/backup
-#tsu -c mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/MALIKI/backup
 tsu -c mv /data/data/com.pubg.krmobile/lib/libtprt.so /storage/emulated/0/MALIKI/backup
 tsu -c mv /data/data/com.pubg.krmobile/lib/libtersafe.so /storage/emulated/0/MALIKI/backup
 tsu -c cp -R /storage/emulated/0/MALIKI/libtprt.so  /data/data/com.pubg.krmobile/lib
 tsu -c cp -R /storage/emulated/0/MALIKI/libtersafe.so  /data/data/com.pubg.krmobile/lib
-#tsu -c cp -R /storage/emulated/0/MALIKI/libUE4.so  /data/data/com.pubg.krmobile/lib
-#tsu -c cp -R /storage/emulated/0/MALIKI/libzlib.so  /data/data/com.pubg.krmobile/lib
-#tsu -c cp -R /storage/emulated/0/MALIKI/libzip.so  /data/data/com.pubg.krmobile/lib
-#tsu -c cp -R /storage/emulated/0/MALIKI/libTDataMaster.so  /data/data/com.pubg.krmobile/lib
-#tsu -c cp -R /storage/emulated/0/MALIKI/libIMSDK.so  /data/data/com.pubg.krmobile/lib
-#tsu -c cp -R /storage/emulated/0/MALIKI/libhelpshiftlistener.so  /data/data/com.pubg.krmobile/lib
-#tsu -c cp -R /storage/emulated/0/MALIKI/libcubehawk.so  /data/data/com.pubg.krmobile/lib
-#tsu -c cp -R /storage/emulated/0/MALIKI/libBugly.so  /data/data/com.pubg.krmobile/lib
-
-
-#tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libBugly.so
-#tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libcubehawk.so
-#tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libhelpshiftlistener.so
-#tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libIMSDK.so
-#tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libTDataMaster.so
-#tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libzip.so
-#tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libzlib.so
 tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libtersafe.so
 tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libtprt.so
-#tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libUE4.so
 
 echo
 echo
-
-#am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
-
-echo 
-#tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/apollo_reslist.flist
-#tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/filelist.json
-#tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_tmp
-#tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs
-#tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/PufferFileList.json
-#tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/new.filelist
-#tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/5135419_47_0.16.5.11560_20200108100228_1861002805_cures.ifs.res
-#tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1375135419_47_0.16.5.11560_20200108100228_1861002805_cures.ifs.cures
-echo 
-#tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.0.11462.pak
-#tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.5.11560.pak
-#tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11463.pak
-#tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11464.pak
-#tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11466.pak
-#tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini
-#tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords
-#tsu -c cp -R /storage/emulated/0/MALIKI/core_patch_0.16.0.11462.pak   /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
-#tsu -c cp -R /storage/emulated/0/MALIKI/core_patch_0.16.5.11560.pak   /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
-#tsu -c cp -R /storage/emulated/0/MALIKI/game_patch_0.16.0.11463.pak  /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
-#tsu -c cp -R /storage/emulated/0/MALIKI/game_patch_0.16.0.11464.pak  /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
-#tsu -c cp -R /storage/emulated/0/MALIKI/game_patch_0.16.0.11466.pak  /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
-#tsu -c cp -R /storage/emulated/0/MALIKI/game_patch_0.16.5.11562.pak  /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
-#tsu -c cp -R /storage/emulated/0/MALIKI/SrcVersion.ini                 /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved
-#tsu -c cp -R /storage/emulated/0/MALIKI/GameErrorNoRecords /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved
-#tsu -c chmod -R 660 /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.0.11462.pak
-#tsu -c chmod -R 660 /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.5.11560.pak
-#tsu -c chmod -R 660 /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11463.pak
-#tsu -c chmod -R 660 /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11464.pak
-#tsu -c chmod -R 660 /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11466.pak
-#tsu -c chmod -R 660 /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.5.11562.pak
-echo "Succesfull 100%"
-
-
-
-echo " "
-echo " "
-echo " "
-echo " "
-#sleep 10
-#tsu -c mv /storage/emulated/0/Android/data/com.pubg.krmobile/files/login-identifier.txt /storage/emulated/0/MALIKI/backup
-#codigo novo
-#tsu -c cp -R /storage/emulated/0/MALIKI/core_patch_0.16.0.11462.pak  /storage/emulated/0/MALIKI/Pach
-#tsu -c cp -R /storage/emulated/0/MALIKI/core_patch_0.16.5.11560.pak  /storage/emulated/0/MALIKI/Pach
-#tsu -c cp -R /storage/emulated/0/MALIKI/game_patch_0.16.0.11463.pak  /storage/emulated/0/MALIKI/Pach
-#tsu -c cp -R /storage/emulated/0/MALIKI/game_patch_0.16.0.11464.pak  /storage/emulated/0/MALIKI/Pach
-#tsu -c cp -R /storage/emulated/0/MALIKI/game_patch_0.16.0.11466.pak  /storage/emulated/0/MALIKI/Pach
-#tsu -c cp -R /storage/emulated/0/MALIKI/game_patch_0.16.5.11562.pak  /storage/emulated/0/MALIKI/Pach
-#tsu -c cp -R /storage/emulated/0/MALIKI/GameErrorNoRecords  /storage/emulated/0/MALIKI/Pach
-#tsu -c cp -R /storage/emulated/0/MALIKI/SrcVersion.ini  /storage/emulated/0/MALIKI/Pach
-
-echo
-echo
-#rm -rf /data/data/com.pubg.krmobile/files/tss_tmp/comm.dat
-#rm -rf /data/data/com.pubg.krmobile/files/tss_tmp/config2.xml.b99a2eec
-#rm -rf /data/data/com.pubg.krmobile/files/tss_tmp/config3.xml
-#rm -rf /data/data/com.pubg.krmobile/files/tss_tmp/gp4.ano.dat
-#rm -rf /data/data/com.pubg.krmobile/files/tss_tmp/mn_cache.dat
-#rm -rf /data/data/com.pubg.krmobile/files/tss_tmp/mrpcs.data
-#rm -rf /data/data/com.pubg.krmobile/files/tss_tmp/tss_base.dat
-#rm -rf /data/data/com.pubg.krmobile/files/tss_tmp/tss_cef.dat
-#rm -rf /data/data/com.pubg.krmobile/files/tss_tmp/tss_cfg2.dat
-#rm -rf /data/data/com.pubg.krmobile/files/tss_tmp/tss_emu_c2.dat
-#rm -rf /data/data/com.pubg.krmobile/files/tss_tmp/tss_lcp.dat
-#rm -rf /data/data/com.pubg.krmobile/files/tss_tmp/tss_r_record.dat
-#rm -rf /data/data/com.pubg.krmobile/files/tss_tmp/tss_shp_tmp.dat
-#rm -rf /data/data/com.pubg.krmobile/files/tss_tmp/tss.ano.dat
-#rm -rf /data/data/com.pubg.krmobile/files/tss_tmp/tssmua.zip
-#cp /storage/emulated/0/MALIKI/comm.dat              /data/data/com.pubg.krmobile/files/tss_tmp/
-#cp /storage/emulated/0/MALIKI/config2.xml.b99a2eec  /data/data/com.pubg.krmobile/files/tss_tmp/
-#cp /storage/emulated/0/MALIKI/config3.xml           /data/data/com.pubg.krmobile/files/tss_tmp/
-#cp /storage/emulated/0/MALIKI/gp4.ano.dat           /data/data/com.pubg.krmobile/files/tss_tmp/
-#cp /storage/emulated/0/MALIKI/mn_cache.dat          /data/data/com.pubg.krmobile/files/tss_tmp/
-#cp /storage/emulated/0/MALIKI/mrpcs.data            /data/data/com.pubg.krmobile/files/tss_tmp/
-#cp /storage/emulated/0/MALIKI/tss_base.dat          /data/data/com.pubg.krmobile/files/tss_tmp/
-#cp /storage/emulated/0/MALIKI/tss_cef.dat           /data/data/com.pubg.krmobile/files/tss_tmp/
-#cp /storage/emulated/0/MALIKI/tss_cfg2.dat          /data/data/com.pubg.krmobile/files/tss_tmp/
-#cp /storage/emulated/0/MALIKI/tss_emu_c2.dat        /data/data/com.pubg.krmobile/files/tss_tmp/
-#cp /storage/emulated/0/MALIKI/tss_lcp.dat           /data/data/com.pubg.krmobile/files/tss_tmp/
-#cp /storage/emulated/0/MALIKI/tss_r_record.dat      /data/data/com.pubg.krmobile/files/tss_tmp/
-#cp /storage/emulated/0/MALIKI/tss_shp_tmp.dat       /data/data/com.pubg.krmobile/files/tss_tmp/
-#cp /storage/emulated/0/MALIKI/tss.ano.dat           /data/data/com.pubg.krmobile/files/tss_tmp/
-#cp /storage/emulated/0/MALIKI/tssmua.zip            /data/data/com.pubg.krmobile/files/tss_tmp/
-
-
-
-#tsu -c mv /storage/emulated/0/MALIKI/Pach/core_patch_0.16.0.11462.pak  /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
-#tsu -c mv /storage/emulated/0/MALIKI/Pach/core_patch_0.16.5.11560.pak  /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
-#tsu -c mv /storage/emulated/0/MALIKI/Pach/game_patch_0.16.0.11463.pak  /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
-#tsu -c mv /storage/emulated/0/MALIKI/Pach/game_patch_0.16.0.11464.pak  /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
-#tsu -c mv /storage/emulated/0/MALIKI/Pach/game_patch_0.16.0.11466.pak  /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
-#tsu -c mv /storage/emulated/0/MALIKI/Pach/game_patch_0.16.5.11562.pak  /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
-#tsu -c mv /storage/emulated/0/MALIKI/Pach/GameErrorNoRecords  /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved
-#tsu -c mv /storage/emulated/0/MALIKI/Pach/SrcVersion.ini  /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved
-
-#tsu -c chmod 440 /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.0.11462.pak
-#tsu -c chmod 440 /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.5.11560.pak
-#tsu -c chmod 440 /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11463.pak
-#tsu -c chmod 440 /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11464.pak
-#tsu -c chmod 440 /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11466.pak 
-#tsu -c chmod 440 /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.5.11562.pak
-#tsu -c chmod 440 /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords
-#tsu -c chmod 440 /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini
-
-
-
-
-
 echo "Pach Copiado"
 echo " "
 echo " "
-sleep 4
 echo " "
-#echo "Troca de libs ok "
-#echo " O jogo ja está no Lobby ?! pressione Enter para Iniciar limpeza !!!"
-#read lobby
-
 echo "Aguardando Carregar Cache"
 sleep 100
 while tsu -c   ps aux | grep -v grep | grep krmobile > /dev/empty
@@ -497,38 +223,8 @@ tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/S
 
 echo
 date
-echo
-      
-#rm -rf  /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs &> /dev/null
-#rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Season &> /dev/null
-#rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/RoleInfo &> /dev/null
-#rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/PersonSpace &> /dev/null
-#rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Match &> /dev/null
-#rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/LobbyBubble &> /dev/null
-#rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/GEM &> /dev/null
-#rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Loading &> /dev/null
-#rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Character &> /dev/null
-#rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Activity &> /dev/null
-#rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo/RoleInfo.json &> /dev/null
-#rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/cache/*
-#rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/login-identifier.txt
-#rm -rf /data/data/com.pubg.krmobile/app_bugly/tomb_1565956570550.txt
-#rm -rf /data/data/com.pubg.krmobile/app_bugly/tomb_1565957246658.txt
-#rm -rf /data/data/com.pubg.krmobile/cache/*
+echo      
 echo "passou por todos comandos"
-#iptables -I INPUT -s dlied1.qq.com -j DROP &>/dev/null
-#iptables -I INPUT -s dlied2.qq.com -j DROP &>/dev/null
-#iptables -I INPUT -s dlied3.qq.com -j DROP &>/dev/null
-#iptables -I INPUT -s dlied4.qq.com -j DROP &>/dev/null
-#iptables -I INPUT -s dlied5.qq.com -j DROP &>/dev/null
-#iptables -I INPUT -s dlied6.qq.com -j DROP &>/dev/null
-#iptables -I INPUT -s cloud.gsdk.proximabeta.com -j DROP &>/dev/null
-#iptables -I INPUT -s vmp.qq.com -j DROP &>/dev/null
-#iptables -I INPUT -s report.helpshift.com -j DROP &>/dev/null
-#iptables -I INPUT -s report.qq.com -j DROP &>/dev/null
-#iptables -I INPUT -s report.syzs.qq.com -j DROP &>/dev/null
-#iptables -I INPUT -s sy.guanjia.qq.com -j DROP &>/dev/null
-#iptables -I INPUT -s astat.bugly.qcloud.com -j DROP &>/dev/null
 echo "bloqueou Host"
 sleep 5 
 done
@@ -541,20 +237,8 @@ echo "
 ▔▔┗┗▔▔▔▔┛┛▔▔▔▔▔▔
 "
 
-#tsu -c mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/MALIKI
-#tsu -c mv /data/data/com.pubg.krmobile/lib/libtersafe.so /storage/emulated/0/MALIKI
-#tsu -c mv /data/data/com.pubg.krmobile/lib/libtprt.so /storage/emulated/0/MALIKI
-tsu -c mv /storage/emulated/0/MALIKI/backup/login-identifier.txt  /storage/emulated/0/Android/data/com.pubg.krmobile/files
-#tsu -c mv /storage/emulated/0/MALIKI/backup/libUE4.so /data/data/com.pubg.krmobile/lib
 tsu -c mv /storage/emulated/0/MALIKI/backup/libtersafe.so /data/data/com.pubg.krmobile/lib
 tsu -c mv /storage/emulated/0/MALIKI/backup/libtprt.so /data/data/com.pubg.krmobile/lib
-#tsu -c mv /storage/emulated/0/MALIKI/backup/libzlib.so /data/data/com.pubg.krmobile/lib
-#tsu -c mv /storage/emulated/0/MALIKI/backup/libzip.so /data/data/com.pubg.krmobile/lib
-#tsu -c mv /storage/emulated/0/MALIKI/backup/libTDataMaster.so /data/data/com.pubg.krmobile/lib
-#tsu -c mv /storage/emulated/0/MALIKI/backup/libIMSDK.so /data/data/com.pubg.krmobile/lib
-#tsu -c mv /storage/emulated/0/MALIKI/backup/libhelpshiftlistener.so /data/data/com.pubg.krmobile/lib
-#tsu -c mv /storage/emulated/0/MALIKI/backup/libcubehawk.so /data/data/com.pubg.krmobile/lib
-#tsu -c mv /storage/emulated/0/MALIKI/backup/libBugly.so /data/data/com.pubg.krmobile/lib
 
 sleep 5
 echo '10%'
