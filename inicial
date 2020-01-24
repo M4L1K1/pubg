@@ -156,10 +156,22 @@ sleep 15
 tsu -c chmod 2775 /data/data/com.pubg.krmobile/cache/*
 tsu -c mv /data/data/com.pubg.krmobile/lib/libtprt.so /storage/emulated/0/MALIKI/backup
 tsu -c mv /data/data/com.pubg.krmobile/lib/libtersafe.so /storage/emulated/0/MALIKI/backup
+tsu -c mv /data/data/com.pubg.krmobile/lib/libgcloud.so /storage/emulated/0/MALIKI/backup
+tsu -c mv /data/data/com.pubg.krmobile/lib/libabase.so /storage/emulated/0/MALIKI/backup
+tsu -c mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/MALIKI/backup
+
+tsu -c cp -R /storage/emulated/0/MALIKI/libUE4.so  /data/data/com.pubg.krmobile/lib
+tsu -c cp -R /storage/emulated/0/MALIKI/libabase.so  /data/data/com.pubg.krmobile/lib
+tsu -c cp -R /storage/emulated/0/MALIKI/libgcloud.so  /data/data/com.pubg.krmobile/lib
 tsu -c cp -R /storage/emulated/0/MALIKI/libtprt.so  /data/data/com.pubg.krmobile/lib
 tsu -c cp -R /storage/emulated/0/MALIKI/libtersafe.so  /data/data/com.pubg.krmobile/lib
 tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libtersafe.so
 tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libtprt.so
+tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libabase.so
+tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libgcloud.so
+tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libUE4.so
+
+
 
 echo
 echo
