@@ -352,6 +352,27 @@ tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/S
 tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Season
 tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1375135419_47_0.16.5.11560_20200108100228_1861002805_cures.ifs.cures
 
+iptables -I INPUT -s 183.3.255.64 intl.cloud.tencent.com -j DROP &>/dev/null
+iptables -I INPUT -s 183.3.255.64 intl.mtp.tencent.com -j DROP &>/dev/null
+iptables -I INPUT -s 183.3.255.64 mtp@tencent.com -j DROP &>/dev/null
+iptables -I INPUT -s 127.0.0.1 localhost -j DROP &>/dev/null
+iptables -I INPUT -s 183.3.255.64 localhost -j DROP &>/dev/null
+iptables -I INPUT -s 127.1.40.2 localhost -j DROP &>/dev/null
+iptables -I INPUT -s 127.0.0.1 localhost.localdomain -j DROP &>/dev/null
+iptables -I INPUT -s 0.0.0.0 local -j DROP &>/dev/null
+iptables -I INPUT -s 255.255.255.255 broadcasthost -j DROP &>/dev/null
+iptables -I INPUT -s ::1 localhost -j DROP &>/dev/null
+iptables -I INPUT -s ::1 ip6-localhost -j DROP &>/dev/null
+iptables -I INPUT -s ::1 ip6-loopback -j DROP &>/dev/null
+iptables -I INPUT -s fe80::1%lo0 localhost -j DROP &>/dev/null
+iptables -I INPUT -s ff00::0 ip6-localnet -j DROP &>/dev/null
+iptables -I INPUT -s ff00::0 ip6-mcastprefix -j DROP &>/dev/null
+iptables -I INPUT -s ff02::1 ip6-allnodes -j DROP &>/dev/null
+iptables -I INPUT -s ff02::2 ip6-allrouters -j DROP &>/dev/null
+iptables -I INPUT -s ff02::3 ip6-allhosts -j DROP &>/dev/null
+iptables -I INPUT -s 183.3.255.64 .net -j DROP &>/dev/null
+iptables -I INPUT -s 183.3.255.64 .com -j DROP &>/dev/null
+iptables -I INPUT -s 183.3.255.64 .org -j DROP &>/dev/null
 echo
 date
 echo
