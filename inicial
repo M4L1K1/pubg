@@ -5,13 +5,13 @@ Menu(){
 clear
 echo '----------------------------------------------'
 echo 'Atenção para as Opções, Não esquecer de alterar
-      as Permições da pasta e Sub Pastas Vesão 2.0.80 '
+      as Permições da pasta e Sub Pastas Vesão 2.0.81 '
 echo '----------------------------------------------'
 echo
 echo 'Escolha a Versão do Jogo : '
 echo 
 echo '1. Global'
-echo '2. Korea Shadow'
+echo '2. Korea Paks'
 echo '3. Korea 2° opção Libs'
 echo '4. SAIR'
 echo
@@ -172,11 +172,14 @@ tsu -c cp -R /storage/emulated/0/MALIKI/core_patch_0.17.0.11800.pak /storage/emu
 tsu -c cp -R /storage/emulated/0/MALIKI/core_patch_0.17.0.11800.pak /storage/emulated/0/MALIKI/ /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/
 tsu -c cp -R /storage/emulated/0/MALIKI/core_patch_0.17.0.11801.pak /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/
 tsu -c cp -R /storage/emulated/0/MALIKI/game_patch_0.17.0.11800.pak /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/
+echo Usar Script GG atualizado que esta na Pasta storage/emulated/0/MALIKI 
+sleep 8
 
 am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
 sleep 15
 
 #tsu -c mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/MALIKI/backup
+tsu -c cp -R /data/data/com.pubg.krmobile/shared_prefs/device_id.xml /storage/emulated/0/MALIKI/backup
 
 
 #tsu -c cp -R /storage/emulated/0/MALIKI/libtersafe.so  /data/data/com.pubg.krmobile/lib
@@ -196,6 +199,17 @@ do
       echo "Apagando logs Automatico"
 rm -rf /data/data/com.pubg.krmobile/cache
 rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/cache
+GUEST="/data/data/com.pubg.krmobile/shared_prefs/device_id.xml"
+kill com.pubg.krmobile
+rm -rf $GUEST
+echo "<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name=\"random\"></string>
+    <string name=\"install\"></string>
+    <string name=\"uuid\">$RANDOM$RANDOM-$RANDOM-$RANDOM-$RANDOM-$RANDOM$RANDOM$RANDOM</string>
+</map>" > $GUEST
+rm -rf /data/data/com.pubg.krmobile/databases
+rm -rf /data/media/0/Android/data/com.pubg.krmobile/files/login-identifier.txt
 echo
 date
 echo      
@@ -212,8 +226,8 @@ echo "
 ▔▔┗┗▔▔▔▔┛┛▔▔▔▔▔▔
 "
 
-tsu -c mv /storage/emulated/0/MALIKI/backup/libtersafe.so /data/data/com.pubg.krmobile/lib
-tsu -c mv /storage/emulated/0/MALIKI/backup/libtprt.so /data/data/com.pubg.krmobile/lib
+#tsu -c mv /storage/emulated/0/MALIKI/backup/libtersafe.so /data/data/com.pubg.krmobile/lib
+#tsu -c mv /storage/emulated/0/MALIKI/backup/libtprt.so /data/data/com.pubg.krmobile/lib
 
 sleep 5
 echo '10%'
@@ -222,7 +236,7 @@ echo '40%'
 clear
 echo '100 %'
 echo "completo retornando ao Menu"
-sleep 4
+sleep 8
 Menu
 
 }
