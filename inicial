@@ -226,7 +226,8 @@ echo "
 ▔▔┗┗▔▔▔▔┛┛▔▔▔▔▔▔
 "
 
-#tsu -c mv /storage/emulated/0/MALIKI/backup/libtersafe.so /data/data/com.pubg.krmobile/lib
+
+tsu -c mv /storage/emulated/0/MALIKI/backup/device_id.xml /data/data/com.pubg.krmobile/shared_prefs
 #tsu -c mv /storage/emulated/0/MALIKI/backup/libtprt.so /data/data/com.pubg.krmobile/lib
 
 sleep 5
