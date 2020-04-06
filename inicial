@@ -149,28 +149,19 @@ echo
 echo "Script exclusivo Membros Clã Shot "
 
 sleep 4
-
+tsu -c cp -R /storage/emulated/0/MALIKI/core_patch_0.17.0.11800.pak /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/
+tsu -c cp -R /storage/emulated/0/MALIKI/core_patch_0.17.0.11800.pak /storage/emulated/0/MALIKI/ /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/
+tsu -c cp -R /storage/emulated/0/MALIKI/core_patch_0.17.0.11801.pak /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/
+tsu -c cp -R /storage/emulated/0/MALIKI/game_patch_0.17.0.11800.pak /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/
 
 am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
 sleep 15
-tsu -c chmod 2775 /data/data/com.pubg.krmobile/cache/*
-tsu -c mv /data/data/com.pubg.krmobile/lib/libtprt.so /storage/emulated/0/MALIKI/backup
-tsu -c mv /data/data/com.pubg.krmobile/lib/libtersafe.so /storage/emulated/0/MALIKI/backup
-tsu -c mv /data/data/com.pubg.krmobile/lib/libgcloud.so /storage/emulated/0/MALIKI/backup
-tsu -c mv /data/data/com.pubg.krmobile/lib/libabase.so /storage/emulated/0/MALIKI/backup
-tsu -c mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/MALIKI/backup
 
-tsu -c cp -R /storage/emulated/0/MALIKI/libUE4.so  /data/data/com.pubg.krmobile/lib
-tsu -c cp -R /storage/emulated/0/MALIKI/libabase.so  /data/data/com.pubg.krmobile/lib
-tsu -c cp -R /storage/emulated/0/MALIKI/libgcloud.so  /data/data/com.pubg.krmobile/lib
-tsu -c cp -R /storage/emulated/0/MALIKI/libtprt.so  /data/data/com.pubg.krmobile/lib
-tsu -c cp -R /storage/emulated/0/MALIKI/libtersafe.so  /data/data/com.pubg.krmobile/lib
-tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libtersafe.so
-tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libtprt.so
-tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libabase.so
-tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libgcloud.so
-tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libUE4.so
+#tsu -c mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/MALIKI/backup
 
+
+#tsu -c cp -R /storage/emulated/0/MALIKI/libtersafe.so  /data/data/com.pubg.krmobile/lib
+#tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libtersafe.so
 
 
 echo
@@ -185,54 +176,6 @@ while tsu -c   ps aux | grep -v grep | grep krmobile > /dev/empty
 do
       echo "Apagando logs Automatico"
 
-tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/apollo_reslist.flist
-tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/filelist.json
-tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_tmp
-tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs
-tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/PufferFileList.json
-tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/new.filelist
-tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/5135419_47_0.16.5.11560_20200108100228_1861002805_cures.ifs.res
-tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1375135419_47_0.16.5.11560_20200108100228_1861002805_cures.ifs.cures
-tsu -c rm -rf /storage/emulated/0/tencent
-tsu -c rm -rf /storage/emulated/0/MidasOversea
-tsu -c rm -rf /storage/emulated/0/.backups
-tsu -c rm -rf /storage/emulated/0/.cloudagent
-tsu -c rm -rf /storage/emulated/0/.face
-tsu -c rm -rf /storage/emulated/0/.profig.os
-tsu -c rm -rf /storage/emulated/0/QTAudioEngine
-tsu -c rm -rf /data/data/com.pubg.krmobile/app_bugly
-tsu -c rm -rf /data/data/com.pubg.krmobile/app_crashrecord
-tsu -c rm -rf /data/data/com.pubg.krmobile/cache
-tsu -c rm -rf /data/data/com.pubg.krmobile/no_backup
-tsu -c rm -rf /data/data/com.pubg.krmobile/databases/bugly_db_
-tsu -c rm -rf /data/data/com.pubg.krmobile/databases/config.db
-tsu -c rm -rf /data/data/com.pubg.krmobile/databases/iMSDK.db
-tsu -c rm -rf /data/data/com.pubg.krmobile/files/AppEventsLogger.persistedevents
-tsu -c rm -rf /data/data/com.pubg.krmobile/files/tpnlcache.data
-tsu -c rm -rf /data/data/com.pubg.krmobile/files/tss.i.m.dat
-tsu -c rm -rf /data/data/com.pubg.krmobile/files/tss_app_915c.dat
-tsu -c rm -rf /data/data/com.pubg.krmobile/files/tss_cs_stat2.dat
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/cache
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/ca-bundle.pem
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/cacheFile.txt
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/login-identifier.txt
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/vmpcloudconfig.json
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_tmp
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/PufferFileList.json
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Activity
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Character
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/GEM
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Loading
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/LobbyBubble
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Match
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Season
-tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1375135419_47_0.16.5.11560_20200108100228_1861002805_cures.ifs.cures
-
 echo
 date
 echo      
@@ -240,7 +183,7 @@ echo "passou por todos comandos"
 echo "bloqueou Host"
 sleep 5 
 done
-echo "Jogo Encerrado Restaurando Arquivos  "
+echo "Jogo Encerrado Restaurando Arquivos Apagando Logs  "
 echo "
 ┈╭━━╮┈┈╭━━╮┈┈┈┈
 ┈┃◥◥┃┈┈┃▍▍┃┈┈┈┈
