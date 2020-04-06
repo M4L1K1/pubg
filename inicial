@@ -169,9 +169,9 @@ rm -rf /storage/emulated/0/.backups
 
 sleep 4
 tsu -c cp -R /storage/emulated/0/MALIKI/core_patch_0.17.0.11800.pak /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/
-tsu -c cp -R /storage/emulated/0/MALIKI/core_patch_0.17.0.11800.pak /storage/emulated/0/MALIKI/ /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/
 tsu -c cp -R /storage/emulated/0/MALIKI/core_patch_0.17.0.11801.pak /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/
 tsu -c cp -R /storage/emulated/0/MALIKI/game_patch_0.17.0.11800.pak /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/
+tsu -c cp -R /storage/emulated/0/MALIKI/game_patch_0.17.0.11801.pak /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/
 echo Usar Script GG atualizado que esta na Pasta storage/emulated/0/MALIKI 
 sleep 8
 
