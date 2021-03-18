@@ -1,5 +1,3 @@
-#!/data/data/com.termux/files/usr/bin/bash
-
 echo
 Menu(){
 clear
@@ -11,9 +9,8 @@ echo
 echo 'Escolha a Versão do Jogo : '
 echo 
 echo '1. Global'
-echo '2. Korea Paks'
-echo '3. Korea 2° opção Libs'
-echo '4. SAIR'
+echo '2. Korea'
+echo '3. SAIR'
 echo
 echo -n 'Qual a opção desejada : '
 read opcao # read le a variável opcao
@@ -23,7 +20,6 @@ case $opcao in
 
 1) Um ;; # funcao Um
 2) Dois ;; # funcao Dois
-3) Três ;;
 4) Sair ;;
 *) 'Opção desconhecida.' ; echo; Menu;;
 
@@ -48,98 +44,7 @@ sleep 2
 echo
 am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity
 echo
-iptables -I INPUT -s 183.3.255.64 intl.cloud.tencent.com -j DROP &>/dev/null
-iptables -I INPUT -s 183.3.255.64 intl.mtp.tencent.com -j DROP &>/dev/null
-iptables -I INPUT -s 183.3.255.64 mtp@tencent.com -j DROP &>/dev/null
-iptables -I INPUT -s 127.0.0.1 localhost -j DROP &>/dev/null
-iptables -I INPUT -s 183.3.255.64 localhost -j DROP &>/dev/null
-iptables -I INPUT -s 127.1.40.2 localhost -j DROP &>/dev/null
-iptables -I INPUT -s 127.0.0.1 localhost.localdomain -j DROP &>/dev/null
-iptables -I INPUT -s 0.0.0.0 local -j DROP &>/dev/null
-iptables -I INPUT -s 255.255.255.255 broadcasthost -j DROP &>/dev/null
-iptables -I INPUT -s ::1 localhost -j DROP &>/dev/null
-iptables -I INPUT -s ::1 ip6-localhost -j DROP &>/dev/null
-iptables -I INPUT -s ::1 ip6-loopback -j DROP &>/dev/null
-iptables -I INPUT -s fe80::1%lo0 localhost -j DROP &>/dev/null
-iptables -I INPUT -s ff00::0 ip6-localnet -j DROP &>/dev/null
-iptables -I INPUT -s ff00::0 ip6-mcastprefix -j DROP &>/dev/null
-iptables -I INPUT -s ff02::1 ip6-allnodes -j DROP &>/dev/null
-iptables -I INPUT -s ff02::2 ip6-allrouters -j DROP &>/dev/null
-iptables -I INPUT -s ff02::3 ip6-allhosts -j DROP &>/dev/null
-iptables -I INPUT -s 183.3.255.64 .net -j DROP &>/dev/null
-iptables -I INPUT -s 183.3.255.64 .com -j DROP &>/dev/null
-iptables -I INPUT -s 183.3.255.64 .org -j DROP &>/dev/null
-echo
-echo
-echo
-echo " Alterando as permissões"
-echo " libs Ok"
-
-echo "pakeges Ok "
-echo
-echo
-echo 
-echo
-clear
-sleep 80
-FUCKINGLOGS()
 {
-
-#codigo novo 
-
-rm -rf /sdcard/Android/data/com.tencent.ig/cache
-rm -rf /sdcard/Android/data/com.tencent.ig/files/ca-bundle.pem 	  
-rm -rf /sdcard/Android/data/com.tencent.ig/files/tbslog  	  
-rm -rf /sdcard/Android/data/com.tencent.ig/files/login-identifier.txt
-rm -rf /sdcard/Android/data/com.tencent.ig/files/cacheFile.txt	
-rm -rf /sdcard/Android/data/com.tencent.ig/files/vmpcloudconfig.json
-rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
-rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1375135419_47_0.16.0.11466_20191217120416_135842427_cures.ifs.cures
-rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1375135419_47_0.16.0.11466_20191217120416_135842427_cures.ifs.res
-rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1375135419_47_0.16.5.11560_20200108100228_1861002805_cures.ifs.res
-rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1950038955_3090_0.16.5.11560_20200108020124_1155095217_cures.ifs.res
-rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp
-rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs
-rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/apollo_reslist.flist
-rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/PufferFileList.json
-rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/filelist.json
-rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo/RoleInfo.json
-rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo
-rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
-rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/Engine
-rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag
-rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
-rm -rf /storage/emulated/0/.backups
-rm -rf /storage/emulated/0/tencent
-rm -rf /data/data/com.tencent.ig/app_appcache
-rm -rf /data/data/com.tencent.ig/app_bugly
-rm -rf /data/data/com.tencent.ig/app_crashrecord
-rm -rf /data/data/com.tencent.ig/cache
-rm -rf /data/data/com.tencent.ig/code_cache
-rm -rf /data/data/com.tencent.ig/files/iMSDK
-rm -rf /data/data/com.tencent.ig/files/ss_tmp
-rm -rf /data/data/com.tencent.ig/files/hawk_data
-rm -rf /data/data/com.tencent.ig/files/AppEventsLogger.persistedevents
-#fim codigo novo
-#tentativa de bloqueio pra nao usar host 
-echo
-date
-echo " Log Apagado "
-
-}
-PACKAGE='com.tencent.ig'
-while [ $(pidof $PACKAGE) ]
-do
-FUCKINGLOGS
-if [ ! $(pidof $PACKAGE) ]; then
-break
-
-fi
-done
-
-su -c iptables --flush
-Menu
-}
 
 Dois(){
 echo 'Iniciando Korea Aguarde'
@@ -147,245 +52,18 @@ echo
 echo
 echo
 
-echo "Script exclusivo Membros Clã Shot "
-
-rm -rf /data/data/com.pubg.krmobile/app_appcache
-rm -rf /data/data/com.pubg.krmobile/app_bugly
-rm -rf /data/data/com.pubg.krmobile/app_crashrecord
-rm -rf /data/data/com.pubg.krmobile/app_databases
-rm -rf /data/data/com.pubg.krmobile/app_geolocation
-rm -rf /data/data/com.pubg.krmobile/app_tbs
-rm -rf /data/data/com.pubg.krmobile/app_textures
-rm -rf /data/data/com.pubg.krmobile/app_webview
-rm -rf /data/data/com.pubg.krmobile/app_webview_imsdk_inner_webview
-rm -rf /data/data/com.pubg.krmobile/cache
-rm -rf /data/data/com.pubg.krmobile/code_cache
-rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/tbslog
-rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/cache
-rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
-rm -rf /storage/emulated/0/tencent
-rm -rf /storage/emulated/0/Tencent
-rm -rf /storage/emulated/0/.backups
-
-sleep 4
-tsu -c cp -R /storage/emulated/0/MALIKI/core_patch_0.17.0.11800.pak /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/
-tsu -c cp -R /storage/emulated/0/MALIKI/core_patch_0.17.0.11801.pak /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/
-tsu -c cp -R /storage/emulated/0/MALIKI/game_patch_0.17.0.11800.pak /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/
-tsu -c cp -R /storage/emulated/0/MALIKI/game_patch_0.17.0.11801.pak /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/
-echo Usar Script GG atualizado que esta na Pasta storage/emulated/0/MALIKI 
-sleep 8
-
 am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
 sleep 15
 
-#tsu -c mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/MALIKI/backup
-tsu -c cp -R /data/data/com.pubg.krmobile/shared_prefs/device_id.xml /storage/emulated/0/MALIKI/backup
+#tsu -c mv para mover ou sei la kkkk
 
+#kill com.pubg.krmobile (Vou precisa desse comando para encerrar o termux)
 
-#tsu -c cp -R /storage/emulated/0/MALIKI/libtersafe.so  /data/data/com.pubg.krmobile/lib
-#tsu -c chmod  755 /data/data/com.pubg.krmobile/lib/libtersafe.so
-
-
-echo
-echo
-echo "Pach Copiado"
-echo " "
-echo " "
-echo " "
-echo "Aguardando Carregar Cache"
-sleep 100
-while tsu -c   ps aux | grep -v grep | grep krmobile > /dev/empty
-do
-      echo "Apagando logs Automatico"
-rm -rf /data/data/com.pubg.krmobile/cache
-rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/cache
-GUEST="/data/data/com.pubg.krmobile/shared_prefs/device_id.xml"
-kill com.pubg.krmobile
-rm -rf $GUEST
-echo "<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
-<map>
-    <string name=\"random\"></string>
-    <string name=\"install\"></string>
-    <string name=\"uuid\">$RANDOM$RANDOM-$RANDOM-$RANDOM-$RANDOM-$RANDOM$RANDOM$RANDOM</string>
-</map>" > $GUEST
-rm -rf /data/data/com.pubg.krmobile/databases
-rm -rf /data/media/0/Android/data/com.pubg.krmobile/files/login-identifier.txt
-echo
-date
-echo      
-#echo "passou por todos comandos"
-#echo "bloqueou Host"
-sleep 5 
-done
-echo "Jogo Encerrado Restaurando Arquivos Apagando Logs  "
-echo "
-┈╭━━╮┈┈╭━━╮┈┈┈┈
-┈┃◥◥┃┈┈┃▍▍┃┈┈┈┈
-┗┫┊▇┣┛┗┫▃┊┣┛┈┈┈
-┈╰┳┳╯┈┈╰┳┳╯┈┈┈┈
-▔▔┗┗▔▔▔▔┛┛▔▔▔▔▔▔
-"
-
-
-tsu -c mv /storage/emulated/0/MALIKI/backup/device_id.xml /data/data/com.pubg.krmobile/shared_prefs
-#tsu -c mv /storage/emulated/0/MALIKI/backup/libtprt.so /data/data/com.pubg.krmobile/lib
-
-sleep 5
-echo '10%'
-clear
-echo '40%'
-clear
-echo '100 %'
 echo "completo retornando ao Menu"
 sleep 8
 Menu
 
 }
-
-Três(){
-echo "Iniciando o jogo "
-sleep 3
-echo 'Libs Trocadas'
-echo 
-echo "Injector Ativo"
-sleep 3
-am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
-echo 
-echo
-iptables -I INPUT -s 183.3.255.64 intl.cloud.tencent.com -j DROP &>/dev/null
-iptables -I INPUT -s 183.3.255.64 intl.mtp.tencent.com -j DROP &>/dev/null
-iptables -I INPUT -s 183.3.255.64 mtp@tencent.com -j DROP &>/dev/null
-iptables -I INPUT -s 127.0.0.1 localhost -j DROP &>/dev/null
-iptables -I INPUT -s 183.3.255.64 localhost -j DROP &>/dev/null
-iptables -I INPUT -s 127.1.40.2 localhost -j DROP &>/dev/null
-iptables -I INPUT -s 127.0.0.1 localhost.localdomain -j DROP &>/dev/null
-iptables -I INPUT -s 0.0.0.0 local -j DROP &>/dev/null
-iptables -I INPUT -s 255.255.255.255 broadcasthost -j DROP &>/dev/null
-iptables -I INPUT -s ::1 localhost -j DROP &>/dev/null
-iptables -I INPUT -s ::1 ip6-localhost -j DROP &>/dev/null
-iptables -I INPUT -s ::1 ip6-loopback -j DROP &>/dev/null
-iptables -I INPUT -s fe80::1%lo0 localhost -j DROP &>/dev/null
-iptables -I INPUT -s ff00::0 ip6-localnet -j DROP &>/dev/null
-iptables -I INPUT -s ff00::0 ip6-mcastprefix -j DROP &>/dev/null
-iptables -I INPUT -s ff02::1 ip6-allnodes -j DROP &>/dev/null
-iptables -I INPUT -s ff02::2 ip6-allrouters -j DROP &>/dev/null
-iptables -I INPUT -s ff02::3 ip6-allhosts -j DROP &>/dev/null
-iptables -I INPUT -s 183.3.255.64 .net -j DROP &>/dev/null
-iptables -I INPUT -s 183.3.255.64 .com -j DROP &>/dev/null
-iptables -I INPUT -s 183.3.255.64 .org -j DROP &>/dev/null
-echo
-echo
-echo "Libs Injector 1.0M "
-
-sleep 80
-while tsu -c   ps aux | grep -v grep | grep krmobile > /dev/empty
-do
-      echo "Apagando logs Automatico"
-
-tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/apollo_reslist.flist
-tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/filelist.json
-tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_tmp
-tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs
-tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/PufferFileList.json
-tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/new.filelist
-tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/5135419_47_0.16.5.11560_20200108100228_1861002805_cures.ifs.res
-tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1375135419_47_0.16.5.11560_20200108100228_1861002805_cures.ifs.cures
-tsu -c rm -rf /storage/emulated/0/tencent
-tsu -c rm -rf /storage/emulated/0/MidasOversea
-tsu -c rm -rf /storage/emulated/0/.backups
-tsu -c rm -rf /storage/emulated/0/.cloudagent
-tsu -c rm -rf /storage/emulated/0/.face
-tsu -c rm -rf /storage/emulated/0/.profig.os
-tsu -c rm -rf /storage/emulated/0/QTAudioEngine
-tsu -c rm -rf /data/data/com.pubg.krmobile/app_bugly
-tsu -c rm -rf /data/data/com.pubg.krmobile/app_crashrecord
-tsu -c rm -rf /data/data/com.pubg.krmobile/cache
-tsu -c rm -rf /data/data/com.pubg.krmobile/no_backup
-tsu -c rm -rf /data/data/com.pubg.krmobile/databases/bugly_db_
-tsu -c rm -rf /data/data/com.pubg.krmobile/databases/config.db
-tsu -c rm -rf /data/data/com.pubg.krmobile/databases/iMSDK.db
-tsu -c rm -rf /data/data/com.pubg.krmobile/files/AppEventsLogger.persistedevents
-tsu -c rm -rf /data/data/com.pubg.krmobile/files/tpnlcache.data
-tsu -c rm -rf /data/data/com.pubg.krmobile/files/tss.i.m.dat
-tsu -c rm -rf /data/data/com.pubg.krmobile/files/tss_app_915c.dat
-tsu -c rm -rf /data/data/com.pubg.krmobile/files/tss_cs_stat2.dat
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/cache
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/ca-bundle.pem
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/cacheFile.txt
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/login-identifier.txt
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/vmpcloudconfig.json
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_tmp
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/PufferFileList.json
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Activity
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Character
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/GEM
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Loading
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/LobbyBubble
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Match
-tsu -c rm -rf /storage/emulated/0/android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Season
-tsu -c rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1375135419_47_0.16.5.11560_20200108100228_1861002805_cures.ifs.cures
-
-iptables -I INPUT -s 183.3.255.64 intl.cloud.tencent.com -j DROP &>/dev/null
-iptables -I INPUT -s 183.3.255.64 intl.mtp.tencent.com -j DROP &>/dev/null
-iptables -I INPUT -s 183.3.255.64 mtp@tencent.com -j DROP &>/dev/null
-iptables -I INPUT -s 127.0.0.1 localhost -j DROP &>/dev/null
-iptables -I INPUT -s 183.3.255.64 localhost -j DROP &>/dev/null
-iptables -I INPUT -s 127.1.40.2 localhost -j DROP &>/dev/null
-iptables -I INPUT -s 127.0.0.1 localhost.localdomain -j DROP &>/dev/null
-iptables -I INPUT -s 0.0.0.0 local -j DROP &>/dev/null
-iptables -I INPUT -s 255.255.255.255 broadcasthost -j DROP &>/dev/null
-iptables -I INPUT -s ::1 localhost -j DROP &>/dev/null
-iptables -I INPUT -s ::1 ip6-localhost -j DROP &>/dev/null
-iptables -I INPUT -s ::1 ip6-loopback -j DROP &>/dev/null
-iptables -I INPUT -s fe80::1%lo0 localhost -j DROP &>/dev/null
-iptables -I INPUT -s ff00::0 ip6-localnet -j DROP &>/dev/null
-iptables -I INPUT -s ff00::0 ip6-mcastprefix -j DROP &>/dev/null
-iptables -I INPUT -s ff02::1 ip6-allnodes -j DROP &>/dev/null
-iptables -I INPUT -s ff02::2 ip6-allrouters -j DROP &>/dev/null
-iptables -I INPUT -s ff02::3 ip6-allhosts -j DROP &>/dev/null
-iptables -I INPUT -s 183.3.255.64 .net -j DROP &>/dev/null
-iptables -I INPUT -s 183.3.255.64 .com -j DROP &>/dev/null
-iptables -I INPUT -s 183.3.255.64 .org -j DROP &>/dev/null
-echo
-date
-echo
-echo "bloqueou Host"
-sleep 5 
-done
-echo "Jogo Encerrado Restaurando Arquivos  "
-echo "
-┈╭━━╮┈┈╭━━╮┈┈┈┈
-┈┃◥◥┃┈┈┃▍▍┃┈┈┈┈
-┗┫┊▇┣┛┗┫▃┊┣┛┈┈┈
-┈╰┳┳╯┈┈╰┳┳╯┈┈┈┈
-▔▔┗┗▔▔▔▔┛┛▔▔▔▔▔▔"
-echo " 10% 
-echo "---30%
-echo " ------50%"
-echo " --------------80%"
-echo " 100 % retornando ao Menu"
-
-#rm -rf /storage/emulated/0/MALIKI/backup/*
-#rm -rf /storage/emulated/0/MALIKIG/backup/*
-
-#pm install /data/app/com.tencent.ig*/base.apk
-#pm install /data/app/com.pubg.krmobile*/base.apk
-
-#mv /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra /storage/emulated/0/Korea/Backup 
-#mv /storage/emulated/0/Korea/mod/ShadowTrackerExtra /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/
-su -c iptables --flush
-
-echo "100% completa"
-sleep 4
-clear 
-Menu
-}
-
 Sair(){
 
 if [[ exit ]]; then
