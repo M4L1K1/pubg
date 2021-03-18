@@ -17,7 +17,7 @@ tsu -c chmod 777  pubg
 #tsu -c chmod 777  pubg/motd
 
 tsu -c git clone https://github.com/Sykher/pubg.git
-tsu -c mv Ark /storage/emulated/0/PARK/
+tsu -c mv ark /storage/emulated/0/PARK/
 
 echo
 tsu -c mv pubg/inicial $HOME
