@@ -13,7 +13,6 @@ tsu -c rm -rf conf
 echo
 
 tsu -c chmod 777  pubg
-#tsu -c chmod 777  pubg/bash.bashrc
 #tsu -c chmod 777  pubg/motd
 
 tsu -c git clone https://github.com/Sykher/pubg.git
