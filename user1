@@ -5,33 +5,21 @@ apt-get --assume-yes install tsu
 apt-get --assume-yes install wget
 apt-get --assume-yes install git
 apt-get --assume-yes install pearl
-tsu -c rm -rf  /storage/emulated/0/MALIKI
-tsu -c rm -rf  /storage/emulated/0/MALIKIG
+tsu -c rm -rf  /storage/emulated/0/PARK
 tsu -c rm -rf pubg
 tsu -c rm -rf inicial
 tsu -c rm -rf conf
-tsu -c mkdir -p /storage/emulated/0/MALIKI/{backup,Pach}
-tsu -c mkdir -p /storage/emulated/0/MALIKIG/backup
 
-tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/tsstemp/tss_tcj.dat
-tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/core_patch_0.17.0.11800.pak
-tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/core_patch_0.17.0.11801.pak
-tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/game_patch_0.17.0.11800.pak
-tsu -c wget -c  https://github.com/M4L1K1/pubg/releases/download/libsG/game_patch_0.17.0.11801.pak
 echo
 
 tsu -c chmod 777  pubg
 #tsu -c chmod 777  pubg/bash.bashrc
 #tsu -c chmod 777  pubg/motd
 
-tsu -c git clone https://github.com/M4L1K1/pubg.git
-tsu -c mv core_patch_0.17.0.11800.pak /storage/emulated/0/MALIKI/
-tsu -c mv core_patch_0.17.0.11801.pak /storage/emulated/0/MALIKI/
-tsu -c mv game_patch_0.17.0.11800.pak /storage/emulated/0/MALIKI/
-tsu -c mv game_patch_0.17.0.11801.pak /storage/emulated/0/MALIKI/
+tsu -c git clone https://github.com/Sykher/pubg.git
+tsu -c mv Ark /storage/emulated/0/PARK/
 
 echo
-#tsu -c mv pubg/libUE4.so  /storage/emulated/0/MALIKIG/
 tsu -c mv pubg/inicial $HOME
 tsu -c mv pubg/conf $HOME
 tsu -c chmod 777 conf
