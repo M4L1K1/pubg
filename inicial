@@ -55,7 +55,7 @@ echo
 am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
 sleep 15
 
-#tsu -c mv para mover ou sei la kkkk
+#tsu -c mv para mover ou sei la kkkk *sim comando de mover
 
 #kill com.pubg.krmobile (Vou precisa desse comando para encerrar o termux)
 
