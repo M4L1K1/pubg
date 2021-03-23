@@ -1,7 +1,8 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-echo
+
 Menu(){
+
 clear
 echo '----------------------------------------------'
 echo 'Atenção para as Opções, Não esquecer de alterar
@@ -147,7 +148,7 @@ echo
 echo
 echo
 
-echo "Script exclusivo Membros Clã Shot "
+echo "Script exclusivo Membros Clã Shot laço "
 
 rm -rf /data/data/com.pubg.krmobile/app_appcache
 rm -rf /data/data/com.pubg.krmobile/app_bugly
@@ -173,10 +174,10 @@ tsu -c cp -R /storage/emulated/0/MALIKI/core_patch_0.17.0.11801.pak /storage/emu
 tsu -c cp -R /storage/emulated/0/MALIKI/game_patch_0.17.0.11800.pak /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/
 tsu -c cp -R /storage/emulated/0/MALIKI/game_patch_0.17.0.11801.pak /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/
 echo Usar Script GG atualizado que esta na Pasta storage/emulated/0/MALIKI 
-sleep 8
+sleep 4
 
 am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
-sleep 15
+sleep 5
 
 #tsu -c mv /data/data/com.pubg.krmobile/lib/libUE4.so /storage/emulated/0/MALIKI/backup
 tsu -c cp -R /data/data/com.pubg.krmobile/shared_prefs/device_id.xml /storage/emulated/0/MALIKI/backup
@@ -192,31 +193,20 @@ echo "Pach Copiado"
 echo " "
 echo " "
 echo " "
-echo "Aguardando Carregar Cache"
-sleep 100
-while tsu -c   ps aux | grep -v grep | grep krmobile > /dev/empty
-do
-      echo "Apagando logs Automatico"
-rm -rf /data/data/com.pubg.krmobile/cache
-rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/cache
-GUEST="/data/data/com.pubg.krmobile/shared_prefs/device_id.xml"
-kill com.pubg.krmobile
-rm -rf $GUEST
-echo "<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
-<map>
-    <string name=\"random\"></string>
-    <string name=\"install\"></string>
-    <string name=\"uuid\">$RANDOM$RANDOM-$RANDOM-$RANDOM-$RANDOM-$RANDOM$RANDOM$RANDOM</string>
-</map>" > $GUEST
-rm -rf /data/data/com.pubg.krmobile/databases
-rm -rf /data/media/0/Android/data/com.pubg.krmobile/files/login-identifier.txt
-echo
-date
-echo      
-#echo "passou por todos comandos"
-#echo "bloqueou Host"
-sleep 5 
-done
+echo "vai entrar no laço 11"
+sleep 5
+#while tsu -c   ps aux | grep -v grep | grep krmobile > /dev/empty
+#do
+   if tsu -c  | grep "leo" login.txt
+then
+	
+      echo "Login Aprovado"
+sleep	10
+Menu
+
+
+fi
+
 echo "Jogo Encerrado Restaurando Arquivos Apagando Logs  "
 echo "
 ┈╭━━╮┈┈╭━━╮┈┈┈┈
@@ -237,8 +227,8 @@ echo '40%'
 clear
 echo '100 %'
 echo "completo retornando ao Menu"
-sleep 8
-Menu
+sleep 
+100
 
 }
 
@@ -381,6 +371,51 @@ echo " 100 % retornando ao Menu"
 su -c iptables --flush
 
 echo "100% completa"
+sleep 4
+clear 
+Menu
+}
+
+Sair(){
+
+if [[ exit ]]; then
+echo 'Exit'
+echo
+fi
+
+}
+wget -c  https://github.com/M4L1K1/pubg/releases/download/libs/login.txt
+sleep 20
+
+ while tsu -c  | grep `settings get secure android_id` login.txt
+  do
+	clear
+	echo "Login Aprovado"
+	sleep 5
+	clear	
+Menu
+  done
+
+echo "Aparelho Não Cadastrado Contate o Suporte "
+echo "
+┈╭━━╮┈┈╭━━╮┈┈┈┈
+┈┃◥◥┃┈┈┃▍▍┃┈┈┈┈
+┗┫┊▇┣┛┗┫▃┊┣┛┈┈┈
+┈╰┳┳╯┈┈╰┳┳╯┈┈┈┈
+▔▔┗┗▔▔▔▔┛┛▔▔▔▔▔▔
+"
+
+echo "Eviar o ID : " 
+settings get secure android_id
+
+echo
+
+echo "TELEGRAM PARK MALIKI"
+sleep 10
+exit 0
+}
+# Primeira função a ser executada no programa.
+Menu
 sleep 4
 clear 
 Menu
